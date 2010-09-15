@@ -211,14 +211,14 @@ module Readability
         header.remove if class_weight(header) < 0 || get_link_density(header) > 0.33
       end
 
-      node.css("form, object, iframe, embed").each do |elem|
+      node.css("form, iframe").each do |elem|
         elem.remove
       end
 
       # remove empty <p> tags
-      node.css("p").each do |elem|
-        elem.remove if elem.content.strip.empty?
-      end
+      # node.css("p").each do |elem|
+      #   elem.remove if elem.content.strip.empty?
+      # end
 
       # Conditionally clean <table>s, <ul>s, and <div>s
       node.css("table, ul, div").each do |el|
@@ -238,8 +238,8 @@ module Readability
           to_remove = false
           reason = ""
 
-          if counts["img"] > counts["p"]
-            reason = "too many images"
+          if (counts["img"] > counts["p"]) && (counts["p"] > 0) 
+            reason = "too many images #{counts['p']}"
             to_remove = true
           elsif counts["li"] > counts["p"] && name != "ul" && name != "ol"
             reason = "more <li>s than <p>s"
@@ -279,7 +279,6 @@ module Readability
         # If element is in whitelist, delete all its attributes
         if whitelist[el.node_name]
           el.attributes.each { |a, x| el.delete(a) unless @options[:attributes] && @options[:attributes].include?(a.to_s) }
-
           # Otherwise, replace the element with its contents
         else
           el.swap(el.text)
