@@ -42,6 +42,8 @@ module Readability
       article = get_article(candidates, best_candidate)
 
       cleaned_article = sanitize(article, candidates, options)
+      cleaned_article = consider_special_cases(cleaned_article)
+      
       if remove_unlikely_candidates && article.text.strip.length < (options[:retry_length] || RETRY_LENGTH)
         make_html
         content(false)
@@ -49,7 +51,23 @@ module Readability
         cleaned_article
       end
     end
-
+    
+    def consider_special_cases(content)
+      if @input.base_uri.to_s =~ /^http:\/\/(www\.)?youtube.com/
+        if @input.base_uri.request_uri =~ /\?v=([_a-z0-9]+)&?/i
+          content = <<-HTML
+            <object width="480" height="385">
+              <param name="movie" value="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US"></param>
+              <param name="allowFullScreen" value="true"></param>
+              <param name="allowscriptaccess" value="always"></param>
+              <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+            </object>
+          HTML
+        end
+      end
+      content
+    end
+    
     def get_article(candidates, best_candidate)
       # Now that we have the top candidate, look through its siblings for content that might also be related.
       # Things like preambles, content split by ads that we removed, etc.
