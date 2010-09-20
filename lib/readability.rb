@@ -6,7 +6,7 @@ module Readability
     TEXT_LENGTH_THRESHOLD = 25
     RETRY_LENGTH = 250
 
-    attr_accessor :options, :html
+    attr_accessor :options, :html, :best_candidate
 
     def initialize(input, options = {})
       @input = input
@@ -83,17 +83,18 @@ module Readability
     end
 
     def select_best_candidate(candidates)
-      sorted_candidates = candidates.values.sort { |a, b| b[:content_score] <=> a[:content_score] }
+      @best_candidate ||= begin 
+        sorted_candidates = candidates.values.sort { |a, b| b[:content_score] <=> a[:content_score] }
 
-      debug("Top 5 canidates:")
-      sorted_candidates[0...5].each do |candidate|
-        debug("Candidate #{candidate[:elem].name}##{candidate[:elem][:id]}.#{candidate[:elem][:class]} with score #{candidate[:content_score]}")
+        debug("Top 5 candidates:")
+        sorted_candidates[0...5].each do |candidate|
+          debug("Candidate #{candidate[:elem].andand.name}##{candidate[:elem][:id]}.#{candidate[:elem][:class]} with score #{candidate[:content_score]}")
+        end
+
+        best_candidate = sorted_candidates.first || { :elem => @html.css("body").first, :content_score => 0 }
+        #debug("Best candidate #{best_candidate[:elem].andand.name} with score #{best_candidate[:content_score]}")
+        best_candidate
       end
-
-      best_candidate = sorted_candidates.first || { :elem => @html.css("body").first, :content_score => 0 }
-      debug("Best candidate #{best_candidate[:elem].name}##{best_candidate[:elem][:id]}.#{best_candidate[:elem][:class]} with score #{best_candidate[:content_score]}")
-
-      best_candidate
     end
 
     def get_link_density(elem)
@@ -281,7 +282,8 @@ module Readability
           el.attributes.each { |a, x| el.delete(a) unless @options[:attributes] && @options[:attributes].include?(a.to_s) }
           # Otherwise, replace the element with its contents
         else
-          el.swap(el.text)
+          # keep getting whiny nils with nokogiri
+          el.swap(el.text) rescue nil
         end
 
       end

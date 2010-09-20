@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.email = "busk@busk.com"
+  s.email = "spiceee@gmail.com"
   s.homepage = "http://github.com/busk/ruby-readability"
   s.version = "1.0.0"
   s.name = "busk-ruby-readability"
