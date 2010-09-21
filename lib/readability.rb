@@ -14,6 +14,20 @@ module Readability
       make_html
     end
 
+    # def charset
+    #   @charset ||= begin
+    #     if content_type = @input.read.to_s.match(/(<meta\s*([^>]*)http-equiv=['"]?content-type['"]?([^>]*))/i)
+    #       if content_type = content_type[0].match(/charset=([\w-]*)/i)
+    #         content_type[1]
+    #       else
+    #         "utf-8"
+    #       end
+    #     else
+    #       "utf-8"
+    #     end
+    #   end
+    # end
+
     def make_html
       @html = Nokogiri::HTML(@input, nil, 'UTF-8')
     end
@@ -35,39 +49,74 @@ module Readability
     def content(remove_unlikely_candidates = true)
       @html.css("script, style").each { |i| i.remove }
 
-      remove_unlikely_candidates! if remove_unlikely_candidates
-      transform_misused_divs_into_paragraphs!
-      candidates = score_paragraphs(options[:min_text_length] || TEXT_LENGTH_THRESHOLD)
-      best_candidate = select_best_candidate(candidates)
-      article = get_article(candidates, best_candidate)
+      article = youtube if is_youtube? && remove_unlikely_candidates
+      article = vimeo if is_vimeo? && remove_unlikely_candidates
 
-      cleaned_article = sanitize(article, candidates, options)
-      cleaned_article = consider_special_cases(cleaned_article)
-      
-      if remove_unlikely_candidates && article.text.strip.length < (options[:retry_length] || RETRY_LENGTH)
-        make_html
-        content(false)
+      if article && remove_unlikely_candidates
+        return article.to_html.gsub(/[\r\n\f]+/, "\n" ).gsub(/[\t ]+/, " ").gsub(/&nbsp;/, " ")
       else
-        cleaned_article
-      end
-    end
-    
-    def consider_special_cases(content)
-      if @input.base_uri.to_s =~ /^http:\/\/(www\.)?youtube.com/
-        if @input.base_uri.request_uri =~ /\?v=([_a-z0-9]+)&?/i
-          content = <<-HTML
-            <object width="480" height="385">
-              <param name="movie" value="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US"></param>
-              <param name="allowFullScreen" value="true"></param>
-              <param name="allowscriptaccess" value="always"></param>
-              <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
-            </object>
-          HTML
+        remove_unlikely_candidates! if remove_unlikely_candidates
+        transform_misused_divs_into_paragraphs!
+        candidates = score_paragraphs(options[:min_text_length] || TEXT_LENGTH_THRESHOLD)
+        best_candidate = select_best_candidate(candidates)
+        article = get_article(candidates, best_candidate)
+      
+        cleaned_article = sanitize(article, candidates, options)
+      
+        if remove_unlikely_candidates && article.text.strip.length < (options[:retry_length] || RETRY_LENGTH)
+          make_html
+          content(false)
+        else
+          cleaned_article
         end
       end
-      content
     end
     
+    def is_youtube?
+      (@input.base_uri.to_s =~ /^http:\/\/(www\.)?youtube.com/)
+    end
+    
+    def is_vimeo?
+      (@input.base_uri.to_s =~ /^http:\/\/(www.)?vimeo.com/)
+    end
+    
+    def is_special_case?
+      (@input.base_uri.to_s =~ REGEXES[:videoRe])
+    end
+    
+    def youtube
+      if @input.base_uri.request_uri =~ /\?v=([_\-a-z0-9]+)&?/i
+        Nokogiri::HTML.fragment <<-HTML
+          <object width="480" height="385">
+            <param name="movie" value="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US"></param>
+            <param name="allowFullScreen" value="true"></param>
+            <param name="allowscriptaccess" value="always"></param>
+            <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+          </object>
+        HTML
+      else
+        nil
+      end
+    end
+    
+    def vimeo
+      # matches channel pages
+      if (player = @html.css(".player")).present?
+        html = ""
+        player.each do |video|
+          if video.to_html =~ /clip_id=([0-9]+)/
+            html << "<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>"
+          end
+        end
+        Nokogiri::HTML.fragment(html)
+      # matches non-channel or pages that used swfobject to print player
+      elsif @html.to_html =~ /clip_id=([0-9]+)/
+        Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
+      else
+        nil
+      end
+    end
+        
     def get_article(candidates, best_candidate)
       # Now that we have the top candidate, look through its siblings for content that might also be related.
       # Things like preambles, content split by ads that we removed, etc.
