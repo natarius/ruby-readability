@@ -92,11 +92,11 @@ module Readability
     def youtube
       if @input.base_uri.request_uri =~ /\?v=([_\-a-z0-9]+)&?/i
         Nokogiri::HTML.fragment <<-HTML
-          <object width="739" height="416">
+          <object width="706" height="422">
             <param name="movie" value="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US"></param>
             <param name="allowFullScreen" value="true"></param>
             <param name="allowscriptaccess" value="always"></param>
-            <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="739" height="416"></embed>
+            <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="706" height="422"></embed>
           </object>
         HTML
       else
