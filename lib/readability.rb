@@ -43,7 +43,7 @@ module Readability
         :trimRe => /^\s+|\s+$/,
         :normalizeRe => /\s{2,}/,
         :killBreaksRe => /(<br\s*\/?>(\s|&nbsp;?)*){1,}/,
-        :videoRe => /http:\/\/(www\.)?(youtube|vimeo)\.com/i
+        :videoRe => /http:\/\/(www\.)?(youtube|vimeo|ted|player\.vimeo)\.com/i
     }
 
     def content(remove_unlikely_candidates = true)
@@ -51,6 +51,7 @@ module Readability
 
       article = youtube if is_youtube? && remove_unlikely_candidates
       article = vimeo if is_vimeo? && remove_unlikely_candidates
+      article = ted if is_ted? && remove_unlikely_candidates
 
       if article && remove_unlikely_candidates
         return article.to_html.gsub(/[\r\n\f]+/, "\n" ).gsub(/[\t ]+/, " ").gsub(/&nbsp;/, " ")
@@ -79,6 +80,10 @@ module Readability
     def is_vimeo?
       (@input.base_uri.to_s =~ /^http:\/\/(www.)?vimeo.com/)
     end
+
+    def is_ted?
+      (@input.base_uri.to_s =~ /^http:\/\/(www.)?ted.com\/talks/)
+    end
     
     def is_special_case?
       (@input.base_uri.to_s =~ REGEXES[:videoRe])
@@ -87,11 +92,11 @@ module Readability
     def youtube
       if @input.base_uri.request_uri =~ /\?v=([_\-a-z0-9]+)&?/i
         Nokogiri::HTML.fragment <<-HTML
-          <object width="480" height="385">
+          <object width="739" height="416">
             <param name="movie" value="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US"></param>
             <param name="allowFullScreen" value="true"></param>
             <param name="allowscriptaccess" value="always"></param>
-            <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+            <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="739" height="416"></embed>
           </object>
         HTML
       else
@@ -112,6 +117,18 @@ module Readability
       # matches non-channel or pages that used swfobject to print player
       elsif @html.to_html =~ /clip_id=([0-9]+)/
         Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
+      else
+        nil
+      end
+    end
+    
+    def ted
+      if (player = @html.css(".copy_paste")).present?
+        unless player.first.attr("value").blank?
+          Nokogiri::HTML.fragment(player.first.attr("value").to_s)
+        else
+          nil
+        end
       else
         nil
       end
@@ -279,8 +296,14 @@ module Readability
         header.remove if class_weight(header) < 0 || get_link_density(header) > 0.33
       end
 
-      node.css("form, iframe").each do |elem|
+      node.css("form").each do |elem|
         elem.remove
+      end
+      
+      node.css("iframe").each do |iframe|
+        unless iframe.attr("src").to_s =~ REGEXES[:videoRe]
+          iframe.remove
+        end
       end
 
       # remove empty <p> tags
