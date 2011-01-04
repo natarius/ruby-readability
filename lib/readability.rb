@@ -6,12 +6,13 @@ module Readability
     TEXT_LENGTH_THRESHOLD = 25
     RETRY_LENGTH = 250
 
-    attr_accessor :options, :html, :best_candidate
+    attr_accessor :document, :base_uri, :request, :options, :best_candidate
 
-    def initialize(input, options = {})
-      @input = input
+    def initialize(document, base_uri, request, options = {})
+      @document = document
+      @base_uri = base_uri
+      @request = request
       @options = options
-      make_html
     end
 
     # def charset
@@ -28,10 +29,6 @@ module Readability
     #   end
     # end
 
-    def make_html
-      @html = Nokogiri::HTML(@input, nil, 'UTF-8')
-    end
-
     REGEXES = {
         :unlikelyCandidatesRe => /combx|comment|disqus|foot|header|menu|meta|nav|rss|shoutbox|sidebar|sponsor/i,
         :okMaybeItsACandidateRe => /and|article|body|column|main/i,
@@ -47,7 +44,8 @@ module Readability
     }
 
     def content(remove_unlikely_candidates = true)
-      @html.css("script, style").each { |i| i.remove }
+      @document.css("script, style").each {|el| el.remove }
+      @document.search('//comment()').each {|el| el.remove }
 
       article = youtube if is_youtube? && remove_unlikely_candidates
       article = vimeo if is_vimeo? && remove_unlikely_candidates
@@ -74,23 +72,23 @@ module Readability
     end
     
     def is_youtube?
-      (@input.base_uri.to_s =~ /^http:\/\/(www\.)?youtube.com/)
+      (@base_uri.to_s =~ /^http:\/\/(www\.)?youtube.com/)
     end
     
     def is_vimeo?
-      (@input.base_uri.to_s =~ /^http:\/\/(www.)?vimeo.com/)
+      (@base_uri.to_s =~ /^http:\/\/(www.)?vimeo.com/)
     end
 
     def is_ted?
-      (@input.base_uri.to_s =~ /^http:\/\/(www.)?ted.com\/talks/)
+      (@base_uri.to_s =~ /^http:\/\/(www.)?ted.com\/talks/)
     end
     
     def is_special_case?
-      (@input.base_uri.to_s =~ REGEXES[:videoRe])
+      (@base_uri.to_s =~ REGEXES[:videoRe])
     end
     
     def youtube
-      if @input.base_uri.request_uri =~ /\?v=([_\-a-z0-9]+)&?/i
+      if @request =~ /\?v=([_\-a-z0-9]+)&?/i
         Nokogiri::HTML.fragment <<-HTML
           <object width="706" height="422">
             <param name="movie" value="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US"></param>
@@ -106,7 +104,7 @@ module Readability
     
     def vimeo
       # matches channel pages
-      if (player = @html.css(".player")).present?
+      if (player = @document.css(".player")).present?
         html = ""
         player.each do |video|
           if video.to_html =~ /clip_id=([0-9]+)/
@@ -115,7 +113,7 @@ module Readability
         end
         Nokogiri::HTML.fragment(html)
       # matches non-channel or pages that used swfobject to print player
-      elsif @html.to_html =~ /clip_id=([0-9]+)/
+      elsif @document.to_html =~ /clip_id=([0-9]+)/
         Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
       else
         nil
@@ -123,7 +121,7 @@ module Readability
     end
     
     def ted
-      if (player = @html.css(".copy_paste")).present?
+      if (player = @document.css(".copy_paste")).present?
         unless player.first.attr("value").blank?
           Nokogiri::HTML.fragment(player.first.attr("value").to_s)
         else
@@ -139,8 +137,8 @@ module Readability
       # Things like preambles, content split by ads that we removed, etc.
 
       sibling_score_threshold = [10, best_candidate[:content_score] * 0.2].max
-      output = Nokogiri::XML::Node.new('div', @html)
-      best_candidate[:elem].parent.children.each do |sibling|
+      output = Nokogiri::XML::Node.new('div', @document)
+      best_candidate[:elem].parent.andand.children.each do |sibling|
         append = false
         append = true if sibling == best_candidate[:elem]
         append = true if candidates[sibling] && candidates[sibling][:content_score] >= sibling_score_threshold
@@ -175,7 +173,7 @@ module Readability
           debug("Candidate #{candidate[:elem].andand.name}##{candidate[:elem][:id]}.#{candidate[:elem][:class]} with score #{candidate[:content_score]}")
         end
 
-        best_candidate = sorted_candidates.first || { :elem => @html.css("body").first, :content_score => 0 }
+        best_candidate = sorted_candidates.first || { :elem => @document.css("body").first, :content_score => 0 }
         #debug("Best candidate #{best_candidate[:elem].andand.name} with score #{best_candidate[:content_score]}")
         best_candidate
       end
@@ -189,7 +187,7 @@ module Readability
 
     def score_paragraphs(min_text_length)
       candidates = {}
-      @html.css("p,td").each do |elem|
+      @document.css("p,td").each do |elem|
         parent_node = elem.parent
         grand_parent_node = parent_node.respond_to?(:parent) ? parent_node.parent : nil
         inner_text = elem.text
@@ -262,7 +260,7 @@ module Readability
     end
 
     def remove_unlikely_candidates!
-      @html.css("*").each do |elem|
+      @document.css("*").each do |elem|
         str = "#{elem[:class]}#{elem[:id]}"
         if str =~ REGEXES[:unlikelyCandidatesRe] && str !~ REGEXES[:okMaybeItsACandidateRe] && elem.name.downcase != 'body'
           debug("Removing unlikely candidate - #{str}")
@@ -272,7 +270,7 @@ module Readability
     end
 
     def transform_misused_divs_into_paragraphs!
-      @html.css("*").each do |elem|
+      @document.css("*").each do |elem|
         if elem.name.downcase == "div"
           # transform <div>s that do not contain other block elements into <p>s
           if elem.inner_html !~ REGEXES[:divToPElementsRe]
