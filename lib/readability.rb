@@ -1,11 +1,8 @@
 require 'rubygems'
 require 'nokogiri'
 
+# so to run with non-Rails projects
 class Object
-  ##
-  #   @person ? @person.name : nil
-  # vs
-  #   @person.try(:name)
   def try(method)
     send method if respond_to? method
   end
@@ -25,20 +22,6 @@ module Readability
       @options = options
     end
 
-    # def charset
-    #   @charset ||= begin
-    #     if content_type = @input.read.to_s.match(/(<meta\s*([^>]*)http-equiv=['"]?content-type['"]?([^>]*))/i)
-    #       if content_type = content_type[0].match(/charset=([\w-]*)/i)
-    #         content_type[1]
-    #       else
-    #         "utf-8"
-    #       end
-    #     else
-    #       "utf-8"
-    #     end
-    #   end
-    # end
-
     REGEXES = {
         :unlikelyCandidatesRe => /combx|comment|disqus|foot|header|menu|meta|nav|rss|shoutbox|sidebar|sponsor/i,
         :okMaybeItsACandidateRe => /and|article|body|column|main/i,
@@ -52,6 +35,12 @@ module Readability
         :killBreaksRe => /(<br\s*\/?>(\s|&nbsp;?)*){1,}/,
         :videoRe => /http:\/\/(www\.)?(youtube|vimeo|ted|player\.vimeo)\.com/i
     }
+
+    # should we get rid of this?
+    def make_html
+      @document.encoding = 'UTF-8'
+      @best_candidate = nil
+    end
 
     def content(remove_unlikely_candidates = true)
       @document.css("script, style").each {|el| el.remove }
@@ -113,8 +102,11 @@ module Readability
     end
     
     def vimeo
+      # matches non-channel or pages that used swfobject to print player
+      if @document.css("#clip_id")
+        Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
       # matches channel pages
-      if (player = @document.css(".player")).present?
+      elsif player = @document.css(".player")
         html = ""
         player.each do |video|
           if video.to_html =~ /clip_id=([0-9]+)/
@@ -122,9 +114,6 @@ module Readability
           end
         end
         Nokogiri::HTML.fragment(html)
-      # matches non-channel or pages that used swfobject to print player
-      elsif @document.to_html =~ /clip_id=([0-9]+)/
-        Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
       else
         nil
       end

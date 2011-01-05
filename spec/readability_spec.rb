@@ -2,7 +2,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), "spec_helper"))
 
 describe Readability do
   before do
-    @simple_html_fixture =  Nokogiri::HTML <<-HTML
+    @simple_html_fixture = Nokogiri::HTML <<-HTML
       <html>
         <head>
           <title>title!</title>
@@ -179,4 +179,21 @@ describe Readability do
       puts "Performed #{checks} checks."
     end
   end
+  
+  describe "handles vimeo.com videos" do
+  
+    before(:each) do 
+      FakeWeb.register_uri(:get, 'http://vimeo.com/10365005',
+                           :response => File.read("spec/fixtures/vimeo.com.html"))
+      @uri = URI.parse("http://vimeo.com/10365005")
+                           
+      @content = Readability::Document.new(Nokogiri::HTML(open('http://vimeo.com/10365005')), @uri, @uri).content
+    end
+    
+    it "should extract the video from the page" do
+      @content.should include("<iframe src=\"http://player.vimeo.com/")
+    end
+  
+  end
+  
 end

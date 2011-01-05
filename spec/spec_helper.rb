@@ -5,6 +5,8 @@ require 'readability'
 require 'spec'
 require 'spec/autorun'
 require 'nokogiri'
+require 'open-uri'
+require 'fakeweb'
 
 Spec::Runner.configure do |config|
 
