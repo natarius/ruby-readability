@@ -104,7 +104,7 @@ module Readability
     def vimeo
       # matches non-channel or pages that used swfobject to print player
       if @document.css("#clip_id")
-        Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
+        Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{@document.css("#clip_id").attr('value')}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
       # matches channel pages
       elsif player = @document.css(".player")
         html = ""

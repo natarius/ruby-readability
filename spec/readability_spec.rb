@@ -191,7 +191,7 @@ describe Readability do
     end
     
     it "should extract the video from the page" do
-      @content.should include("<iframe src=\"http://player.vimeo.com/")
+      @content.should include("<iframe src=\"http://player.vimeo.com/video/10365005")
     end
   
   end
