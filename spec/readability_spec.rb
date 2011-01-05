@@ -2,7 +2,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), "spec_helper"))
 
 describe Readability do
   before do
-    @simple_html_fixture = <<-HTML
+    @simple_html_fixture =  Nokogiri::HTML <<-HTML
       <html>
         <head>
           <title>title!</title>
@@ -20,22 +20,22 @@ describe Readability do
 
   describe "transformMisusedDivsIntoParagraphs" do
     before do
-      @doc = Readability::Document.new(@simple_html_fixture)
+      @doc = Readability::Document.new(@simple_html_fixture, nil, nil)
       @doc.transform_misused_divs_into_paragraphs!
     end
 
     it "should transform divs containing no block elements into <p>s" do
-      @doc.html.css("#body").first.name.should == "p"
+      @doc.document.css("#body").first.name.should == "p"
     end
 
     it "should not transform divs that contain block elements" do
-      @doc.html.css("#contains_blockquote").first.name.should == "div"
+      @doc.document.css("#contains_blockquote").first.name.should == "div"
     end
   end
 
   describe "score_node" do
     before do
-      @doc = Readability::Document.new(<<-HTML)
+      @html = Nokogiri::HTML <<-HTML
         <html>
           <body>
             <div id='elem1'>
@@ -47,8 +47,10 @@ describe Readability do
           </body>
         </html>
       HTML
-      @elem1 = @doc.html.css("#elem1").first
-      @elem2 = @doc.html.css("#elem2").first
+      
+      @doc = Readability::Document.new(@html, nil, nil)
+      @elem1 = @doc.document.css("#elem1").first
+      @elem2 = @doc.document.css("#elem2").first
     end
 
     it "should like <div>s more than <th>s" do
@@ -66,33 +68,33 @@ describe Readability do
 
   describe "remove_unlikely_candidates!" do
     before do
-      @doc = Readability::Document.new(@simple_html_fixture)
+      @doc = Readability::Document.new(@simple_html_fixture, nil, nil)
       @doc.remove_unlikely_candidates!
     end
 
     it "should remove things that have class comment" do
-      @doc.html.inner_html.should_not =~ /a comment/
+      @doc.document.inner_html.should_not =~ /a comment/
     end
 
     it "should not remove body tags" do
-      @doc.html.inner_html.should =~ /<\/body>/
+      @doc.document.inner_html.should =~ /<\/body>/
     end
 
     it "should not remove things with class comment and id body" do
-      @doc.html.inner_html.should =~ /real content/
+      @doc.document.inner_html.should =~ /real content/
     end
   end
 
   describe "score_paragraphs" do
     before(:each) do
-      @doc = Readability::Document.new(<<-HTML)
+      @html = Nokogiri::HTML <<-HTML
         <html>
           <head>
             <title>title!</title>
           </head>
           <body id="body">
             <div id="div1">
-              <div id="div2>
+              <div id="div2">
                 <p id="some_comment">a comment</p>
               </div>
               <p id="some_text">some text</p>
@@ -103,11 +105,13 @@ describe Readability do
           </body>
         </html>
       HTML
+      
+      @doc = Readability::Document.new(@html, nil, nil)
       @candidates = @doc.score_paragraphs(0)
     end
 
     it "should score elements in the document" do
-      @candidates.values.length.should == 3
+      @candidates.values.length.should == 4
     end
 
     it "should prefer the body in this particular example" do
@@ -122,14 +126,13 @@ describe Readability do
       allowed_tags = %w[div span table tr td p i strong u h1 h2 h3 h4 pre code br a]
       allowed_attributes = %w[href]
       html = File.read(File.dirname(__FILE__) + "/fixtures/cant_read.html")
-      Readability::Document.new(html, :tags => allowed_tags, :attributes => allowed_attributes).content.should match(/Can you talk a little about how you developed the looks for the/)
+      Readability::Document.new(Nokogiri::HTML(html), nil, nil, :tags => allowed_tags, :attributes => allowed_attributes).content.should match(/Can you talk a little about how you developed the looks for the/)
     end
   end
 
   describe "general functionality" do
     before do
-      @doc = Readability::Document.new("<html><head><title>title!</title></head><body><div><p>Some content</p></div></body>",
-                                       :min_text_length => 0, :retry_length => 1)
+      @doc = Readability::Document.new(Nokogiri::HTML("<html><head><title>title!</title></head><body><div><p>Some content</p></div></body>"), nil, nil, :min_text_length => 0, :retry_length => 1)
     end
 
     it "should return the main page content" do
@@ -139,8 +142,7 @@ describe Readability do
 
   describe "ignoring sidebars" do
     before do
-      @doc = Readability::Document.new("<html><head><title>title!</title></head><body><div><p>Some content</p></div><div class='sidebar'><p>sidebar<p></div></body>",
-                                       :min_text_length => 0, :retry_length => 1)
+      @doc = Readability::Document.new(Nokogiri::HTML("<html><head><title>title!</title></head><body><div><p>Some content</p></div><div class='sidebar'><p>sidebar<p></div></body>"), nil, nil, :min_text_length => 0, :retry_length => 1)
     end
 
     it "should not return the sidebar" do
@@ -159,7 +161,7 @@ describe Readability do
       checks = 0
       @samples.each do |sample|
         html = File.read(File.dirname(__FILE__) + "/fixtures/samples/#{sample}.html")
-        doc = Readability::Document.new(html).content
+        doc = Readability::Document.new(Nokogiri::HTML(html), nil, nil).content
 
         load "fixtures/samples/#{sample}-fragments.rb"
         puts "testing #{sample}..."

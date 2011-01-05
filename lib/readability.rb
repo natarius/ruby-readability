@@ -1,6 +1,16 @@
 require 'rubygems'
 require 'nokogiri'
 
+class Object
+  ##
+  #   @person ? @person.name : nil
+  # vs
+  #   @person.try(:name)
+  def try(method)
+    send method if respond_to? method
+  end
+end
+
 module Readability
   class Document
     TEXT_LENGTH_THRESHOLD = 25
@@ -138,7 +148,7 @@ module Readability
 
       sibling_score_threshold = [10, best_candidate[:content_score] * 0.2].max
       output = Nokogiri::XML::Node.new('div', @document)
-      best_candidate[:elem].parent.andand.children.each do |sibling|
+      best_candidate[:elem].parent.try(:children).each do |sibling|
         append = false
         append = true if sibling == best_candidate[:elem]
         append = true if candidates[sibling] && candidates[sibling][:content_score] >= sibling_score_threshold
@@ -170,7 +180,7 @@ module Readability
 
         debug("Top 5 candidates:")
         sorted_candidates[0...5].each do |candidate|
-          debug("Candidate #{candidate[:elem].andand.name}##{candidate[:elem][:id]}.#{candidate[:elem][:class]} with score #{candidate[:content_score]}")
+          debug("Candidate #{candidate[:elem].try(:name)}##{candidate[:elem][:id]}.#{candidate[:elem][:class]} with score #{candidate[:content_score]}")
         end
 
         best_candidate = sorted_candidates.first || { :elem => @document.css("body").first, :content_score => 0 }

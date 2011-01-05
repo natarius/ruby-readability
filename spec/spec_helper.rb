@@ -4,6 +4,7 @@ require 'rubygems'
 require 'readability'
 require 'spec'
 require 'spec/autorun'
+require 'nokogiri'
 
 Spec::Runner.configure do |config|
 
