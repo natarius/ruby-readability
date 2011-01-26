@@ -43,6 +43,7 @@ module Readability
     end
 
     def content(remove_unlikely_candidates = true)
+      debug "Starting the content heuristic"
       @document.css("script, style").each {|el| el.remove }
       @document.search('//comment()').each {|el| el.remove }
 
@@ -58,9 +59,9 @@ module Readability
         candidates = score_paragraphs(options[:min_text_length] || TEXT_LENGTH_THRESHOLD)
         best_candidate = select_best_candidate(candidates)
         article = get_article(candidates, best_candidate)
-      
+
         cleaned_article = sanitize(article, candidates, options)
-      
+
         if remove_unlikely_candidates && article.text.strip.length < (options[:retry_length] || RETRY_LENGTH)
           make_html
           content(false)
@@ -69,24 +70,25 @@ module Readability
         end
       end
     end
-    
+
     def is_youtube?
-      (@base_uri.to_s =~ /^http:\/\/(www\.)?youtube.com/)
+      (@base_uri.to_s =~ /^(www\.)?youtube.com/)
     end
-    
+
     def is_vimeo?
-      (@base_uri.to_s =~ /^http:\/\/(www.)?vimeo.com/)
+      (@base_uri.to_s =~ /^(www.)?vimeo.com/)
     end
 
     def is_ted?
-      (@base_uri.to_s =~ /^http:\/\/(www.)?ted.com\/talks/)
+      (@base_uri.to_s =~ /^(www.)?ted.com\/talks/)
     end
-    
+
     def is_special_case?
       (@base_uri.to_s =~ REGEXES[:videoRe])
     end
-    
+
     def youtube
+      debug("I have a Youtube video page")
       if @request =~ /\?v=([_\-a-z0-9]+)&?/i
         Nokogiri::HTML.fragment <<-HTML
           <object width="706" height="422">
@@ -100,8 +102,9 @@ module Readability
         nil
       end
     end
-    
+
     def vimeo
+      debug("I have a Vimeo video page")
       # matches non-channel or pages that used swfobject to print player
       if @document.css("#clip_id")
         Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{@document.css("#clip_id").attr('value')}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
@@ -118,8 +121,9 @@ module Readability
         nil
       end
     end
-    
+
     def ted
+      debug("I have a TED video page")
       if (player = @document.css(".copy_paste")).present?
         unless player.first.attr("value").blank?
           Nokogiri::HTML.fragment(player.first.attr("value").to_s)
@@ -130,7 +134,7 @@ module Readability
         nil
       end
     end
-        
+
     def get_article(candidates, best_candidate)
       # Now that we have the top candidate, look through its siblings for content that might also be related.
       # Things like preambles, content split by ads that we removed, etc.
@@ -164,7 +168,7 @@ module Readability
     end
 
     def select_best_candidate(candidates)
-      @best_candidate ||= begin 
+      @best_candidate ||= begin
         sorted_candidates = candidates.values.sort { |a, b| b[:content_score] <=> a[:content_score] }
 
         debug("Top 5 candidates:")
@@ -255,7 +259,7 @@ module Readability
     end
 
     def debug(str)
-      puts str if options[:debug]
+      puts "READABILITY : "+ str if options[:debug]
     end
 
     def remove_unlikely_candidates!
@@ -296,7 +300,7 @@ module Readability
       node.css("form").each do |elem|
         elem.remove
       end
-      
+
       node.css("iframe").each do |iframe|
         unless iframe.attr("src").to_s =~ REGEXES[:videoRe]
           iframe.remove
@@ -326,7 +330,7 @@ module Readability
           to_remove = false
           reason = ""
 
-          if (counts["img"] > counts["p"]) && (counts["p"] > 0) 
+          if (counts["img"] > counts["p"]) && (counts["p"] > 0)
             reason = "too many images #{counts['p']}"
             to_remove = true
           elsif counts["li"] > counts["p"] && name != "ul" && name != "ol"
