@@ -140,6 +140,27 @@ describe Readability do
     end
   end
 
+  describe 'dealing with iso-8859-1' do
+    before(:each) do
+      file = File.open('spec/fixtures/folha.html', 'r')
+      @content = file.read
+    end
+
+    it "should return the main page content" do
+      Readability::Document.new(Nokogiri::HTML(@content, nil, 'ISO-8859'),nil,nil).content.unpack("C*").pack("U*")  .should == "<div><div>\n <p>\n COLABORA\303\207\303\203O PARA A FOLHA\n </p>\n <p>\n A Anvisa (Ag\303\252ncia Nacional de Vigil\303\242ncia Sanit\303\241ria) interditou o lote do ch\303\241 de erva doce da marca Dr. Oetker. A medida foi publicada no \"Di\303\241rio Oficial da Uni\303\243o\" na quarta-feira (26).\n </p>\n <p>\n Segundo a Vigil\303\242ncia Sanit\303\241ria, o lote L160T02 do produto --data de validade 01/12/2011-- apresentou resultado insatisfat\303\263rio no ensaio de pesquisa para mat\303\251rias macrosc\303\263picas e microsc\303\263picas que detectou a presen\303\247a de p\303\252lo de roedor e fragmentos de inseto.\n </p>\n <p>\n A interdi\303\247\303\243o cautelar vale pelo per\303\255odo de 90 dias ap\303\263s a data de publica\303\247\303\243o. Durante esse tempo, o produto interditado n\303\243o deve ser consumido e nem comercializado. As pessoas que j\303\241 adquiriram o produto do lote suspenso devem interromper o consumo.\n </p>\n</div></div>"
+    end
+  end
+
+  describe 'dealing with utf-8' do
+    before do
+      @doc = Readability::Document.new(Nokogiri::HTML("<html><head><title>title!</title></head><body><div><p>Açougue, espátula, Vovô, çáóéãà</p></div></body>", nil, 'UTF-8'), nil, nil, :min_text_length => 0, :retry_length => 1)
+    end
+
+    it 'should return the main page content' do
+      @doc.content.should match("Açougue, espátula, Vovô, çáóéãà")
+    end
+  end
+
   describe "ignoring sidebars" do
     before do
       @doc = Readability::Document.new(Nokogiri::HTML("<html><head><title>title!</title></head><body><div><p>Some content</p></div><div class='sidebar'><p>sidebar<p></div></body>"), nil, nil, :min_text_length => 0, :retry_length => 1)

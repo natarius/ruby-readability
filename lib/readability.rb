@@ -243,6 +243,10 @@ module Readability
       weight
     end
 
+    def convert_to_utf8(string)
+      string.unpack("C*").pack("U*")
+    end
+
     def score_node(elem)
       content_score = class_weight(elem)
       case elem.name.downcase
