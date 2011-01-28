@@ -3,8 +3,8 @@ require 'nokogiri'
 
 # so to run with non-Rails projects
 class Object
-  def try(method)
-    send method if respond_to? method
+  def try(method, *arguments)
+    send(method, *arguments) if respond_to? method
   end
 end
 
