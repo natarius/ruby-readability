@@ -50,6 +50,7 @@ module Readability
       article = youtube if is_youtube? && remove_unlikely_candidates
       article = vimeo if is_vimeo? && remove_unlikely_candidates
       article = ted if is_ted? && remove_unlikely_candidates
+      article = odia if is_odia? && remove_unlikely_candidates
 
       if article && remove_unlikely_candidates
         return article.to_html.gsub(/[\r\n\f]+/, "\n" ).gsub(/[\t ]+/, " ").gsub(/&nbsp;/, " ")
@@ -83,9 +84,26 @@ module Readability
       (@base_uri.to_s =~ /^(www.)?ted.com\/talks/)
     end
 
+    def is_odia?
+      (@base_uri.to_s =~ /portalodia.com/)
+    end
+
     def is_special_case?
       (@base_uri.to_s =~ REGEXES[:videoRe])
     end
+
+    def odia
+      debug "I have an O Dia page"
+      extracted = @document.css("#content-noticia p")
+      extracted.each do |elem|
+        if (elem.try(:inner_text) =~ /^\W*$/)
+          extracted.delete elem
+        end
+      end
+      extracted
+    end
+
+
 
     def youtube
       debug("I have a Youtube video page")
@@ -284,14 +302,7 @@ module Readability
             debug("Altering div(##{elem[:id]}.#{elem[:class]}) to p");
             elem.name = "p"
           end
-        else
-          # wrap text nodes in p tags
-#          elem.children.each do |child|
-#            if child.text?
-##              debug("wrapping text node with a p")
-#              child.swap("<p>#{child.text}</p>")
-#            end
-#          end
+
         end
       end
     end
@@ -386,6 +397,14 @@ module Readability
       # Get rid of duplicate whitespace
       node.to_html.gsub(/[\r\n\f]+/, "\n" ).gsub(/[\t ]+/, " ").gsub(/&nbsp;/, " ")
     end
-
   end
+
+  private
+
+  def remove_empty_tags(chunk)
+    chunk.css("p").each do |elem|
+      elem.remove if elem.content.strip.empty?
+    end
+  end
+
 end

@@ -216,4 +216,21 @@ describe Readability do
 
   end
 
+  describe "handles portal o dia" do
+
+    before(:each) do
+      FakeWeb.register_uri(:get, 'http://portalodia.com/noticias/mundo/homem-chama-a-policia-porque-nao-quer-fazer-sexo-com-a-mulher-100984.html',
+                           :response => File.read("spec/fixtures/portalodia.com.html"))
+      @uri = URI.parse("http://portalodia.com/noticias/mundo/homem-chama-a-policia-porque-nao-quer-fazer-sexo-com-a-mulher-100984.html")
+      @parsed_page = Readability::Document.new(Nokogiri::HTML(open('http://portalodia.com/noticias/mundo/homem-chama-a-policia-porque-nao-quer-fazer-sexo-com-a-mulher-100984.html')),
+      @uri.host, @uri.request_uri, :debug => true)
+      @content = @parsed_page.content
+    end
+
+    it "should extract the news from the page" do
+      @content.should == "<p>A pol\303\255cia alem\303\243 informou nesta ter\303\247a-feira que recebeu um chamado no m\303\255nimo inusitado. Um homem da cidade de Waiblingen, distrito de Stuttgart, ligou para os policiais porque n\303\243o queria mais fazer sexo com sua mulher.</p><p>De acordo com ele, apesar de recusar seguidamente as ofertas, ela continua insistindo e n\303\243o o\302\240deixa dormir. O casal, que tem dois filhos, est\303\241 junto h\303\241 18 anos, mas j\303\241 n\303\243o dorme na mesma cama h\303\241 quatro.\302\240</p><p>Embora o caso seja curioso, n\303\243o \303\251 in\303\251dito no pa\303\255s europeu. Em 2006, a pol\303\255cia de Aachen, oeste da Alemanha, foi acionada por uma mulher que acusava o marido de n\303\243o cumprir suas obriga\303\247\303\265es conjugais.</p><p>Na ocasi\303\243o, ap\303\263s meses sem nenhum contato f\303\255sico, ela acordou no meio da madrugada e exigiu que o c\303\264njuge satisfizesse suas necessidades sexuais. Frustrada por ter seu pedido negado, ela acionou os agentes, que nada puderam fazer.</p><p>O porta voz da pol\303\255cia, Paul Kemen, explicou \303\240 \303\251poca que os policiais n\303\243o se sentiram capazes de resolver o caso. \"O que eles puderam fazer foi abrir uma ocorr\303\252ncia para o caso de uma poss\303\255vel interven\303\247\303\243o futura\", disse.\302\240</p>"
+    end
+
+  end
+
 end
