@@ -100,7 +100,6 @@ module Readability
           extracted.delete elem
         end
         if elem.try(:name) == "img"
-          debugger
           elem.set_attribute("src", "http://"+ @base_uri + elem.attribute("src").value)
         end
       end
