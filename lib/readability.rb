@@ -94,7 +94,7 @@ module Readability
 
     def odia
       debug "I have an O Dia page"
-      extracted = @document.css("#content-noticia p")
+      extracted = @document.css("#content-noticia p, #content-noticia img")
       extracted.each do |elem|
         if (elem.try(:inner_text) =~ /^\W*$/)
           extracted.delete elem
