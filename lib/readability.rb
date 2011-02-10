@@ -96,15 +96,8 @@ module Readability
       debug "I have an O Dia page"
       extracted = @document.css("#content-noticia p")
       extracted.each do |elem|
-        if (elem.try(:inner_text) =~ /^\W*$/)
+        if (elem.try(:inner_html) =~ /^\W*$/)
           extracted.delete elem
-        end
-        if elem.try(:children)
-          elem.children.each do |child|
-            if child.try(:name) == "img"
-              child.set_attribute("src", "http://"+ @base_uri + child.attribute("src").value)
-            end
-          end
         end
       end
       extracted
