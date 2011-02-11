@@ -93,10 +93,6 @@ module Readability
       (@base_uri.to_s =~ REGEXES[:videoRe])
     end
 
-
-
-
-
     def youtube
       debug("I have a Youtube video page")
       if @request =~ /\?v=([_\-a-z0-9]+)&?/i
@@ -395,7 +391,10 @@ module Readability
     private
 
     def rules
-      @rules ||= YAML.load_file("special_rules.yml")["sites"]
+      if @base_uri =~ /^www\.(.*)$/
+        @base_uri = $1
+      end
+      @rules ||= YAML.load_file(File.dirname(__FILE__) + "/../special_rules.yml")["sites"]
     end
 
     def apply_custom_rule
