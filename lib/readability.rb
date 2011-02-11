@@ -42,6 +42,11 @@ module Readability
       @best_candidate = nil
     end
 
+    def has_special_rule?
+      !!rules[@base_uri]
+    end
+
+
     def content(remove_unlikely_candidates = true)
       debug "Starting the content heuristic"
       @document.css("script, style").each {|el| el.remove }
@@ -50,7 +55,7 @@ module Readability
       article = youtube if is_youtube? && remove_unlikely_candidates
       article = vimeo if is_vimeo? && remove_unlikely_candidates
       article = ted if is_ted? && remove_unlikely_candidates
-      article = odia if is_odia? && remove_unlikely_candidates
+      article = apply_custom_rule if has_special_rule?
 
       if article && remove_unlikely_candidates
         return article.to_html.gsub(/[\r\n\f]+/, "\n" ).gsub(/[\t ]+/, " ").gsub(/&nbsp;/, " ")
@@ -84,24 +89,11 @@ module Readability
       (@base_uri.to_s =~ /^(www.)?ted.com\/talks/)
     end
 
-    def is_odia?
-      (@base_uri.to_s =~ /portalodia.com/)
-    end
-
     def is_special_case?
       (@base_uri.to_s =~ REGEXES[:videoRe])
     end
 
-    def odia
-      debug "I have an O Dia page"
-      extracted = @document.css("#content-noticia p")
-      extracted.each do |elem|
-        if (elem.try(:inner_html) =~ /^\W*$/)
-          extracted.delete elem
-        end
-      end
-      extracted
-    end
+
 
 
 
@@ -159,26 +151,28 @@ module Readability
 
       sibling_score_threshold = [10, best_candidate[:content_score] * 0.2].max
       output = Nokogiri::XML::Node.new('div', @document)
-      best_candidate[:elem].parent.try(:children).each do |sibling|
-        append = false
-        append = true if sibling == best_candidate[:elem]
-        append = true if candidates[sibling] && candidates[sibling][:content_score] >= sibling_score_threshold
+      begin
+        best_candidate[:elem].parent.try(:children).each do |sibling|
+          append = false
+          append = true if sibling == best_candidate[:elem]
+          append = true if candidates[sibling] && candidates[sibling][:content_score] >= sibling_score_threshold
 
-        if sibling.name.downcase == "p"
-          link_density = get_link_density(sibling)
-          node_content = sibling.text
-          node_length = node_content.length
+          if sibling.name.downcase == "p"
+            link_density = get_link_density(sibling)
+            node_content = sibling.text
+            node_length = node_content.length
 
-          if node_length > 80 && link_density < 0.25
-            append = true
-          elsif node_length < 80 && link_density == 0 && node_content =~ /\.( |$)/
-            append = true
+            if node_length > 80 && link_density < 0.25
+              append = true
+            elsif node_length < 80 && link_density == 0 && node_content =~ /\.( |$)/
+              append = true
+            end
           end
-        end
 
-        if append
-          sibling.name = "div" unless %w[div p].include?(sibling.name.downcase)
-          output << sibling
+          if append
+            sibling.name = "div" unless %w[div p].include?(sibling.name.downcase)
+            output << sibling
+          end
         end
       end
 
@@ -397,7 +391,25 @@ module Readability
       # Get rid of duplicate whitespace
       node.to_html.gsub(/[\r\n\f]+/, "\n" ).gsub(/[\t ]+/, " ").gsub(/&nbsp;/, " ")
     end
+
+    private
+
+    def rules
+      @rules ||= YAML.load_file("special_rules.yml")["sites"]
+    end
+
+    def apply_custom_rule
+      extracted = @document.css(rules[@base_uri]["css"])
+      extracted.each do |elem|
+        if (elem.try(:inner_html) =~ /^\W*$/)
+          extracted.delete elem
+        end
+      end
+      extracted
+    end
+
   end
+
 
   private
 
@@ -406,5 +418,7 @@ module Readability
       elem.remove if elem.content.strip.empty?
     end
   end
+
+
 
 end

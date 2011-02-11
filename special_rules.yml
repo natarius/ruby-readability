@@ -1,0 +1,5 @@
+sites:
+  "portalodia.com":
+    name: Portal O Dia
+    css:  "#content-noticia p"
+
