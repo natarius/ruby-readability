@@ -398,6 +398,7 @@ module Readability
     end
 
     def apply_custom_rule
+      debug "Applying custom selector for : " + rules[@base_uri]['name']
       extracted = @document.css(rules[@base_uri]["css"])
       extracted.each do |elem|
         if (elem.try(:inner_html) =~ /^\W*$/)
