@@ -394,7 +394,7 @@ module Readability
       if @base_uri =~ /^www\.(.*)$/
         @base_uri = $1
       end
-      @rules ||= YAML.load_file(File.dirname(__FILE__) + "/../special_rules.yml")["sites"]
+      @rules ||= YAML.load_file(options[:exceptions_file] || File.dirname(__FILE__) + "/../special_rules.yml")["sites"]
     end
 
     def apply_custom_rule
