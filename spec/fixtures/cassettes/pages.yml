@@ -1,0 +1,1461 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://www.mmonline.com.br:80/noticias!noticiasOpiniao.action?idArtigo=4184
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      content-type: 
+      - text/html;charset=iso-8859-1
+      content-language: 
+      - pt-BR
+      server: 
+      - Apache
+      date: 
+      - Mon, 28 Feb 2011 13:53:46 GMT
+      set-cookie: 
+      - JSESSIONID=E3D0CE1A3642B9F26055DC48BBC5CC74; Path=/
+      transfer-encoding: 
+      - chunked
+    body: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+      <html xml:lang=\"pt-br\" lang=\"pt-br\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\
+      <head>\r\n\
+      \r\n\
+      \r\n\
+      \r\n\
+      \t\r\n\
+      \t\t<title>Um novo jogo se desenha - m&amp;m online | Opini\xE3o &raquo; Not\xEDcias\r\n\
+      \t\t</title>\r\n\
+      \t \r\n\
+      \t \t\t\r\n\
+      \t\t\r\n\
+      \t\t<meta name=\"copyright\" content=\" Ag\xEAnciaClick\" />\r\n\
+      \t\t<meta name=\"author\" content=\"Meio & Mensagem - http://www.mmonline.com.br\" />\r\n\
+      \t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />\r\n\
+      \t\t<meta http-equiv=\"Content-Language\" content=\"pt-BR\" />\r\n\
+      \t\t<meta name=\"robots\" content=\"index,follow\" />\r\n\
+      \t\t<meta name=\"robots\" content=\"noodp\" />\r\n\
+      \t\t<meta name=\"revisit-after\" content=\"7 days\" />\r\n\
+      \t\t<meta http-equiv=\"imagetoolbar\" content=\"no\" />\r\n\
+      \t\t<meta name=\"MSSmartTagsPreventParsing\" content=\"true\" />\r\n\
+      \t\t<!-- Tag para Renderizar as Tags no IE 8 -->\r\n\
+      \t\t\r\n\
+      \t\t<link href=\"/img/favicon.ico\" rel=\"shortcut icon\" type=\"image/x-icon\" />\r\n\
+      \t\t<style type=\"text/css\">\r\n\
+      \t\t\t@import \"/css/meio_e_mensagem.css\";\r\n\
+      \t\t\t@import \"/css/menu_principal.css\";\r\n\
+      \t\t\t@import \"/css/anuario.css\";\r\n\
+      \t\t\t@import \"/css/cadastro.css\";\r\n\
+      \t\t\t@import \"/css/midianot.css\";\r\n\
+      \t\t\t@import \"/css/blog.css\";\r\n\
+      \t\t\t@import \"/css/busca.css\";\r\n\
+      \t\t\t@import \"/css/noticias.css\";\r\n\
+      \t\t\t@import \"/css/impressos.css\";\r\n\
+      \t\t\t@import \"/css/multimidia.css\";\r\n\
+      \t\t\t@import \"/css/player.css\";\r\n\
+      \t\t\t@import \"/css/fale_conosco.css\";\r\n\
+      \t\t\t@import \"/css/duvidas_frequentes.css\";\r\n\
+      \t\t\t@import \"/css/acesso_patrocinado.css\";\r\n\
+      \t\t\t@import \"/css/editoriais.css\";\r\n\
+      \t\t\t@import \"/css/rss.css\";\r\n\
+      \t\t\t@import \"/css/multimidia_tag.css\";\r\n\
+      \t\t\t@import \"/css/multimidia_audio.css\";\r\n\
+      \t\t\t@import \"/css/multimidia_fotos.css\";\r\n\
+      \t\t\t@import \"../css/cx_ajax.css\";\r\n\
+      \t\t</style>\r\n\
+      \t\t<script type=\"text/javascript\" src=\"/js/meioemensagem/jquery_aumenta.js\"></script>\r\n\
+      \t\t<script type=\"text/javascript\" src=\"/js/meioemensagem/scripts.js\"></script>\r\n\
+      \t\t<script src=\"/js/jquery.js\" type=\"text/javascript\" language=\"JavaScript\"></script>\r\n\
+      \t\t<script src=\"/js/jquery.tipTip.minified.js\" type=\"text/javascript\"></script>\r\n\
+      \t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/tipTip.css\" />\r\n\
+      \t\t<script src=\"/js/jquery.validate.js\" type=\"text/javascript\" language=\"JavaScript\"></script>\r\n\
+      \t\t<script src=\"/js/meioemensagem/jquery.tabs.js\" type=\"text/javascript\" language=\"JavaScript\"></script>\r\n\
+      \t\t<script src=\"/js/jquery.rules.js\" type=\"text/javascript\" language=\"JavaScript\"></script>\r\n\
+      \t\t<script src=\"/js/meioemensagem/jquery.maxlength.js\" type=\"text/javascript\" language=\"JavaScript\"></script>\r\n\
+      \t\t<script src=\"../js/swfobject.js\" type=\"text/javascript\"></script>\r\n\
+      \t\t<script src=\"/js/jquery.js\" type=\"text/javascript\"></script>\r\n\
+      \t\t<script src=\"/js/functions.js\" type=\"text/javascript\" charset=\"iso-8859-1\"></script>\r\n\
+      \t\t<script src=\"/js/init.js\" type=\"text/javascript\"></script>\r\n\
+      \t\t<script src=\"/js/meio_e_mensagem.js\" type=\"text/javascript\"></script>\r\n\
+      \t\t<script src=\"/js/menu_principal.js\" type=\"text/javascript\"></script>\r\n\
+      \t\t\r\n\
+      \r\n\
+      \r\n\
+      <meta name=\"description\" content=\"Experi\xEAncias internacionais e algumas ainda incipientes por aqui demonstram que os torcedores est\xE3o dispostos a pagar por algo que eles enxergam como valor. Diante disso, saber a melhor forma de se relacionar com eles \xE9 mais do que estrat\xE9gico, \xE9 fundamental nesse novo jogo que se desenha\" />\r\n\
+      \r\n\
+      <style>\r\n\
+      .comentario{\r\n\
+      font-size: 10px;\r\n\
+      font-weight: bold;\r\n\
+      color: #555555;\r\n\
+      float: right;\r\n\
+      margin-right: 26px;\r\n\
+      margin-top: 18px;\r\n\
+      }\r\n\
+      ul.indique {width: 480px; height: 44px; margin-bottom: 2px;margin-top:5px; list-style: none;}\r\n\
+      \t\t\tul.indique li {height: 47px; float: left;}\r\n\
+      \t\t\tul.indique li a {display: block; text-align: center; font-weight: bold;margin-right: 6px}\r\n\
+      \t\t\tul.indique li a:hover, ul.indique li a.hover {background-position: bottom;}\r\n\
+      \t\t\tul.indique li.recomende {height: 44px; padding-top: 3px;}\r\n\
+      \t\t\tul.indique li.recomende a {margin: 0px; padding: 0px;}\r\n\
+      \t\t\t\ta.btnComente {width: 134px; height: 45px; background: url(../img/Comente_n.png);}\r\n\
+      \t\t\t\ta.btnComente .flo_come {font-size: 10px;font-weight: bold;color: #555555}\r\n\
+      \t\t\t\ta.btnCompartilhe {width: 117px; height: 45px; background: url(../img/compartilhe_v.png);}\r\n\
+      \t\t\t\ta.btnEnvie {width: 81px; height: 45px; background: url(../img/envie_n.png);}\r\n\
+      \t\t\t\ta.btnComunique {width: 122px; height: 45px;margin-left:2px; background: url(../img/comunique_n.png);}\r\n\
+      \t\t\t\ta.btnRecomen {width: 122px; height: 45px; background: url(../img/recomende_n.png);}\r\n\
+      \t\t\t\ta.btnfavo {width: 100px; height: 45px; background: url(../img/favoritar_n.png);}\r\n\
+      \t\t\t\ta.btnTwitt {width: 67px; height: 45px; background: url(../img/twitt_n.png);}\r\n\
+      \t\t\t\ta.btnimprimi {width: 91px; height: 45px; background: url(../img/imprimir_n.png);}\r\n\
+      \t\t\t\t\r\n\
+      .box542 {width: 480px; background: #ebebeb url(../img/bg-box542.gif) top no-repeat; position: relative; display: none;}\r\n\
+      \t\t\t\t.contetComente {width: 465px; padding: 30px 0px 0px 5px; position: relative;}\r\n\
+      \t\t\t\t.contetComente strong {font-size: 18px;margin-left: 5px; }\r\n\
+      \t\t\t\t.contetComente label {width: 70px; padding-right: 5px; text-align: right; font-size: 12px; font-weight: bold; float: left;}\r\n\
+      \t\t\t\t.contetComente input {width: 374px; height: 18px; margin-bottom: 5px; border: 1px solid #ACACAC; background: #FFF; float: left;}\r\n\
+      \t\t\t\t.contetComente input.error {width: 402px; height: 18px; margin-bottom: 5px; border: 1px solid #E24248; background: #FFF; float: left;}\r\n\
+      \t\t\t\t.contetComente p.caracteres {width: 485px; padding-left: 85px; font-size: 11px; color: #333333;}\r\n\
+      \t\t\t\t.contetComente textarea {width: 374px; height: 75px; margin-bottom: 5px; border: 1px solid #ACACAC; background: #FFF; float: left;}\r\n\
+      \t\t\t\t.contetComente textarea.error {border: 1px solid #E24248;}\r\n\
+      \t\t\t\t.contetComente input.btnEnviar {width: 58px; height: 20px; margin-right: 13px; border: none; padding-right: 0px; float: right;}\r\n\
+      \t\t\t\t.contetComente input.nome {width: 158px;}\r\n\
+      \t\t\t\t.contetComente input.email {width: 158px;}\r\n\
+      \t\t\t\t.sucessComments {width: 450px; padding: 10px 0px 10px 30px; margin: 20px 0px -20px 0px; text-align: center; color: #FFF; font-size: 13px; background: #636363; position: relative; display: none;}\r\n\
+      \t\t\t\t.sucessComments2 {width: 450px; padding: 10px 0px 10px 30px; margin: 20px 0px -20px 0px; text-align: center; color: #FFF; font-size: 13px; background: #636363; position: relative; display: none;}\r\n\
+      \t\t\t\t.comments {width: 418px; padding: 15px 20px 20px 20px;margin-left:10px; margin-top: 20px; border-top: 1px solid #B2B2B2; background: #EBEBEB; position: relative;}\r\n\
+      \t\t\t\t.comments ul {width: 418px; margin-top: 15px; list-style: none;}\r\n\
+      \t\t\t\t.comments ul li {width: 418px; padding: 0px 0px 15px 0px; margin-bottom: 10px; border-bottom: 1px dotted #B3B3B3;}\r\n\
+      \t\t\t\t.comments ul li {padding-bottom: 15px;}\r\n\
+      \t\t\t\t.comments ul li.last {border-bottom: none;}\r\n\
+      \t\t\t\t.comments ul li span {width: 100%; font-size: 11px; color:#999999; float: left;font-weight: bold;margin-bottom: 5px}\r\n\
+      \t\t\t\t.comments ul li span strong {font-size: 11px;}\r\n\
+      \t\t\t\t.comments ul li .txtComment {width: 418px; font-size: 11px; color: 636363; float: left;}\r\n\
+      \t\t\t\t.comments ul li .txtComment p strong {font-size: 14px; color: #333333;}\r\n\
+      \t\t\t\th5.comentarios {font-size:22px;color:#555555; display: block; margin-bottom: 10px;}\r\n\
+      \t\t\t\t.contentEnvie {width: 462px;padding: 4px;position: relative; }\r\n\
+      \t\t\t\t.contentEnvie .item {width: 476px;}\r\n\
+      \t\t\t\t.ie .contentEnvie .item {width: 476px; padding: 7px 20px; margin-left: 0px;}\r\n\
+      \t\t\t\t.contentEnvie .item.borderBottom {border-bottom: 1px solid #C1C1C1;}\r\n\
+      \t\t\t\t.contentEnvie .item div {width: 205px; margin: 9px; float: left;}\r\n\
+      \t\t\t\t.contentEnvie label {width: 100px; font-size: 13px; font-weight: bold;}\r\n\
+      \t\t\t\t.contentEnvie input {width: 200px; height: 18px; margin-bottom: 5px; border: 1px solid #ACACAC; background: #FFF;}\r\n\
+      \t\t\t\t.contentEnvie input.error {width: 218px; height: 18px; margin-bottom: 5px; border: 1px solid #E24248; background: #FFF;}\r\n\
+      \t\t\t\t.contentEnvie .itemAdd {width: 473px; padding: 10px 0px 10px 0px; margin: 0px 0px 10px 0px; border-bottom: 1px solid #FFF; background: #EBEBEB; position: relative;}\r\n\
+      \t\t\t\t.ie .contentEnvie .itemAdd {width: 470px; padding: 10px 20px; margin-left: 5px;}\r\n\
+      \t\t\t\t.contentEnvie .itemAdd div {width: 205px; margin: 9px; float: left;}\r\n\
+      \t\t\t\t.contentEnvie .itemAdd #fechar {float: left; width: 15px;height:15px; background: #cccccc;margin-top: 27px;margin-left: -5px;text-align: center;}\r\n\
+      \t\t\t\t.mensagem {width: 474px; padding: 15px 0px 20px 0px; border-top: 1px solid #B3B3B3; background: #EBEBEB; position: relative;}\r\n\
+      \t\t\t\t.mensagem p.caracteres {width: 400px; padding-left: 85px; font-size: 11px; color: #333333;}\r\n\
+      \t\t\t\t.mensagem textarea {width: 344px; height: 75px; margin-bottom: 5px; border: 1px solid #ACACAC; background: #FFF; float: left;}\r\n\
+      \t\t\t\t.mensagem textarea.error {border: 1px solid #E24248;}\r\n\
+      \t\t\t\t.mensagem input.btnEnviar {width: 63px; height: 20px; margin-right: 18px;margin-top:10px; border: none; padding-right: 0px; float: right;}\r\n\
+      \t\t\t\t.mensagem label {width: 75px; padding-left: 10px; float: left; text-align: left;}\r\n\
+      \t\t\t\t.compartim {width: 440px;padding: 18px;}\r\n\
+      \t\t\t\t.compartim a {display: block;text-align: center;margin:10px; left;color: #333333}\r\n\
+      \t\t\t\t.compartim a:hover { color: #52a356}\r\n\
+      \t\t\t\t.compartim a img {margin-bottom: 5px}\r\n\
+      \t\t\t\t.msgError {position: absolute; top: -9999px; left: -9999px;}\r\n\
+      \t\t\t\t.msgErrorComments {width: 180px; color: #ED1C24; position: absolute; bottom: 7px; right: 65px; display: none;}\r\n\
+      \t\t\t\t.msgErrorEnvie {width: 180px; color: #ED1C24; position: absolute; bottom: 27px; right: 80px; display: none;}\r\n\
+      \t\t\t\t.msgErrorComunique {width: 180px; color: #ED1C24; position: absolute; bottom: 7px; right: 65px; display: none;}\r\n\
+      \t\t\t\t.msgErrorEspaco {width: 180px; color: #ED1C24; position: absolute; bottom: 27px; right: 80px; display: none;}\r\n\
+      \t\t\t\t.msgErrorEmail {width: 200px; color: #ED1C24; position: absolute; bottom: 25px; left: 100px; display: none;}\r\n\
+      \t\t\t\t.msgErrorAlterado {width: 200px; color: #ED1C24; margin-top: 30px; float: left; display: none;}\r\n\
+      \t\t\t\t.msgErrorCancelado {width: 200px; color: #ED1C24; margin-top: 30px; float: left; display: none;}\r\n\
+      \t\t\t\t.msgErrorEnvieSeu {width: 215px; color: #ED1C24; padding-top: 5px; margin-left: 240px; float: left; display: none;}\r\n\
+      \t\t\t\t.sucessEnvie {width: 474px; height: 159px; padding-top: 85px; color: #333333; text-align: center; background: url(../img/bg-sucessEnvie.jpg); position: relative; display: none;}\r\n\
+      \t\t\t\t.sucessEnvie span {font-size: 18px; text-transform: uppercase;}\r\n\
+      \t\t\t\t.sucessCadastro {width: 100%; font-size: 17px; color: #333333; text-align: center; position: relative; display: none;}\r\n\
+      \t\t\t\t.sucessCadastro p {margin: 55px 0px 100px 0px;}\r\n\
+      \t\t\t\t.sucessAlterarCadastro {width: 100%; font-size: 18px; color: #333333; text-align: center; position: relative; display: none;}\r\n\
+      \t\t\t\t.sucessAlterarCadastro p {margin: 55px 0px 100px 0px;}\r\n\
+      \t\t\t\t.sucessCancelar {width: 100%; font-size: 18px; color: #333333; text-align: center; position: relative; display: none;}\r\n\
+      \t\t\t\t.sucessCancelar p {margin: 55px 0px 100px 0px;}\r\n\
+      \t\t\t\t.sucessEnvieSeu {width: 474px; position: relative; display: none;}\r\n\
+      \t\t\t\t.sucessEnvieSeu p {width: 249px; height: 78px; background: url(../img/p-sucessEnvieSeu.gif); text-indent: -9999px; overflow: hidden; display: block; margin: 0 auto;}\r\n\
+      \t#box-tags {margin:15px 0px}\r\n\
+      \t#box-tags h3 { font-size:13px; color:#333333; font-weight:bold}\r\n\
+      \t#box-tags a { font-size:12px; text-decoration:none; color:#2966a7}\r\n\
+      \t#box-tags a:hover { text-decoration:none; color:#333333}\r\n\
+      \t#box-tags span {color:#2966a7}\r\n\
+      </style>\r\n\
+      </head>\r\n\
+      \r\n\
+      <body>\r\n\
+      \t\r\n\
+      \r\n\
+      <!-- tag IMD e Google -->\r\n\
+      \r\n\
+      \r\n\
+      \t<!-- tag cgi do Isee1 -->\r\n\
+      \t<span id=\"isee1\" style=\"position: absolute; width: 0px; height: 0px; top: -5px; visibility: hidden\">\r\n\
+      \t\t<img src=\"http://a0.mmonline2009.isee1.net/?StringID=noticias\" width=\"1\" height=\"1\" border=\"0\" alt=\"\" />\r\n\
+      \t</span>\r\n\
+      \r\n\
+      \t<!-- TAGS OBRIGATORIAS PARA TODAS AS PAGINAS DE VENDAS -->\r\n\
+      \t<script type=\"text/javascript\">\r\n\
+      \tvar gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");\r\n\
+      \t\tdocument.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\r\n\
+      \t</script>\r\n\
+      \t\r\n\
+      \t<script type=\"text/javascript\" src=\"/js/ga_dpc_tag_min_mm.js\"></script>\r\n\
+      \r\n\
+      \r\n\
+      <!-- tag IMD e Google -->\r\n\
+      \t\r\n\
+      \t\t\r\n\
+      <!-- Predicta Atmosphere 2007 - Nao remover esta parte do codigo -->\r\n\
+      <script type=\"text/javascript\">\r\n\
+      \t//<![CDATA[[\r\n\
+      \t_ATM = {\r\n\
+      \t\tsu :'https://mem.atmo.ptmeioemensagem.predicta.com.br/atmo',\r\n\
+      \t\tsi :53,\r\n\
+      \t\tmig : [ 'mmonline', 218 ]\r\n\
+      \t}\r\n\
+      \t_ATM.un = 'noticias'\r\n\
+      \t//]]>\r\n\
+      </script>\r\n\
+      <script type=\"text/javascript\" src=\"/js/atm.js\"></script>\r\n\
+      <noscript>\r\n\
+      <div style=\"height: 1px;\"><img alt=\"\" src='https://mem.atmo.ptmeioemensagem.predicta.com.br/atmo/cap/$s=53$jsv=0$un=noticias' width=\"1\" height=\"1\" /></div>\r\n\
+      </noscript>\r\n\
+      \t\r\n\
+      \t\r\n\
+      \r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\t\t\t\r\n\
+      \t\t\r\n\
+      \r\n\
+      \r\n\
+      <div id=\"container2\">\r\n\
+      \r\n\
+      \r\n\
+      \r\n\
+      \r\n\
+      \r\n\
+      <script type=\"text/javascript\">\r\n\
+      \tfunction fn_logout(){\r\n\
+      \t\tdocument.location = 'cadastro!deslogar.mm?url=' + window.location.href;\r\n\
+      \t}\r\n\
+      \r\n\
+      \tfunction abrir(){\r\n\
+      \t\tvar oAbrir = document.getElementById('abrir');\r\n\
+      \t\tif (oAbrir) oAbrir.style.display = 'block';\r\n\
+      \t}\r\n\
+      </script>\r\n\
+      <div id=\"header\">\r\n\
+      \t<div id=\"advertising_top\">\r\n\
+      \t<div class=\"banner_expansivel\">\t\r\n\
+      \t\t\t<script type=\"text/javascript\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/script/$d=391$p=3$s=16$br=1\">\r\n\
+      </script>\r\n\
+      <noscript>\r\n\
+      \t<div>\r\n\
+      \t<a href=\"http://mfp1.adnetwork.com.br/mfp/go/img/$d=391$p=3$s=16$n=0\" target=\"_blank\">\r\n\
+      \t<img alt=\"\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/img/$d=391$p=3$s=16$n=0?\" border=\"0\"/></a>\r\n\
+      \t</div>\r\n\
+      </noscript>\r\n \r\n\
+      \t\t</div>\r\n\
+      \t\t<div class=\"box_busca\">\r\n            \t\t\t\n\
+      <form id=\"busca\" name=\"busca\" onsubmit=\"return true;\" action=\"/busca!conteudo.action;jsessionid=E3D0CE1A3642B9F26055DC48BBC5CC74\" method=\"get\">\r\n\
+      \t\t\t\t<fieldset>\r\n\
+      \t\t\t\t\t<input type=\"text\" name=\"buscaTexto\" value=\"\" id=\"txt_busca\" class=\"text_busca\" title=\"Busca\"/>\r\n\
+      \t\t\t\t\t<input type=\"hidden\" name=\"ordem\" value=\"data\" id=\"busca_ordem\"/>\r\n\
+      \t\t\t\t\t<button type=\"submit\" title=\"OK\">OK</button>\r\n\
+      \t\t\t\t\t<p>\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\t\t<input type=\"radio\" name=\"tipo\" id=\"tipo_conteudoconteudo\" checked=\"checked\" value=\"conteudo\"/><label for=\"tipo_conteudoconteudo\">Conte\xFAdo</label>\n\
+      <input type=\"radio\" name=\"tipo\" id=\"tipo_conteudoanuarios\" value=\"anuarios\"/><label for=\"tipo_conteudoanuarios\">Anu\xE1rios</label>\n\
+      \r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\t</p>\r\n\
+      \t\t\t\t</fieldset>\r\n            </form>\n\n\n\n\
+      \r\n\
+      \t\t</div>\t\r\n\
+      \t\t<div class=\"tit_public_flash\"></div>\t\r\n\
+      \t</div>\r\n\
+      \t<div id=\"top\">\r\n\
+      \t\t<div class=\"logo\">\r\n\
+      \t\t\t<a href=\"./\" title=\"M&amp;M Online\"><img src=\"/img/img_logo_memonline.png\" width=\"368\" height=\"78\" alt=\"M&amp;M Online\" /></a>\r\n\
+      \t\t\t<p> \r\n\
+      \t\t\t\tSegunda-feira, \r\n\
+      \t\t\t\t28 de \r\n\
+      \t\t\t\tFevereiro de\r\n\
+      \t\t\t\t2011\r\n\
+      \t\t\t\t- \xDAltima atualiza\xE7\xE3o:\r\n\
+      \t\t\t\t10:53\r\n\
+      \t\t\t</p>\t\t\t\r\n\
+      \t\t</div>\r\n\
+      \t\t<div class=\"user\">\r\n\
+      \t\t\t\r\n\
+      \r\n\
+      \t\t\t\r\n\
+      \t\t\t\t<p class=\"login\">\r\n\
+      \t\t\t\t\t<button type=\"button\" title=\"Login\" onclick=\"abrir();\">LOGIN</button><br /><br />\r\n\
+      \t\t\t\t\t<a href=\"/esqueceSenha.mm\">Esqueceu sua senha?</a><br />\r\n\
+      \t\t\t\t\t<a href=\"cadastroIdentificacao!input.mm\" title=\"Cadastre-se j&aacute;\">Cadastre-se j&aacute;</a> e tenha acesso a diversos conte\xFAdos do site.\r\n\
+      \t\t\t\t\r\n\
+      \t\t\t\t\t<div id=\"abrir\" style=\"display:none;margin-left: 10px\">\r\n\
+      \t\t\t\t\t\t\t\t\t\n\
+      <form id=\"cadastro\" name=\"cadastro\" onsubmit=\"return true;\" action=\"/cadastro.action;jsessionid=E3D0CE1A3642B9F26055DC48BBC5CC74\" method=\"post\">   \r\n\
+      \t\t\t             \t<input type=\"hidden\" name=\"url\" id=\"url\" value=\"\"/>\r\n\
+      \t\t\t\t\t\t\t<div style=\"float:left; width:298px;margin-left:0px;\">\r\n\
+      \t\t\t\t\t\t\t\t<label class=\"log\" for=\"senha\">Usuario</label>\r\n\
+      \t\t\t\t\t\t\t\t<input type=\"text\" name=\"email\" size=\"14\" value=\"\" id=\"email\" class=\"input_text\"/>\r\n\
+      \t\t\t\t\t\t\t\t<label class=\"log\" for=\"senha\">Senha</label>\r\n\
+      \t\t\t\t\t\t\t\t<input type=\"password\" name=\"senha\" size=\"14\" maxlength=\"15\" id=\"senha\" class=\"input_text\"/>\r\n\
+      \t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t           <div style=\"float:left;margin-left:5px; margin-top:-1px\">\r\n\
+      \t\t\t\t\t\t\t\t<input type=\"image\" src=\"../img/ok_logar.png\" name=\"method:logar\" value=\"Entrar\" title=\"Entrar\"></input>\r\n\
+      \t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t</form>\n\n\n\n\
+      \r\n\
+      \t\t\t\t\t</div>\r\n\
+      \t\t\t\t</p>\r\n\
+      \t\t\t\t<script type=\"text/javascript\">\r\n\
+      \t\t\t\t\tdocument.getElementById('url').value = window.location.href \r\n\
+      \t\t\t\t</script>\t\t\t\t\r\n\
+      \t\t\t\r\n\
+      \t\t</div>\r\n\
+      \r\n\
+      \t\t <div class=\"patrocinador_master\">\r\n\
+      \t\t\t<script type=\"text/javascript\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/script/$d=391$p=5$s=16$br=1\">\r\n\
+      </script>\r\n\
+      <noscript>\r\n\
+      \t<div>\r\n\
+      \t<a href=\"http://mfp1.adnetwork.com.br/mfp/go/img/$d=391$p=5$s=16$n=0\" target=\"_blank\">\r\n\
+      \t<img alt=\"\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/img/$d=391$p=5$s=16$n=0?\" border=\"0\"/></a>\r\n\
+      \t</div>\r\n\
+      </noscript>\r\n \r\n\
+      \t\t</div>\r\n\
+      \t\t<p class=\"comunique\">&raquo; <a href=\"#\" onclick=\"popup('comunicarSugestao.mm?',409,550,0);\" title=\"Deixe sugest\xE3o ou comunique erro\"><strong>Deixe sugest\xE3o ou comunique erro</strong></a></p>\r\n\
+      \r\n\
+      \t</div>\r\n\
+      \t\r\n\
+      \t\r\n\
+      \r\n\
+      \r\n\
+      <script type=\"text/javascript\">\r\n\
+      \t// Abre o popup do jornal\r\n\
+      \tfunction abreJornal() {\r\n\
+      \t\t\r\n\
+      \t\t\r\n\
+      \t\t\twindow.open(\"http://meioemensagem.ideavalley.com.br/token.php?c=&ran=a6991c1b0232a0d0fd2148eff33f95f2&nome=&sobrenome=&referencia=53\",\"_blank\");\r\n\
+      \t\t\r\n\
+      \t}\r\n\
+      </script>\r\n\
+      <div id=\"nav_header\" style=\"text-align: left;z-index:10\">\r\n\
+      \t\t<ul>\r\n\
+      \t\t\t<li class=\"home\"><a href=\"/home.mm\" onmouseover=\"return navShow('home');\" title=\"HOME\">HOME</a></li>\r\n\
+      \t\t\t<li class=\"noticias\"><a href=\"#\" onmouseover=\"return navShow('noticias');\" title=\"NOT\xCDCIAS\">NOT\xCDCIAS</a></li>\r\n\
+      \t\t\t<li class=\"noticias_sub\">\r\n\
+      \t\t\t\t<ul class=\"sub_menu\">\r\n\
+      \t\t\t\t\t<li><a href=\"/noticias!agenciaCriacao.mm\" title=\"Ag\xEAncia &amp; Cria\xE7\xE3o\">Ag\xEAncia &amp; Cria\xE7\xE3o</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/noticias!marketingNegocios.mm\" title=\"Marketing &amp; Neg\xF3cios\">Marketing &amp; Neg\xF3cios</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/noticias!midia.mm\" title=\"M\xEDdia\">M\xEDdia</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/noticias!digital.mm\" title=\"Digital\">Digital</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/noticias!ultimas.mm\" title=\"\xDAltimas\" style=\"z-index: 9999\">\xDAltimas</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/noticias!meuFavoritosMM.mm\" title=\"Favoritas\">Favoritas</a></li>\r\n\
+      \t\t\t\t</ul>\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t\t<li class=\"multimidia\" onmouseover=\"return navShow('multimidia');\"><a href=\"#\" title=\"MULTIM\xCDDIA\">MULTIM\xCDDIA</a></li>\r\n\
+      \t\t\t<li class=\"multimidia_sub\">\r\n\
+      \t\t\t\t<ul class=\"sub_menu\">\r\n\
+      \t\t\t\t\t<li><a href=\"/multimidiaVideo.mm\" title=\"V\xEDdeo\">V\xEDdeo</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/multimidiaAudio.mm\" title=\"V\xEDdeo\">\xC1udio</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/multimidiaFoto.mm\" title=\"Fotos\">Fotos</a></li>\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t</ul>\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t\t<li class=\"blog\" onmouseover=\"return navShow('blog');\"><a href=\"#\" title=\"BLOGS\">BLOGS</a></li>\r\n\
+      \t\t\t<li class=\"blog_sub\">\r\n\
+      \t\t\t\t<ul class=\"sub_menu\">\r\n\
+      \t\t\t\t\t<li><a href=\"/blog!diarioDeBordo.mm\" title=\"Di\xE1rio de Bordo\">Di\xE1rio de Bordo</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/blog!sapoDeDentro.mm\" title=\"Sapo de Dentro\">Sapo de Dentro</a></li>\r\n\
+      \t\t\t\t</ul>\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\t\t\t\r\n\
+      \t\t\t \r\n\
+      \t\t\r\n\
+      \t\t\t \r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t \r\n\
+      \r\n\
+      \t\t\t<li class=\"impressos\" onmouseover=\"return navShow('impressos');\"><a href=\"#\" title=\"MEIO&MENSAGEM\">MEIO&amp;MENSAGEM</a></li>\r\n\
+      \r\n\
+      \t\t\t<li class=\"impressos_sub\">\r\n\
+      \t\t\t\t<ul class=\"sub_menu\">\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\t\t<li><a href=\"http://meioemensagem.ideavalley.com.br/\" title=\"Jornal\" target=\"_blank\">Jornal</a></li>\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<!-- <li><a href=\"impressos!datacenter.mm\" title=\"Data center\">Data center</a></li>\r\n\
+      \t\t\t\t\t<li>|</li> -->\r\n\
+      \t\t\t\t\t<li><a href=\"/noticias!opiniao.mm\" title=\"Opini\xE3o\">Opini\xE3o</a></li>\r\n\
+      \t\t\t\t</ul>\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t<li class=\"proxxima\" onmouseover=\"return navShow('proxxima');\">\r\n\
+      \t\t\t<a href=\"#\" title=\"PROXXIMA\">PROXXIMA</a></li>\r\n\
+      \t\t\t<li class=\"proxxima_sub\">\r\n\
+      \t\t\t\t<ul class=\"sub_menu\">\r\n\
+      \t\t\t\t<li><a href=\"http://www.proxxima.com.br/portal/home/\" title=\"Home\" target=\"_blank\">Home</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://proxxima.digitalpages.com.br/home.aspx\" title=\"Revista\" target=\"_blank\">Revista</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.proxxima.com.br/portal/noticias/\" title=\"Not\xEDcias\" target=\"_blank\">Not\xEDcias</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.proxxima.com.br/portal/noticias/\" title=\"Blog\" target=\"_blank\">Blog</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.proxxima.com.br/portal/evento/\" title=\"Evento\" target=\"_blank\">Evento</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.proxxima.com.br/portal/bolsaDeEstudos/\" title=\"Bolsa de Estudos\" target=\"_blank\">Bolsa de Estudos</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.meioemensagem.com.br/galeriacriativa/\" title=\"Galeria Criativa\" target=\"_blank\">Galeria Criativa</a></li>\r\n\
+      \t\t\t\t</ul>\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t<li class=\"anuarios\" onmouseover=\"return navShow('anuarios');\"><a href=\"#\" title=\"ANU\xC1RIOS\">ANU\xC1RIOS</a></li>\r\n\
+      \t\t\t<li class=\"anuarios_sub\">\r\n\
+      \t\t\t\t<ul class=\"sub_menu\">\r\n\
+      \t\t\t\t\t<li><a href=\"/anuariosMidia.mm\" title=\"M\xEDdia\">M\xEDdia</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/anuariosPropaganda.mm\" title=\"Propaganda\">Propaganda</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/anuarios!buscaFornecedores.mm\" title=\"Fornecedores\">Fornecedores</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/anuarios!buscaAnunciantes.mm\" title=\"Anunciantes\">Anunciantes</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"/anuarios!minhaAgenda.mm\" title=\"Minha agenda\">Minha agenda</a></li>\r\n\
+      \t\t\t\t</ul>\r\n\
+      \t\t\t</li>\t\t\t\r\n\
+      \t\t\t<li class=\"especiais\" onmouseover=\"return navShow('especiais');\"><a href=\"#\" title=\"ESPECIAIS\">Eventos</a></li>\r\n\
+      \t\t\t<li class=\"especiais_sub\">\r\n\
+      \t\t\t\t<ul class=\"sub_menu\">\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.cabore.com.br/\" \r\n\
+      \t\t\t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_especiais_cabore')\" target=\"_blank\" title=\"Cabor\xE9\">Cabor\xE9</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\t\t\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.meioemensagem.com.br/cannes/\" \r\n\
+      \t\t\t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_especiais_cannes')\" target=\"_blank\" title=\"Cannes\">Cannes</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.maximidia.com.br/\" \r\n\
+      \t\t\t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_especiais_meximidia')\" target=\"_blank\" title=\"MaxiM\xEDdia\">MaxiM\xEDdia</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://mmonline.com.br/eventos/wavefestival/2010/home/\"  \r\n\
+      \t\t\t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_especiais_wavefestival')\" target=\"_blank\" title=\"Wave Festival\">Wave Festival</a></li> \r\n\
+      \t\t\t\t\t<!--<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.meioemensagem.com.br/fatosmarcantes30anos/\" \r\n\
+      \t\t\t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_especiais_fatos_marcantes')\" target=\"_blank\" title=\"Fatos Marcantes\">Fatos Marcantes</a></li>\r\n\
+      \t\t\t\t\t<li>|</li>\r\n\
+      \t\t\t\t\t<li><a href=\"http://www.meioemensagem.com.br/ivcongresso/\" \r\n\
+      \t\t\t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_especiais_ivcongresso')\" target=\"_blank\" title=\"IV Congresso\">IV Congresso</a></li>\r\n\
+      \t\t\t\t--></ul>\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t<li class=\"rss\"><a href=\"/rss.mm\" title=\"RSS\">RSS</a></li>\r\n\
+      \t\t\t<li class=\"newsletter\"><a href=\"/cadastroNewsletters!news.mm\" title=\"Assine as Newsletters\">Assine as Newsletters</a></li>\r\n\
+      \t\t\t<li class=\"ajuda\"><a href=\"/home!duvidasFrequentes.mm\" title=\"Ajuda\">Ajuda</a></li>\r\n\
+      \t\t</ul>\r\n\
+      \t</div>\r\n\
+      \r\n\
+      \t<div id=\"navsub_header\" style=\"text-align: left;\">\r\n\
+      \t\t<!--\r\n\
+      \t\t<script type=\"text/javascript\">\r\n\
+      \t\t\tticker();\r\n\
+      \t\t</script>\r\n\
+      \t\t-->\r\n\
+      \r\n\
+      \t\t<ul class=\"player\">\r\n\
+      \t\t\t<li class=\"previous\"><a href=\"#\" id=\"anterior\" title=\"Anterior\">Anterior</a></li>\r\n\
+      \t\t\t<li class=\"pause\"><a href=\"#\" id=\"parar\" title=\"Pausa/Play\">Pausa/Play</a></li>\r\n\
+      \t\t\t<li class=\"next\"><a href=\"#\" id=\"avancar\" title=\"Pr\xF3ximo\">Pr\xF3ximo</a></li>\r\n\
+      \t\t</ul>\r\n\
+      \r\n\
+      \t\t<div id=\"scrollup\" style=\"color:#006699;\"></div>\r\n\
+      \r\n\
+      \t\t<ul class=\"links\" style=\"text-align: left;\">\r\n\
+      \t\t\t<li><a href=\"https://comprasegura.meioemensagem.com.br/loja/default.php\" target=\"_blank\" title=\"Loja M&amp;M\">Loja M&amp;M</a></li>\r\n\
+      \t\t\t<li><img src=\"/img/img_bulet.gif\" width=\"10\" height=\"13\" alt=\"\" /></li>\r\n\
+      \t\t\t<li><a href=\"http://www.meioemensagem.com.br/publicidade\" target=\"_blank\" title=\"Publicidade\">Publicidade</a></li>\r\n\
+      \t\t\t<li><img src=\"/img/img_bulet.gif\" width=\"10\" height=\"13\" alt=\"\" /></li>\r\n\
+      \t\t\t<li><a href=\"faleConosco.mm\" title=\"Fale Conosco\">Fale Conosco</a></li>\r\n\
+      \t\t</ul>\r\n\
+      \t</div>\r\n\
+      \r\n\
+      \t<script type=\"text/javascript\">\r\n\
+      \t\tfunction AbrirPatrocinador() {\r\n\
+      \t\t\tdocument.getElementById('patrocinador_expandir').style.display='block';\r\n\
+      \t\t\tdocument.getElementById('link_abrir_patrocinador').style.display='none';\r\n\
+      \t\t\tdocument.getElementById('link_fechar_patrocinador').style.display='block';\r\n\
+      \t\t\tvar abrir = false;\r\n\
+      \t\t}\r\n\
+      \t\tfunction FecharPatrocinador(){\r\n\
+      \t\t\tdocument.getElementById('patrocinador_expandir').style.display='none';\r\n\
+      \t\t\tdocument.getElementById('link_fechar_patrocinador').style.display='none';\r\n\
+      \t\t\tdocument.getElementById('link_abrir_patrocinador').style.display='block';\r\n\
+      \t\t\tvar abrir = false;\r\n\
+      \t\t}\t\t\r\n\
+      \t</script>\r\n\
+      \r\n\
+      \t<div class=\"banner_patrocinador\">\r\n\
+      \t\t<script type=\"text/javascript\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/script/$d=391$p=12$s=16$br=1\">\r\n\
+      </script>\r\n\
+      <noscript>\r\n\
+      \t<div>\r\n\
+      \t<a href=\"http://mfp1.adnetwork.com.br/mfp/go/img/$d=391$p=12$s=16$n=0\" target=\"_blank\">\r\n\
+      \t<img alt=\"\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/img/$d=391$p=12$s=16$n=0?\" border=\"0\"/></a>\r\n\
+      \t</div>\r\n\
+      </noscript>\r\n \t\t\t\r\n\
+      \t</div>\r\n\
+      \t\r\n\
+      </div></div>\r\n\
+      <div id=\"container\">\r\n\
+      \t\t<script type=\"text/javascript\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/script/$d=391$p=23$s=16$br=1\">\r\n\
+      </script>\r\n\
+      <noscript>\r\n\
+      \t<div>\r\n\
+      \t<a href=\"http://mfp1.adnetwork.com.br/mfp/go/img/$d=391$p=23$s=16$n=0\" target=\"_blank\">\r\n\
+      \t<img alt=\"\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/img/$d=391$p=23$s=16$n=0?\" border=\"0\"/></a>\r\n\
+      \t</div>\r\n\
+      </noscript>\r\n \r\n\
+      \r\n\
+      \t<div id=\"main\">\r\n\
+      <div style=\"width:980px; margin-left:0px;background:#ffffff;float:left\">\r\n\
+      \t\t<div id=\"left\">\r\n\
+      \t\t\t<div class=\"cabCategoria\" style=\"margin-left: 10px\">\r\n\
+      \t\t\t\t\t\t\t<span>\r\n\
+      \t\t\t\t\t\t\t\t<img src=\"img/seta_brandcamp.gif\" />&nbsp;\r\n\
+      \t\t\t\t\t\t\t\t<a href=\"noticias!opiniao.mm?dataPublicacao_order=desc\" title=\"Not\xEDcias &gt; Opini\xE3o\">Not\xEDcias | Opini\xE3o</a>\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t </span>\r\n\
+      \t\t\t</div>\r\n\
+      \t\t<div class=\"conteudo_opni\">\t\r\n\
+      \t\t\t<div id=\"noti_cias\" style=\"margin-top: 20px; margin-bottom: 0px\"> \r\n                   \t\t<span class=\"data_no\">\r\n\
+      \t\t\t\t\t\t21/02/2011\r\n\
+      \t\t\t\t\t</span>\r\n\
+      \t\t\t</div>\r\n\
+      \t\t\t<h1>\r\n\
+      \t\t\t\tUm novo jogo se desenha\r\n\
+      \t\t\t</h1>\t\t\r\n\
+      \t\t\t<h2>Edi\xE7\xE3o 1447 do Meio &amp; Mensagem</h2>\r\n\
+      \t\t\t<div class=\"ferramentas_texto\">\r\n\
+      \t\t\t\t<a id=\"reduz_fonte\" title=\"Reduzir tamanho da fonte\">A-</a>&nbsp;<a id=\"aumenta_fonte\" title=\"Aumentar tamanho da fonte\">A+</a>\r\n\
+      \t\t\t</div>\t\r\n\
+      \t\t\t<div style=\"clear:both;\"></div>\r\n         \t<div class=\"texto\" id=\"textoT\">A principal reportagem desta edi&ccedil;&atilde;o traz um interessante panorama sobre a disputa pelos direitos de transmiss&atilde;o do maior produto de m&iacute;dia da televis&atilde;o brasileira, em virtude da decis&atilde;o do Clube dos 13 de promover um leil&atilde;o para as emissoras de TV aberta interessadas em transmitir o Campeonato Brasileiro no tri&ecirc;nio 2012-14. Est&aacute; prevista para esta semana a publica&ccedil;&atilde;o de um edital estabelecendo as regras dessa concorr&ecirc;ncia. O que est&aacute; sacramentado, at&eacute; por conta de uma decis&atilde;o do Cade de outubro do ano passado, &eacute; a divis&atilde;o desses direitos em cinco plataformas: TV aberta, TV por assinatura, pay-per-view, internet e telefonia m&oacute;vel.<br /><br />H&aacute; uma apreens&atilde;o geral do mercado publicit&aacute;rio em torno da possibilidade da transmiss&atilde;o do Brasileir&atilde;o migrar da Globo, onde est&aacute; h&aacute; quase duas d&eacute;cadas, para a Record, que, com muita compet&ecirc;ncia, alardeia pelos quatro cantos que tem caminh&otilde;es de dinheiro para bancar o aumento da oferta inicial do Clube dos 13 &ndash; de R$ 250 milh&otilde;es para R$ 500 milh&otilde;es, s&oacute; para TV. Valor inicialmente recha&ccedil;ado pela Globo.<br /><br />O pacote de futebol da emissora l&iacute;der &eacute; o mais valorizado do mercado e tem como ponto forte justamente a entrega de m&iacute;dia que a rede possibilita aos seus cotistas. A migra&ccedil;&atilde;o do futebol para a Record deixa s&eacute;rias d&uacute;vidas:<br /><br />1<sup>o</sup>) se o mercado ir&aacute; bancar os altos investimentos necess&aacute;rios feitos pela emissora para transmitir o campeonato, e,<br /><br />2<sup>o</sup>) se a segunda televis&atilde;o do Pa&iacute;s tem uma grade de programa&ccedil;&atilde;o atraente a ponto de sustentar um pacote t&atilde;o rent&aacute;vel como hoje &eacute; o do futebol da Globo.<br /><br />A despeito da polaridade entre Globo e Record pelos direitos de transmiss&atilde;o da TV, esse leil&atilde;o do Clube dos 13 pode mudar de uma forma ainda maior a configura&ccedil;&atilde;o do jogo da m&iacute;dia atual. Ao disponibilizar a divis&atilde;o desses direitos em cinco modalidades, entre as quais internet e telefonia celular, abre-se uma grande oportunidade para as empresas de telecomunica&ccedil;&otilde;es entrarem para valer nesse neg&oacute;cio.<br /><br />Em um cen&aacute;rio no qual os dispositivos m&oacute;veis como os tablets crescem de forma exponencial no Brasil e no mundo &ndash; s&oacute; para se ter uma ideia, no Mobile World Congress, realizado semana passada em Barcelona, cerca de 50 fabricantes lan&ccedil;aram concorrentes do iPad &ndash;, e o governo tem como prioridade na &aacute;rea de comunica&ccedil;&otilde;es democratizar o acesso &agrave; banda larga, a mobilidade &eacute; um ponto important&iacute;ssimo a ser levado em conta no cipoal de possibilidades que se desenha neste cen&aacute;rio. Por raz&otilde;es &oacute;bvias, as empresas de telecomunica&ccedil;&otilde;es podem se tornar ainda mais poderosas caso passem a abarcar em seus pacotes de oferta tamb&eacute;m os jogos do Brasileir&atilde;o. Terra/Telef&ocirc;nica e iG/Oi j&aacute; se sentaram com os caciques do Clube dos 13 para apresentarem suas propostas sobre o assunto.<br /><br />Nessas discuss&otilde;es todas, parece que uma parte fundamental deste neg&oacute;cio est&aacute; sendo deixada de lado: o torcedor. N&atilde;o h&aacute; d&uacute;vida de que o mundo digital e, em especial, as m&iacute;dias sociais, deram muito mais poder aos torcedores, transformando a rela&ccedil;&atilde;o antes linear entre f&atilde;s, &iacute;dolos, clubes e marcas. Experi&ecirc;ncias internacionais e algumas ainda incipientes por aqui demonstram que eles est&atilde;o dispostos a pagar por algo que enxerguem como valor. Diante disso, saber a melhor forma de se relacionar com eles &eacute; mais do que estrat&eacute;gico, &eacute; fundamental nesse novo jogo que se desenha.<br/></div>\r\n\
+      \t\t\t\t         \t\t<br/>\r\n\
+      \t\t\t\t         \t\t<div>\r\n\
+      \t\t\t\t\t\t\t\t\t<p>Publicidade</p>\r\n\
+      \t\t\t\t\t\t\t\t\t<div class=\"banner\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t<script type=\"text/javascript\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/script/$d=391$p=1$s=16$br=1\">\r\n\
+      </script>\r\n\
+      <noscript>\r\n\
+      \t<div>\r\n\
+      \t<a href=\"http://mfp1.adnetwork.com.br/mfp/go/img/$d=391$p=1$s=16$n=0\" target=\"_blank\">\r\n\
+      \t<img alt=\"\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/img/$d=391$p=1$s=16$n=0?\" border=\"0\"/></a>\r\n\
+      \t</div>\r\n\
+      </noscript>\r\n \r\n\
+      \t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t<div id=\"box-tags\">\r\n\
+      \t\t\t\t\t\t\t\t\t<h3>Tags:\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"M\xEDdia\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=M\xEDdia\">M\xEDdia</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Rede Globo\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Rede Globo\">Rede Globo</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Record\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Record\">Record</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Futebol\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Futebol\">Futebol</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Copa do Mundo\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Copa do Mundo\">Copa do Mundo</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Cade\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Cade\">Cade</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Clube dos 13\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Clube dos 13\">Clube dos 13</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Terra\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Terra\">Terra</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Telefonica\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Telefonica\">Telefonica</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"iG\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=iG\">iG</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<span> | </span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<a target=\"_self\" title=\"Oi\" href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Oi\">Oi</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t</h3>\r\n\
+      \t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\r\n\
+      \r\n\
+      <ul class=\"cx_veja_tambem\">\r\n\
+      \t<li><strong>Veja Tamb&eacute;m:<span> </span></strong></li>\r\n\
+      \t\r\n\
+      \t\t<span><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4104\" title=\"O futebol de todos os povos\">O futebol de todos os povos</a></span>\r\n\
+      \t\t\r\n\
+      \t\t\r\n\
+      \t\t\t<span> | </span>\r\n\
+      \t\t \r\n\
+      \t\r\n\
+      \t\t<span><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4081\" title=\"Empreendedorismo e Sustentabilidade\">Empreendedorismo e Sustentabilidade</a></span>\r\n\
+      \t\t\r\n\
+      \t\t\r\n\
+      \t\t\t<span> | </span>\r\n\
+      \t\t \r\n\
+      \t\r\n\
+      \t\t<span><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4184\" title=\"Um novo jogo se desenha\">Um novo jogo se desenha</a></span>\r\n\
+      \t\t\r\n\
+      \t\t\r\n\
+      \t\t\t<span> | </span>\r\n\
+      \t\t \r\n\
+      \t\r\n\
+      \t\t<span><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4165\" title=\"O uso perverso da publicidade estatal\">O uso perverso da publicidade estatal</a></span>\r\n\
+      \t\t\r\n\
+      \t\t \r\n\
+      \t\r\n\
+      </ul>\r\n\
+      \t\t\t\t\t\t\t\t<div id=\"cx_reco\">\r\n\
+      \t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"barraOrigem\" id=\"barraOrigem\" value=\"Artigo\"/>\r\n\
+      \t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"id\" id=\"id\" value=\"4184\"/>\r\n\
+      \t\t\t\t\t\t\t\t\t<ul>\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t<li><a class=\"btnRecomen\" id=\"btnRecomende20x20\" href=\"#\" style=\"cursor:pointer;\"></a></li>\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t<li><a class=\"btnTwitt\" name=\"envie\" href=\"http://twitter.com/home/?status=Um+novo+jogo+se+desenha+http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184+(via+@mmonline)\" title=\"Twitter\" target=\"_blank\"></a></li>\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t<li><a class=\"btnimprimi\" href=\"#\" onclick=\"window.open('/home!barraImprimir.mm?barraOrigem=Artigo&idArtigo=4184&url=http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184','popupWindow','scrollbars=yes,width=500,height=450');\"></a></li>\r\n\
+      \t\t\t\t\t\t\t      </ul>\r\n\
+      \t\t\t\t\t\t\t\t<div style=\"clear: both\"></div>\t\r\n\
+      \t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t<div class=\"box667\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t<ul class=\"indique\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<li><a class=\"btnComente\" href=\"#boxComentario\" id=\"vemaqui\"><div class=\"comentario\">[0]</div></a></li>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<li><a class=\"btnCompartilhe\" name=\"envie\" href=\"#boxCompartilhe\"></a></li>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<li><a class=\"btnEnvie\" name=\"envie\" href=\"#boxEnvie\"></a></li>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<li><a class=\"btnComunique\" name=\"envie\" href=\"#boxComunicar_erro\"></a></li>\r\n\
+      \t\t\t\t\t\t\t\t\t\t</ul>\r\n\
+      \t\t\t\t\t\t\t\t\t\t<div class=\"box542 boxComentario\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<div id=\"comente_post\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"msg_login\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\tPara comentar \xE9 preciso ser cadastrado no M&M Online. Fa\xE7a o seu login\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<a onclick=\"abrir();\" href=\"#\">Aqui</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</p>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<div style=\"clear: both\"></div>\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t<div class=\"box542 boxCompartilhe\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<div class=\"compartim\">\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://twitter.com/home/?status=Um+novo+jogo+se+desenha+http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184+(via+@mmonline)\" title=\"Twitter\" target=\"_blank\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"../img/shareTwitter.gif\" /><br/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Twitter</strong>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://del.icio.us/post?url=http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184&title=Um+novo+jogo+se+desenha\" title=\"Delicious\" target=\"_blank\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"../img/shareDelicious.gif\" /><br/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Delicious</strong>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://www.stumbleupon.com/submit?url=http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184&title=Um+novo+jogo+se+desenha\" title=\"Stumbleupon\" target=\"_blank\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"../img/shareStumbleupon.gif\" /><br/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Stumbleupon</strong>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://www.facebook.com/share.php?u=http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184\" title=\"Facebook\" target=\"_blank\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"../img/shareFacebook.gif\" /><br/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Facebook</strong>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://www.technorati.com/faves?add=http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184\" title=\"Technorati\" target=\"_blank\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"../img/shareTechnorati.gif\" /><br/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Technorati</strong>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<!--<a href=\"http://digg.com/submit?phase=2&url=http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184\" title=\"Digg\" target=\"_blank\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"../img/shareDigg.gif\" /><br/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Digg</strong>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</a>-->\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://www.google.com/bookmarks/mark?op=edit&bkmk=http://www.mmonline.com.br/noticias!noticiasOpiniao.mm?idArtigo=4184&title=Um+novo+jogo+se+desenha\" title=\"Google\" target=\"_blank\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"../img/shareGoogle.gif\" /><br/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<strong>Google</strong>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<br clear=\"all\"/>\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t</div>\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t   <br clear=\"all\"/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t<div class=\"box542 boxEnvie\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<form class=\"formEnvie\" action=\"\" method=\"post\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"barraOrigem\" value=\"Artigo\"/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"idArtigo\" value=\"4184\"/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"msgError\"></div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"contentEnvie\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"item borderBottom\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<label>Seu nome</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" name=\"compartilharNome\" class=\"required\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<label>Seu e-mail</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" name=\"compartilharEmail\" class=\"email required\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"item\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<label>Nome do amigo</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" name=\"amigonome\" class=\"required\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<label>E-mail do amigo</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" name=\"amigoemail\" class=\"email required\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"itensClone\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"itemAdd\" style=\"display: none;\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<label>Nome do amigo</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" name=\"nomeAmigo[1]\" id=\"nomeAmigo[1]\" class=\"nome\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<label>E-mail do amigo</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" name=\"emailAmigo[1]\" id=\"emailAmigo[1]\" class=\"email\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a id=\"fechar\" class=\"btnExcluirAmigo \" href=\"#\">X</a>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<p style=\"width: 485px\" align=\"center\"><a class=\"addAmigos\" href=\"#\">Adicionar mais amigos</a></p>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<br />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"mensagem\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<label>Mensagem</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<textarea cols=\"\" rows=\"\" name=\"compartilharMensagem\" class=\"required\"></textarea>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"caracteres\">A quantidade m\xE1xima \xE9 de <span>300</span> caracteres por mensagem.</p>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"msgErrorEnvie\">Preencha corretamente os campos</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"image\" name=\"enviar\" src=\"../img/../img/noticias_btn.png\" class=\"btnEnviar\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"sucessEnvie\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<p>Sua mensagem foi enviada com sucesso.</p>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<span>Obrigado</span>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t</form>\r\n\
+      \t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t<div class=\"box542 boxComunicar_erro\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<form class=\"formComunique\" action=\"#\" method=\"post\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"barraOrigem\" value=\"Artigo\"/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"idArtigo\" value=\"4184\"/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"msgError2\"></div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"contetComente\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<label>Nome</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<input id=\"comunicarErrosNome\" type=\"text\" name=\"comunicarErrosNome\" class=\"nome required\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<label style=\"width: 50px\">E-mail</label>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\t<input id=\"comunicarErrosEmail\" type=\"text\" name=\"comunicarErrosEmail\" class=\"email required\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<label>Coment\xE1rio</label>\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<textarea cols=\"\" rows=\"\" id=\"comunicarErrosMensagem\" name=\"comunicarErrosMensagem\" maxlength=\"300\" class=\"required maxlength\"></textarea>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"caracteres charsLeft\">A quantidade m\xE1xima \xE9 de <span>300</span> caracteres por coment\xE1rio.</p>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"msgErrorComunique\">Preencha corretamente os campos</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"image\" name=\"enviar\" src=\"../img/noticias_btn.png\" class=\"btnEnviar\"/>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"sucessComments2\">\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\t<p>Erro foi reportado com sucesso.</p>\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t</div>\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t</form>\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t<div style=\"clear: both\"></div>\t\t\t\t\t\r\n\
+      \t\t\t\t\t\t\t\t\t\t</div>\r\n\
+      \t\t\t\t\t\t\t\t\t\t</div>\t\r\n\
+      \t\t</div>\t\r\n\
+      \t\t<div id=\"cont_opi\">\r\n\
+      \t\t\t<h2>Editorial</h2>\r\n\
+      \t\t\t<br clear=\"all\"/>\r\n\
+      \t\t\t<div class=\"titu_stron\">\r\n\
+      \t\t\t\t<strong>Regina Augusto</strong>\r\n\
+      \t\t\t</div>\r\n\
+      \t\t\t\r\n\
+      \t\t\t<div class=\"fot_camp\">\r\n\
+      \t\t\t\t<p style=\"float: left; margin-right: 6px\"><img src=\"http://mmimg.meioemensagem.com.br/articulistas/raugusto.jpg\" alt=\"\" /></p>\r\n\
+      \t\t\t\t<p>Diretora Editoral da Editora Meio & Mensagem</p>\r\n\
+      \t\t\t\t<br clear=\"all\"/>\r\n\
+      \t\t\t\t<div class=\"link_op\"><a href=\"noticias!listaDeArtigos.mm?idArticulista=101\">Lista de artigos de Regina Augusto</a> </div>\r\n\
+      \t\t\t</div>\t\r\n\
+      \t\t\t\r\n\
+      \t\t\t<div class=\"opniao_op\">\r\n\
+      \t\t\t\t\t<img src=\"../img/ico_aspa_top.gif\" width=\"19\" height=\"17\" alt=\"\" class=\"top\" />\r\n\
+      \t\t\t\t\t<p style=\"line-height: 200%\">\r\n\
+      \t\t\t\t\t\t<strong>Experi\xEAncias internacionais e algumas ainda incipientes por aqui demonstram que os torcedores est\xE3o dispostos a pagar por algo que eles enxergam como valor. Diante disso, saber a melhor forma de se relacionar com eles \xE9 mais do que estrat\xE9gico, \xE9 fundamental nesse novo jogo que se desenha</strong>\r\n\
+      \t\t\t\t\t</p>\r\n\
+      \t\t\t\t\t<img src=\"../img/ico_aspa_bottom.gif\" width=\"20\" height=\"17\" alt=\"\" class=\"bottom\" />\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t</div>\t\r\n\
+      \t\t</div>\r\n\
+      \t\t\r\n\
+      \t\t<br />\r\n\
+      \t\t<div>\r\n\
+      \t\t\t<p>Publicidade</p>\r\n\
+      \t\t\t<div class=\"banner\">\r\n\
+      \t\t\t\t<script type=\"text/javascript\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/script/$d=391$p=2$s=16$br=1\">\r\n\
+      </script>\r\n\
+      <noscript>\r\n\
+      \t<div>\r\n\
+      \t<a href=\"http://mfp1.adnetwork.com.br/mfp/go/img/$d=391$p=2$s=16$n=0\" target=\"_blank\">\r\n\
+      \t<img alt=\"\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/img/$d=391$p=2$s=16$n=0?\" border=\"0\"/></a>\r\n\
+      \t</div>\r\n\
+      </noscript>\r\n \r\n\
+      \t\t\t</div>\r\n\
+      \t\t</div>\r\n\
+      \t\t\r\n\
+      \t\t\r\n\
+      \r\n\
+      \r\n\
+      \t<div class=\"artigos_anteriores\">\r\n\
+      \t\t<div class=\"top_ulti\">Artigos Anteriores</div>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>21/02 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4184\" title=\"Um novo jogo se desenha\">\r\n\
+      \t\t\t\t  Editorial \r\n\
+      \t\t\t\t- Regina Augusto - \r\n\
+      \t\t\t\tUm novo jogo se desenha\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>15/02 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4165\" title=\"O uso perverso da publicidade estatal\">\r\n\
+      \t\t\t\t  M\xEDdia \r\n\
+      \t\t\t\t- Jayme Sirotsky - \r\n\
+      \t\t\t\tO uso perverso da publicidade estatal\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>15/02 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4164\" title=\"Contratam-se cientistas <br> para trabalho em <br> constru\xE7\xE3o de marcas. <br> Job Description: Ouvir e Sentir\">\r\n\
+      \t\t\t\t  Produ\xE7\xE3o \r\n\
+      \t\t\t\t- Eduardo Camargo - \r\n\
+      \t\t\t\tContratam-se cientistas <br> para trabalho em <br> constru\xE7\xE3o de marcas. <br> Job Description: Ouvir e Sentir\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>14/02 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4144\" title=\"Novo ecossistema\">\r\n\
+      \t\t\t\t  Editorial \r\n\
+      \t\t\t\t- Regina Augusto - \r\n\
+      \t\t\t\tNovo ecossistema\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>07/02 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4124\" title=\"Futebol e foco\">\r\n\
+      \t\t\t\t  Editorial \r\n\
+      \t\t\t\t- Regina Augusto - \r\n\
+      \t\t\t\tFutebol e foco\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>31/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4105\" title=\"Com a palavra... os anunciantes\">\r\n\
+      \t\t\t\t  Comunica\xE7\xE3o integrada \r\n\
+      \t\t\t\t- Antonio Fadiga - \r\n\
+      \t\t\t\tCom a palavra... os anunciantes\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>31/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4104\" title=\"O futebol de todos os povos\">\r\n\
+      \t\t\t\t  Marketing esportivo \r\n\
+      \t\t\t\t- German Hartenstein - \r\n\
+      \t\t\t\tO futebol de todos os povos\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>31/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4121\" title=\"Retratos do Brasil\">\r\n\
+      \t\t\t\t  Editorial \r\n\
+      \t\t\t\t- Regina Augusto - \r\n\
+      \t\t\t\tRetratos do Brasil\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>26/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4103\" title=\"Um tweet aqui, um like ali, e voc\xEA j\xE1 n\xE3o est\xE1 mais no mesmo lugar\">\r\n\
+      \t\t\t\t  Produ\xE7\xE3o \r\n\
+      \t\t\t\t- Eduardo Camargo - \r\n\
+      \t\t\t\tUm tweet aqui, um like ali, e voc\xEA j\xE1 n\xE3o est\xE1 mais no mesmo lugar\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>26/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4102\" title=\"Um ano para aprender\">\r\n\
+      \t\t\t\t  Marketing \r\n\
+      \t\t\t\t- Herlander Zola - \r\n\
+      \t\t\t\tUm ano para aprender\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>26/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4101\" title=\"T\xE3o perto e t\xE3o longe\">\r\n\
+      \t\t\t\t  Editorial \r\n\
+      \t\t\t\t- Regina Augusto - \r\n\
+      \t\t\t\tT\xE3o perto e t\xE3o longe\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>17/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4081\" title=\"Empreendedorismo e Sustentabilidade\">\r\n\
+      \t\t\t\t  Sustentabilidade \r\n\
+      \t\t\t\t- Oskar Metsavaht - \r\n\
+      \t\t\t\tEmpreendedorismo e Sustentabilidade\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>17/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4062\" title=\"Rede social: a festa do cabide\">\r\n\
+      \t\t\t\t  Planejamento \r\n\
+      \t\t\t\t- Fernand Alphen - \r\n\
+      \t\t\t\tRede social: a festa do cabide\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>17/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4061\" title=\"O deslize da Red Bull\">\r\n\
+      \t\t\t\t  Editorial \r\n\
+      \t\t\t\t- Regina Augusto - \r\n\
+      \t\t\t\tO deslize da Red Bull\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>12/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4042\" title=\"O WikiLeaks e o WikiLixo\">\r\n\
+      \t\t\t\t  M\xEDdia \r\n\
+      \t\t\t\t- Jayme Sirotsky - \r\n\
+      \t\t\t\tO WikiLeaks e o WikiLixo\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>12/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4041\" title=\"O desafio de se tornar cosmopolita\">\r\n\
+      \t\t\t\t  Editorial \r\n\
+      \t\t\t\t- Regina Augusto - \r\n\
+      \t\t\t\tO desafio de se tornar cosmopolita\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>28/01 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4021\" title=\"Os campe\xF5es de 2010 e o crescimento da TV por assinatura\">\r\n\
+      \t\t\t\t  Marketing esportivo \r\n\
+      \t\t\t\t- German Hartenstein - \r\n\
+      \t\t\t\tOs campe\xF5es de 2010 e o crescimento da TV por assinatura\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>16/12 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4002\" title=\"Multimeios\">\r\n\
+      \t\t\t\t  Converg\xEAncia \r\n\
+      \t\t\t\t- Alberto Magno - \r\n\
+      \t\t\t\tMultimeios\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul true>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>16/12 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=4001\" title=\"Ano novo, vida nova? Esteja preparado para rupturas\">\r\n\
+      \t\t\t\t  Comunica\xE7\xE3o integrada \r\n\
+      \t\t\t\t- Antonio Fadiga - \r\n\
+      \t\t\t\tAno novo, vida nova? Esteja preparado para rupturas\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t\t<ul false>\r\n\
+      \t\t\t<li class=\"titulo\" style=\"margin-top:7px\">\r\n\
+      \t\t\t\t <span style=\" float: left; padding: 0px 8px 0px 0px; width: 27px; height: 15px; margin-right: 5px; vertical-align: middle; border-right: 2px solid rgb(153, 153, 153);\"><strong>07/12 </strong></span>\r\n\
+      \t\t\t\t <span style=\" float: left;width: 400px\"><a href=\"noticias!noticiasOpiniao.mm?idArtigo=3962\" title=\"Sustentabilidade e design\">\r\n\
+      \t\t\t\t  Sustentabilidade \r\n\
+      \t\t\t\t- Oskar Metsavaht - \r\n\
+      \t\t\t\tSustentabilidade e design\r\n\
+      \t\t\t\t</a>\t\t\t\t\r\n\
+      \t\t\t\t</span>\r\n\
+      \t\t\t<br clear=\"all\" />\r\n\
+      \t\t\t</li>\r\n\
+      \t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t\r\n\
+      \t</div>\t\t\r\n\
+      \t\r\n\
+      \t\t\r\n\
+      \t\t</div>\r\n\
+      \t\t\r\n\
+      \t\t<div id=\"right\">\r\n\
+      \t\t\t\t\t\t<div id=\"advertising_right\" >\r\n\
+      \t\t\t\tPublicidade\r\n\
+      \t\t\t\t<div class=\"advertising\">\r\n\
+      \t\t\t\t\t<script type=\"text/javascript\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/script/$d=391$p=8$s=16$br=1\">\r\n\
+      </script>\r\n\
+      <noscript>\r\n\
+      \t<div>\r\n\
+      \t<a href=\"http://mfp1.adnetwork.com.br/mfp/go/img/$d=391$p=8$s=16$n=0\" target=\"_blank\">\r\n\
+      \t<img alt=\"\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/img/$d=391$p=8$s=16$n=0?\" border=\"0\"/></a>\r\n\
+      \t</div>\r\n\
+      </noscript>\r\n \r\n\
+      \t\t\t\t</div>\r\n\
+      \t\t\t</div>\r\n\
+      \t\t\t<div id=\"cx_news_abas\">\r\n\
+      \t\t\t\t<script type=\"text/javascript\">javascript:fn_noticias_noticias_tipo('emPauta' , 'maisLidas')</script>\r\n\
+      \t\t\t</div>\r\n\
+      \t\t\t\t\t\t<div id=\"advertising_right\" >\r\n\
+      \t\t\t\t<!-- Publicidade -->\r\n\
+      \t\t\t\t<div class=\"advertising\">\r\n\
+      \t\t\t\t\t<script type=\"text/javascript\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/script/$d=391$p=9$s=16$br=1\">\r\n\
+      </script>\r\n\
+      <noscript>\r\n\
+      \t<div>\r\n\
+      \t<a href=\"http://mfp1.adnetwork.com.br/mfp/go/img/$d=391$p=9$s=16$n=0\" target=\"_blank\">\r\n\
+      \t<img alt=\"\" src=\"http://mfp1.adnetwork.com.br/mfp/ad/img/$d=391$p=9$s=16$n=0?\" border=\"0\"/></a>\r\n\
+      \t</div>\r\n\
+      </noscript>\r\n \r\n\
+      \t\t\t\t</div>\r\n\
+      \t\t\t</div>\r\n\
+      \t\t\t\r\n\
+      \r\n\
+      \r\n\
+      <style type=\"text/css\" >\r\n a {   text-decoration: none; }\r\n a:hover {  text-decoration: none; color:#577bbc    }\r\n\
+      /*   estilos para cada n\xEDvel de link   */\r\n\
+      \r\n\
+      /*   estilos para cada n\xEDvel de link   */\r\n\
+      \t.level-0  {font-size: 7px; color: #333333;}\r\n\
+      \t.level-1  {font-size: 9px; color: #333333;}\r\n\
+      \t.level-2  {font-size: 12px; color: #333333;}\r\n\
+      \t.level-3  {font-size: 15px; color: #333333;}\r\n\
+      \t.level-4  {font-size: 15px; color: #333333;}\r\n\
+      \t.level-5  {font-size: 16px; color: #333333;}\r\n\
+      \t.level-6  {font-size: 16px; color: #333333;}\r\n\
+      \t.level-7  {font-size: 16px; color: #333333;}\r\n\
+      \t.level-8  {font-size: 18px; color: #333333;}\r\n\
+      \t.level-9  {font-size: 20px; color: #333333;}\r\n\
+      \t.level-10 {font-size: 22px; color: #333333;}\r\n\
+      \t.level-11 {font-size: 24px; color: #333333;}\r\n\
+      \t.level-12 {font-size: 26px; color: #333333;}\r\n\
+      \t.level-13 {font-size: 28px; color: #333333;}\r\n\
+      \t.level-14 {font-size: 30px; color: #333333;}\r\n\
+      \t.level-15 {font-size: 32px; color: #333333;}\r\n\
+      \t.level-16 {font-size: 34px; color: #333333;}\r\n\
+      \t.level-17 {font-size: 36px; color: #333333;}\r\n\
+      \t.level-18 {font-size: 40px; color: #333333;}\r\n\
+      \t.level-19 {font-size: 40px; color: #333333;}\r\n\
+      \t.level-20 {font-size: 40px; color: #333333;}\r\n\
+      </style>\r\n\
+      \r\n\
+      \r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \t\r\n\
+      \r\n\
+      \r\n\
+      \r\n\
+      \r\n\
+      \t\r\n\
+      \t\t<div>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Produ\xE7\xE3o\" title=\"Produ\xE7\xE3o\" class=\"level-8\" style=\"color: #d2d2d2;\">Produ\xE7\xE3o </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Neg\xF3cios\" title=\"Neg\xF3cios\" class=\"level-13\" style=\"color: #d2d2d2;\">Neg\xF3cios </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=M\xEDdia\" title=\"M\xEDdia\" class=\"level-17\" style=\"color: #d2d2d2;\">M\xEDdia </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Marketing\" title=\"Marketing\" class=\"level-20\" style=\"color: #d2d2d2;\">Marketing </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Cases\" title=\"Cases\" class=\"level-9\" style=\"color: #d2d2d2;\">Cases </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Tecnologia\" title=\"Tecnologia\" class=\"level-6\" style=\"color: #d2d2d2;\">Tecnologia </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Corporativo\" title=\"Corporativo\" class=\"level-5\" style=\"color: #d2d2d2;\">Corporativo </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Tend\xEAncias\" title=\"Tend\xEAncias\" class=\"level-16\" style=\"color: #d2d2d2;\">Tend\xEAncias </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Mercado\" title=\"Mercado\" class=\"level-1\" style=\"color: #d2d2d2;\">Mercado </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Digital\" title=\"Digital\" class=\"level-19\" style=\"color: #d2d2d2;\">Digital </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=redes sociais\" title=\"redes sociais\" class=\"level-7\" style=\"color: #d2d2d2;\">redes sociais </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Planejamento\" title=\"Planejamento\" class=\"level-10\" style=\"color: #d2d2d2;\">Planejamento </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Inova\xE7\xE3o\" title=\"Inova\xE7\xE3o\" class=\"level-14\" style=\"color: #d2d2d2;\">Inova\xE7\xE3o </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Marketing Esportivo\" title=\"Marketing Esportivo\" class=\"level-11\" style=\"color: #d2d2d2;\">Marketing Esportivo </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Ag\xEAncias\" title=\"Ag\xEAncias\" class=\"level-12\" style=\"color: #d2d2d2;\">Ag\xEAncias </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Varejo\" title=\"Varejo\" class=\"level-4\" style=\"color: #d2d2d2;\">Varejo </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Internacional\" title=\"Internacional\" class=\"level-2\" style=\"color: #d2d2d2;\">Internacional </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=marcas\" title=\"marcas\" class=\"level-3\" style=\"color: #d2d2d2;\">marcas </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Sustentabilidade\" title=\"Sustentabilidade\" class=\"level-15\" style=\"color: #d2d2d2;\">Sustentabilidade </a>\r\n\
+      \t\t\r\n\
+      \t\t\t<a href=\"/busca!conteudo.mm?canal=NOTICIAS&ordem=data&buscaTexto=Cria\xE7\xE3o\" title=\"Cria\xE7\xE3o\" class=\"level-18\" style=\"color: #d2d2d2;\">Cria\xE7\xE3o </a>\r\n\
+      \t\t\r\n\
+      \t\t</div>\r\n\
+      \t\r\n\
+      \r\n\
+      \r\n\
+      \r\n\
+      \t\t<br />\r\n\
+      \t\t</div>\r\n\
+      \t\r\n\
+      </div>\r\n\
+      </div>\r\n\
+      </div>\r\n\
+      \r\n\
+      \r\n\
+      <style>\r\n\
+      #footer {float: left;width: 100%;height: 205px;background: url(/img/bg_footer2.jpg) repeat-x;text-align: center}\r\n\
+      #footer #footer_container {position: relative;margin: 0 auto;height: auto;width: 980px;text-align: center}\r\n\
+      #footer #links {float: left;width: 980px;margin-top: 15px;text-align: center}\r\n\
+      #footer #servicos {float: left;width: 980px;margin-top: 15px;}\r\n\
+      #footer p {float: left;width: 980px;margin-top: 15px;}\r\n\
+      #footer ul li {display: inline;margin: 0 2px}\r\n\
+      #footer ul li a:hover,#footer ul li a:focus {text-decoration: none}\r\n\
+      \r\n\
+      #footer ul li img {margin-right: 4px}\r\n\
+      #footer #servicos ul li a img.rss2 {margin: 0px 0px -4px 8px;height: 20px;}\r\n\
+      </style>\r\n\
+      \r\n\
+      \r\n\
+      <style>\r\n\
+      .bgbrancofooter{position: relative;margin: 0 auto;width: 980px;text-align: left;background-color: #ffffff;height: 205px;}\r\n\
+      #cx_indice {float: left;width: 100%;height:auto;background-image: url(/img/bg_footer1.jpg);background-repeat: repeat-x;text-align: center;margin-top: 80px}\r\n\
+      #cx_indice #indice {position: relative;background-color: #ffffff;margin: 0 auto;height: auto;width: 980px;text-align: center;}\r\n\
+      #cx_indice #indice ul {float: left;text-align:left;margin-left: 20px;margin-right: 20px;line-height: 16px;margin-bottom: 20px;}\r\n\
+      #cx_indice #indice ul li a:hover,#indice ul li a:focus {text-decoration: none}\t\t\t\r\n\
+      </style>\r\n\
+      <div id=\"cx_indice\">\r\n\
+      \t<div class=\"bgbrancofooter\" >\r\n\
+      \t<div  id=\"indice\" style=\"text-align: left;font-size: 11px;\">\r\n\
+      \t\t<ul>\r\n\
+      \t\t\t<li style=\"height: 25px;width: 60px;\"><span class=\"tit_bg\">Not\xEDcias</span></li>\r\n\
+      \t\t\t<li><a href=\"/noticias!agenciaCriacao.mm\" title=\"Ag\xEAncia &amp; Cria\xE7\xE3o\">Ag\xEAncia &amp; Cria\xE7\xE3o</a></li>\r\n\
+      \t\t\t<li><a href=\"/noticias!marketingNegocios.mm\" title=\"Marketing &amp; Neg\xF3cios\">Marketing &amp; Neg\xF3cios</a></li>\r\n\
+      \t\t\t<li><a href=\"/noticias!midia.mm\" title=\"M\xEDdia\">M\xEDdia</a></li>\r\n\
+      \t\t\t<li><a href=\"/noticias!digital.mm\" title=\"Digital\">Digital</a></li>\r\n\
+      \t\t\t<li><a href=\"/noticias!ultimas.mm\" title=\"\xDAltimas\">\xDAltimas</a></li>\r\n\
+      \t\t\t<!-- <li><a href=\"/noticias!opiniao.mm\" title=\"Opini\xE3o\">Opini\xE3o</a></li> -->\r\n\
+      \t\t\t<li><a href=\"/noticias!meuFavoritosMM.mm\" title=\"Favoritas\">Favoritas</a></li>\r\n\
+      \t\t</ul>\r\n\
+      \t\t<ul style=\"width: 90px;\">\r\n\
+      \t\t\t<li style=\"height: 25px\"><span class=\"tit_bg\">Multim\xEDdia</span></li>\r\n\
+      \t\t\t<li><a href=\"/multimidiaVideo.mm\" title=\"V\xEDdeo\">V\xEDdeo</a></li>\r\n\
+      \t\t\t<li><a href=\"/multimidiaAudio.mm\" title=\"\xC1udio\">\xC1udio</a></li> \r\n\
+      \t\t\t<li><a href=\"/multimidiaFoto.mm\" title=\"Fotos\">Fotos</a></li>\r\n\
+      \t\t</ul>\r\n\
+      \t\t<ul style=\"width: 60px;\">\r\n\
+      \t\t\t<li style=\"height: 25px\"><span class=\"tit_bg\">Blogs</span></li>\r\n\
+      \t\t\t<li><a href=\"/blog!sapoDeDentro.mm\" title=\"Sapo de dentro\">Sapo de dentro</a></li>\r\n\
+      \t\t\t<li><a href=\"/blog!diarioDeBordo.mm\" title=\"Di\xE1rio de bordo\">Di\xE1rio de bordo</a></li>\r\n\
+      \t\t</ul>\r\n\
+      \t\t<ul style=\"width: 140px;\">\t \r\n\
+      \t\t\t<li style=\"height: 25px\"><span class=\"tit_bg\">Meio &amp; Mensagem</span></li>\r\n\
+      \r\n\
+      \t\t\t\r\n\
+      \t\t\r\n\
+      \t\t\t \r\n\
+      \t\t\t \t\r\n\
+      \t\t\t \r\n\
+      \t\t\t\r\n\
+      \t\t\t\r\n\
+      \t\t\t\t<li><a href=\"cadastro!input.mm?url=home.mm?impressoMM=true\" title=\"Jornal\">Jornal</a></li>\r\n\
+      \t\t\t\r\n\
+      \t\t\t<li><a href=\"/noticias!opiniao.mm\" title=\"Opini\xE3o\">Opini\xE3o</a></li>\r\n\
+      \r\n\
+      \t\t\t\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t\t\t\t\t<li><a href=\"cadastro!input.mm?url=home.mm?impressoMMEspecial=true\" title=\"Edi\xE7\xF5es especiais M&amp;M\">Edi\xE7\xF5es especiais M&amp;M</a></li>\r\n\
+      \t\t\t\t\t\r\n\
+      \t\t</ul>\r\n\
+      \t\t<ul style=\"width: 110px;\">\r\n\
+      \t\t\t<li style=\"height: 25px\"><span class=\"tit_bg\">Proxxima</span></li>\r\n\
+      \t\t\t<li><a href=\"http://www.proxxima.com.br/portal/home/\" target=\"_blank\" title=\"Home\">Home</a></li>\r\n\
+      \t\t\t<li><a href=\"http://proxxima.digitalpages.com.br/home.aspx\" target=\"_blank\" title=\"Revista\">Revista</a></li>\r\n\
+      \t\t\t<li><a href=\"http://www.proxxima.com.br/portal/noticias/\" target=\"_blank\" title=\"Not\xEDcias\">Not\xEDcias</a></li>\r\n\
+      \t\t\t<li><a href=\"http://www.proxxima.com.br/portal/noticias/\" target=\"_blank\" title=\"Blog\">Blog</a></li>\r\n\
+      \t\t\t<li><a href=\"http://www.proxxima.com.br/eventos/proxxima/2010/home/\" target=\"_blank\" title=\"Evento\">Evento</a></li>\r\n\
+      \t\t\t<li><a href=\"http://www.proxxima.com.br/portal/bolsaDeEstudos/\" target=\"_blank\" title=\"Bolsa de Estudos\">Bolsa de Estudos</a></li>\r\n\
+      \t\t\t<li><a href=\"http://www.meioemensagem.com.br/galeriacriativa/\" target=\"_blank\" title=\"Galeria Criativa\">Galeria Criativa</a></li>\r\n\
+      \t\t</ul>\r\n\
+      \t\t<ul style=\"width: 100px;\">\r\n\
+      \t\t\t<li style=\"height: 25px\"><span class=\"tit_bg\">Anu\xE1rios</span></li>\r\n\
+      \t\t\t<li><a href=\"anuariosMidia.mm\" title=\"M\xEDdia\">M\xEDdia</a></li>\r\n\
+      \t\t\t<li><a href=\"anuariosPropaganda.mm\" title=\"Propaganda\">Propaganda</a></li>\r\n\
+      \t\t\t<li><a href=\"anuarios!buscaFornecedores.mm\" title=\"Fornecedores\">Fornecedores</a></li>\r\n\
+      \t\t\t<li><a href=\"anuarios!buscaAnunciantes.mm\" title=\"Anunciantes\">Anunciantes</a></li>\r\n\
+      \t\t\t<li><a href=\"anuarios!minhaAgenda.mm\" title=\"Minha agenda\">Minha agenda</a></li>\r\n\
+      \t\t</ul>\t\t\r\n\
+      \t\t<ul style=\"width: 80px;\">\r\n\
+      \t\t\t<li style=\"height: 25px\"><span class=\"tit_bg\">Especiais</span></li>\r\n\
+      \t\t\t<li><a href=\"http://www.cabore.com.br/\" target=\"_blank\" title=\"Cabor\xE9\">Cabor\xE9</a></li>\r\n\
+      \t\t\t<li><a href=\"http://www.meioemensagem.com.br/cannes/\" target=\"_blank\" title=\"Cannes\">Cannes</a></li>\r\n\
+      \t\t\t<li><a href=\"http://www.maximidia.com.br\" target=\"_blank\" title=\"MaxiM\xEDdia\">MaxiM\xEDdia</a></li>\r\n\
+      \t\t\t<li><a href=\"http://mmonline.com.br/eventos/wavefestival/2010/home/\" target=\"_blank\" title=\"Wave Festival\">Wave Festival</a></li>\r\n\
+      \t\t\t<li><a href=\"http://www.meioemensagem.com.br/fatosmarcantes30anos/\" title=\"Fatos Marcantes\">Fatos Marcantes</a></li>\t\t\t\r\n\
+      \t\t\t<li><a href=\"http://www.meioemensagem.com.br/ivcongresso/\" target=\"_blank\" title=\"Congresso\">IV Congresso</a></li>\r\n\
+      \t\t</ul>\r\n\
+      \t</div>\r\n\
+      \t</div>\r\n\
+      </div>\r\n\
+      <div id=\"footer\">\r\n\
+      \t<div id=\"footer_container\">\r\n\
+      \t\t<div id=\"links\">\r\n\
+      \t\t\t<ul>\r\n\
+      \t\t\t\t<li><span class=\"tit_bg\">Links</span></li>\r\n\
+      \t\t\t\t<li><a href=\"http://www.mmonline.com.br/showup\" \r\n\
+      \t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_links_melhor_da_propaganda')\" title=\"Show Up - O Melhor da Propaganda\" target=\"blank\">Show Up - O Melhor da Propaganda</a></li>\r\n\
+      \r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t<a href=\"http://www.projetointermeios.com.br/\" \r\n\
+      \t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_links_projeto_intermeios')\" title=\"Projeto Inter-Meios\" target=\"blank\">Projeto Inter-Meios</a></li>\r\n\
+      \r\n\
+      \t\t\t\t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t<a href=\"http://www.mmeventos.com.br/\" \r\n\
+      \t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_links_eventos_grupo_mem')\" title=\"M&amp;M Eventos\" target=\"blank\">M&amp;M Eventos</a></li>\r\n\
+      \r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t<a href=\"http://www5.fgv.br/mgmsp/MGM-SP/DetCurso.aspx?codCurso=191\" \r\n\
+      \t\t\t\t\t\tonmouseup=\"atmCLL('mmonline_links_master_business_comunication')\" title=\"Master Business in Comunication/FGV\" target=\"blank\">Master Business in Comunication/FGV</a></li>\r\n\
+      \r\n\
+      \t\t\t\t<!-- <li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t<a href=\"http://advertising.microsoft.com/brasil/noticias-domercado\" title=\"Pr\xEAmio MMonline / MSN\" target=\"blank\">Pr\xEAmio MMonline / MSN</a></li> -->\r\n\
+      \r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t<a href=\"http://www.effie.com.br/\" target=\"blank\" onmouseup=\"atmCLL('mmonline_links_premio_effie')\" title=\"Pr\xEAmio Effie\">Pr\xEAmio Effie</a></li>\r\n\
+      \r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t<a href=\"http://www.cabore.com.br/\" target=\"blank\"\tonmouseup=\"atmCLL('mmonline_links_premio_cabore')\" title=\"Pr\xEAmio Cabor\xE9\">Pr\xEAmio Cabor\xE9</a></li>\r\n\
+      \t\t\t\t\r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t<a href=\"http://www.meioemensagem.com.br/maisadmirados\" target=\"blank\" title=\"Ve\xEDculos Mais Admirados\">Ve\xEDculos Mais Admirados</a></li>\r\n\
+      \t\t\t</ul>\r\n\
+      \t\t</div>\r\n\
+      \t\t<div id=\"servicos\">\r\n\
+      \t\t\t<ul>\r\n\
+      \t\t\t\t<li><span class=\"tit_bg\">Servi\xE7os</span></li>\r\n\
+      \t\t\t\t<li>\r\n\
+      \t\t\t\t\t<a href=\"http://www.meioemensagem.com.br/loja/\" onmouseup=\"atmCLL('mmonline_servicos_assine_mem')\" title=\"Assine M&amp;M\">Assine M&amp;M</a></li>\r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t\t<a href=\"https://comprasegura.meioemensagem.com.br/loja/default.php\" onmouseup=\"atmCLL('mmonline_servicos_loja')\" title=\"Loja\">Loja</a></li>\r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t\t<a href=\"http://www.meioemensagem.com.br/publicidade/\" onmouseup=\"atmCLL('mmonline_servicos_anuncie')\" title=\"Anuncie\">Anuncie</a></li>\r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t\t<a href=\"home!duvidasFrequentes.mm\" title=\"D\xFAvidas Frequentes\">D\xFAvidas Frequentes</a></li>\r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t\t<a href=\"faleConosco.mm\" title=\"Fale Conosco\">Fale Conosco</a></li>\r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t\t<a href=\"cadastroNewsletters!news.mm\" title=\"Newsletter\">Newsletter</a></li>\r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t\t<a href=\"rss.mm\" title=\"RSS\">RSS</a></li>\r\n\
+      \t\t\t\t<li><img src=\"/img/img_bulet_azul.gif\" width=\"10\" height=\"13\" alt=\"\" />\r\n\
+      \t\t\t\t\t<a href=\"#\" onclick=\"popup('comunicarSugestao.mm?',409,550,0);\" title=\"Comunicar Erros\">Comunicar Erros</a></li>\t\t\t\t\r\n\
+      \t\t\t</ul>\r\n\
+      \t\t</div>\r\n\
+      \t\t<p>\r\n\
+      \t\t\t<img src=\"/img/bg_copyright.jpg\" width=\"524\" height=\"17\" alt=\"\" /><br />\r\n\
+      \t\t\tcopyright 2008 Meio &amp; Mensagem.\r\n\
+      \t\t</p>\r\n\
+      \t</div>\r\n\
+      </div>\r\n\
+      \r\n\
+      \r\n\
+      </body>\r\n\
+      </html>"
+    http_version: "1.1"
