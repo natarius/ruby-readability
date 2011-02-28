@@ -258,21 +258,22 @@ describe Readability do
   end
 
   describe "#has_special_rule?" do
+    use_vcr_cassette 'pages', :record => :new_episodes
+
     it "should return true when I have a special rule" do
       url = "http://portalodia.com/noticias/piaui/mais-de-um-veiculo-e-roubado-por-dia-na-capital-102189.html"
-      FakeWeb.register_uri(:get, url,
-                           :response => File.read("spec/fixtures/portalodia_photo.html"))
       @uri = URI.parse(url)
-      @parsed_page = Readability::Document.new(Nokogiri::HTML(open(url)), @uri.host, @uri.request_uri)
+      response = Net::HTTP.get_response(@uri)
+
+      @parsed_page = Readability::Document.new(Nokogiri::HTML(response.body), @uri.host, @uri.request_uri)
       @parsed_page.has_special_rule?.should be_true
     end
 
     it "should return false when I don't have a special rule" do
       url = "http://globoesporte.globo.com/futebol/times/internacional/noticia/2011/02/inter-ainda-aguarda-sinal-verde-da-fifa-para-cavenaghi-ser-relacionado.html"
-      FakeWeb.register_uri(:get, url,
-                           :response => File.read("spec/fixtures/portalodia_photo.html"))
       @uri = URI.parse(url)
-      @parsed_page = Readability::Document.new(Nokogiri::HTML(open(url)), @uri.host, @uri.request_uri)
+      response = Net::HTTP.get_response(@uri)
+      @parsed_page = Readability::Document.new(Nokogiri::HTML(response.body), @uri.host, @uri.request_uri)
       @parsed_page.has_special_rule?.should be_false
     end
   end
