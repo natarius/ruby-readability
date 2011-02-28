@@ -58,7 +58,11 @@ module Readability
       article = apply_custom_rule if has_special_rule?
 
       if article && remove_unlikely_candidates
-        return article.to_html.gsub(/[\r\n\f]+/, "\n" ).gsub(/[\t ]+/, " ").gsub(/&nbsp;/, " ")
+        content = article.to_html.gsub(/[\r\n\f]+/, "\n" ).gsub(/[\t ]+/, " ").gsub(/&nbsp;/, " ")
+        if rules[@base_uri].try(:encoding) && rules[@base_uri].encoding == 'ISO-8859-1'
+          return convert_to_utf8(content)
+        end
+        return content
       else
         remove_unlikely_candidates! if remove_unlikely_candidates
         transform_misused_divs_into_paragraphs!
