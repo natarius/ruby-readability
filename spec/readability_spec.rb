@@ -243,10 +243,13 @@ describe Readability do
   end
 
   describe "meio e mensagem" do
+    use_vcr_cassette 'pages', :record => :new_episodes
+
     it "should extract the news from the page" do
       url = 'http://www.mmonline.com.br/noticias!noticiasOpiniao.action?idArtigo=4184'
       @uri = URI.parse(url)
-      @parsed_page = Readability::Document.new(Nokogiri::HTML(open(url)),
+      response = Net::HTTP.get_response(@uri)
+      @parsed_page = Readability::Document.new(Nokogiri::HTML(response.body),
       @uri.host, @uri.request_uri)
       @content = @parsed_page.content
 
