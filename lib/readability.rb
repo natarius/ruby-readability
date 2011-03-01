@@ -152,26 +152,28 @@ module Readability
       sibling_score_threshold = [10, best_candidate[:content_score] * 0.2].max
       output = Nokogiri::XML::Node.new('div', @document)
       begin
-        best_candidate[:elem].parent.try(:children).each do |sibling|
-          append = false
-          append = true if sibling == best_candidate[:elem]
-          append = true if candidates[sibling] && candidates[sibling][:content_score] >= sibling_score_threshold
+        if best_candidate[:elem].try(:parent)
+          best_candidate[:elem].parent.try(:children).each do |sibling|
+            append = false
+            append = true if sibling == best_candidate[:elem]
+            append = true if candidates[sibling] && candidates[sibling][:content_score] >= sibling_score_threshold
 
-          if sibling.name.downcase == "p"
-            link_density = get_link_density(sibling)
-            node_content = sibling.text
-            node_length = node_content.length
+            if sibling.name.downcase == "p"
+              link_density = get_link_density(sibling)
+              node_content = sibling.text
+              node_length = node_content.length
 
-            if node_length > 80 && link_density < 0.25
-              append = true
-            elsif node_length < 80 && link_density == 0 && node_content =~ /\.( |$)/
-              append = true
+              if node_length > 80 && link_density < 0.25
+                append = true
+              elsif node_length < 80 && link_density == 0 && node_content =~ /\.( |$)/
+                append = true
+              end
             end
-          end
 
-          if append
-            sibling.name = "div" unless %w[div p].include?(sibling.name.downcase)
-            output << sibling
+            if append
+              sibling.name = "div" unless %w[div p].include?(sibling.name.downcase)
+              output << sibling
+            end
           end
         end
       end
