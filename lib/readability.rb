@@ -55,6 +55,7 @@ module Readability
       article = youtube if is_youtube? && remove_unlikely_candidates
       article = vimeo if is_vimeo? && remove_unlikely_candidates
       article = ted if is_ted? && remove_unlikely_candidates
+      article = slideshare if is_slideshare? && remove_unlikely_candidates
       article = apply_custom_rule if has_special_rule?
 
       if article && remove_unlikely_candidates
@@ -93,8 +94,32 @@ module Readability
       (@base_uri.to_s =~ /^(www.)?ted.com\/talks/)
     end
 
+    def is_slideshare?
+      (@base_uri.to_s =~ /^(www.)?slideshare.net/)
+    end
+
     def is_special_case?
       (@base_uri.to_s =~ REGEXES[:videoRe])
+    end
+
+    def slideshare
+      title = @document.css("h1.h-slideshow-title").inner_html
+      movie_value = @document.css("link[name='media_presentation']").first.attributes["href"].value
+      Nokogiri::HTML.fragment <<-HTML
+        <div style=\"width:425px\" id=\"__ss_2606283\">
+          <strong style=\"display:block;margin:12px 0 4px\">
+            <a href=\"#{@request}\" title=\"#{title}\">
+              #{title}
+            </a>
+          </strong>
+          <object id=\"__sse2606283\" width=\"425\" height=\"355\">
+            <param name=\"movie\" value=\"#{movie_value}\" />
+            <param name=\"allowFullScreen\" value=\"true\"/>
+            <param name=\"allowScriptAccess\" value=\"always\"/>
+            <embed name=\"__sse2606283\" src=\"#{movie_value}\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"425\" height=\"355\"></embed>
+          </object>
+        </div>
+        HTML
     end
 
     def youtube

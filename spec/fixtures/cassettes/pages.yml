@@ -10,14 +10,14 @@
       code: 200
       message: OK
     headers: 
-      content-type: 
-      - text/html;charset=iso-8859-1
       content-language: 
       - pt-BR
-      server: 
-      - Apache
+      content-type: 
+      - text/html;charset=iso-8859-1
       date: 
       - Mon, 28 Feb 2011 13:53:46 GMT
+      server: 
+      - Apache
       set-cookie: 
       - JSESSIONID=E3D0CE1A3642B9F26055DC48BBC5CC74; Path=/
       transfer-encoding: 
@@ -1472,10 +1472,10 @@
     headers: 
       content-type: 
       - text/html; charset=utf-8
-      date: 
-      - Mon, 28 Feb 2011 14:09:45 GMT
       server: 
       - Apache
+      date: 
+      - Mon, 28 Feb 2011 14:09:45 GMT
       content-length: 
       - "66159"
       set-cookie: 
@@ -1583,10 +1583,10 @@
     headers: 
       content-type: 
       - text/html; charset=utf-8
-      server: 
-      - Apache
       date: 
       - Mon, 28 Feb 2011 14:34:50 GMT
+      server: 
+      - Apache
       content-length: 
       - "54742"
       set-cookie: 
@@ -1645,10 +1645,10 @@
     headers: 
       content-type: 
       - text/html; charset=utf-8
-      server: 
-      - Apache
       date: 
       - Mon, 28 Feb 2011 14:34:51 GMT
+      server: 
+      - Apache
       set-cookie: 
       - csrftoken=981c1324abf981a0ba6b34d63787fabc; Max-Age=31449600; Path=/
       vary: 
@@ -1711,17 +1711,17 @@
       - Mon, 28 Feb 2011 02:37:02 GMT
       content-type: 
       - text/html; charset=UTF-8
-      date: 
-      - Mon, 28 Feb 2011 14:37:02 GMT
       server: 
       - Apache
+      date: 
+      - Mon, 28 Feb 2011 14:37:02 GMT
       set-cookie: 
       - uid=0; expires=Thu, 25-Feb-2021 14:37:02 GMT; path=/; domain=.vimeo.com
+      vary: 
+      - Accept-Encoding
       cache-control: 
       - no-store, no-cache, must-revalidate
       - post-check=0, pre-check=0
-      vary: 
-      - Accept-Encoding
       transfer-encoding: 
       - chunked
     body: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\
@@ -2235,28 +2235,28 @@
       code: 200
       message: OK
     headers: 
-      x-varnish: 
-      - "11269686"
       expires: 
       - Mon, 28 Feb 2011 14:44:23 GMT
-      via: 
-      - 1.1 CachOS
-      connection: 
-      - keep-alive
+      x-varnish: 
+      - "11269686"
       content-type: 
       - text/html; charset=utf-8
+      connection: 
+      - keep-alive
+      via: 
+      - 1.1 CachOS
       date: 
       - Mon, 28 Feb 2011 14:44:13 GMT
       content-length: 
       - "137528"
-      x-bip: 
-      - 11269686 67 13
-      age: 
-      - "0"
-      vary: 
-      - Accept-Encoding
       cache-control: 
       - max-age=10
+      vary: 
+      - Accept-Encoding
+      age: 
+      - "0"
+      x-bip: 
+      - 11269686 67 13
     body: "\n\n\n\
       <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\n\
       <html dir=\"ltr\" xml:lang=\"pt-br\" lang=\"pt-br\" xmlns=\"http://www.w3.org/1999/xhtml\">\n\
@@ -2898,3 +2898,1494 @@
       </body>\n\
       </html>\n"
     http_version: "1.0"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://www.slideshare.net:80/plataformatec/classificao-de-textos-dev-in-sampa-28nov2009
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-varnish: 
+      - 743589396 743458300
+      via: 
+      - 1.1 varnish
+      x-bench-route: 
+      - slideshow/view
+      content-type: 
+      - text/html; charset=utf-8
+      date: 
+      - Fri, 04 Mar 2011 19:31:17 GMT
+      x-xss-protection: 
+      - "0"
+      x-runtime: 
+      - "369"
+      server: 
+      - nginx/0.6.39
+      content-length: 
+      - "92080"
+      x-bench-id: 
+      - s2606283/a23175993
+      age: 
+      - "553"
+      cache-control: 
+      - no-cache, must-revalidate
+      status: 
+      - "200"
+    body: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\" \"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n\
+      <html xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:hx=\"http://purl.org/NET/hinclude\" xmlns:fb=\"http://developers.facebook.com/schema/\" xml:lang=\"en\" xmlns:dc=\"http://purl.org/dc/terms/\" xmlns:media=\"http://search.yahoo.com/searchmonkey/media/\" xmlns=\"http://www.w3.org/1999/xhtml\">\n\
+      <head>\n\
+      <meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\" /><link href=\"http://public.slidesharecdn.com/v3/styles/combined.css?23757\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n\
+      <!--[if lte IE 6]><link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"http://public.slidesharecdn.com/v3/styles/slideview_ie6.css?23757\" /><![endif]-->\n\
+      <!--[if IE 7]><link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"http://public.slidesharecdn.com/v3/styles/slideview_ie7.css?23757\" /><![endif]-->\n\
+      <script id=\"page-json\" type=\"text/javascript\"><!--\n\
+      var slideshare_object = {\"player\":{\"height\":481,\"version\":9,\"color\":\"#FFFFFF\",\"url\":\"http://static.slidesharecdn.com/swf/ssplayer2.swf\",\"width\":598},\"doc\":\"devinsampa-2009mini-091129060000-phpapp01\",\"stats\":{\"url\":\"http://www.slideshare.net/~/slideshow/stats/2606283.json\"},\"user\":{\"commenter\":false,\"pro\":null,\"loggedin\":null,\"organization\":null,\"member_type\":\"non-member\",\"login\":\"guest\",\"photo_url\":\"http://public.slidesharecdn.com/images/userImage-96x96.gif\",\"su\":null,\"owner\":false,\"user_group\":null,\"name\":null,\"occupation\":null,\"email\":\"guest\",\"id\":null,\"can_remove_contact\":null},\"pvt\":0,\"gam_cat_name\":\"technology\",\"_auth_token_name\":\"authenticity_token\",\"dev\":false,\"contests\":[],\"sharing_more\":{\"url\":\"http://www.slideshare.net/~/slideshow/sharing_more/2606283.html\"},\"default_tab\":\".svMoreAuthor\",\"contacts\":{\"create_url\":\"http://www.slideshare.net/contact/create?contactee=CONTACTEE\\u0026frm_source=slidepage\",\"delete_url\":\"http://www.slideshare.net/contact/delete?contactee=23175993\\u0026frm_source=slidepage\"},\"favorites\":{\"tag_href\":\"/tag/TAGNAME\",\"create_url\":\"http://www.slideshare.net/favorite/create\",\"delete_url\":\"http://www.slideshare.net/favorite/delete\",\"update_url\":\"http://www.slideshare.net/favorite/update/FAVID\"},\"activities\":{\"favorites\":{\"count\":10,\"total\":10,\"url\":\"http://www.slideshare.net/~/slideshow/favorites_list/2606283.json\"},\"community\":{\"count\":0,\"total\":0,\"url\":\"http://www.slideshare.net/~/slideshow/community_list/2606283.json\"}},\"_auth_token\":\"MIZsuVvoE2TWsHkP3BbSORdWVyiBygYeGZZsfQxizv8=\",\"kissmetrics_api_key\":\"f38a86f22083188a0a69d64d1487a4078b65db16\",\"totalSlides\":155,\"key\":false,\"embeds_count\":5,\"downloads\":{\"allow\":true,\"sp_isdwnl\":true},\"version_no\":\"1259496219\",\"topnav\":{\"get_url\":\"/top_nav\",\"update_url\":\"http://www.slideshare.net/language/update_language\"},\"userimage_placeholder\":\"http://public.slidesharecdn.com/images/userImage-96x96.gif\",\"voting_widget_host\":\"/\",\"groups\":{\"post_url\":\"http://www.slideshare.net/community/send_to_community\"},\"preview\":\"no\",\"useHttp\":1,\"slideshow\":{\"wp_code\":\"[slideshare id=2606283\\u0026doc=devinsampa-2009mini-091129060000-phpapp01]\",\"allow_embeds\":true,\"type\":\"presentation\",\"form_is_blocking\":false,\"form_after_slide_number\":null,\"embed_code\":\"\\u003Cdiv style=\\\"width:{width}px\\\" id=\\\"__ss_2606283\\\"\\u003E \\u003Cstrong style=\\\"display:block;margin:12px 0 4px\\\"\\u003E\\u003Ca href=\\\"http://www.slideshare.net/plataformatec/classificao-de-textos-dev-in-sampa-28nov2009\\\" title=\\\"Classifica\\u00e7\\u00e3o de textos - Dev in Sampa - 28nov2009\\\"\\u003EClassifica\\u00e7\\u00e3o de textos - Dev in Sampa - 28nov2009\\u003C/a\\u003E\\u003C/strong\\u003E \\u003Cobject id=\\\"__sse2606283\\\" width=\\\"{width}\\\" height=\\\"{height}\\\"\\u003E \\u003Cparam name=\\\"movie\\\" value=\\\"http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=devinsampa-2009mini-091129060000-phpapp01{rel}{startSlide}\\u0026stripped_title=classificao-de-textos-dev-in-sampa-28nov2009\\u0026userName=plataformatec\\\" /\\u003E \\u003Cparam name=\\\"allowFullScreen\\\" value=\\\"true\\\"/\\u003E \\u003Cparam name=\\\"allowScriptAccess\\\" value=\\\"always\\\"/\\u003E \\u003Cembed name=\\\"__sse2606283\\\" src=\\\"http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=devinsampa-2009mini-091129060000-phpapp01{rel}{startSlide}\\u0026stripped_title=classificao-de-textos-dev-in-sampa-28nov2009\\u0026userName=plataformatec\\\" type=\\\"application/x-shockwave-flash\\\" allowscriptaccess=\\\"always\\\" allowfullscreen=\\\"true\\\" width=\\\"{width}\\\" height=\\\"{height}\\\"\\u003E\\u003C/embed\\u003E \\u003C/object\\u003E \\u003Cdiv style=\\\"padding:5px 0 12px\\\"\\u003E View more \\u003Ca href=\\\"http://www.slideshare.net/\\\"\\u003Epresentations\\u003C/a\\u003E from \\u003Ca href=\\\"http://www.slideshare.net/plataformatec\\\"\\u003EPlataforma Tecnologia\\u003C/a\\u003E \\u003C/div\\u003E \\u003C/div\\u003E\",\"show_related_content\":\"1\",\"user_name\":\"Plataforma Tecnologia\",\"is_audio\":false,\"title\":\"Classifica\\u00e7\\u00e3o de textos - Dev in Sampa - 28nov2009\",\"user_login\":\"plataformatec\",\"fullscreen_bg_color\":\"White\",\"id\":\"2606283\",\"embed_sizes\":{\"presets\":{\"preset3\":{\"displaySize\":{\"height\":45,\"width\":60},\"size\":{\"height\":426,\"width\":510}},\"preset4\":{\"displaySize\":{\"height\":53,\"width\":70},\"size\":{\"height\":497,\"width\":595}},\"preset1\":{\"displaySize\":{\"height\":30,\"width\":40},\"size\":{\"height\":284,\"width\":340}},\"preset2\":{\"displaySize\":{\"height\":38,\"width\":50},\"size\":{\"height\":355,\"width\":425}}},\"config\":{\"defaultPreset\":\"preset2\"}}},\"category\":{\"featured\":0},\"slideshow_placeholder\":\"http://public.slidesharecdn.com/images/thumbnail.png\",\"facebook_app_id\":2490221586,\"stripped_title\":\"classificao-de-textos-dev-in-sampa-28nov2009\",\"startSlide\":1,\"inContest\":0,\"flagging\":{\"flagged_value\":null,\"update_url\":\"http://www.slideshare.net/main/flag?slideshow_id=2606283\"},\"comments\":{\"unsubscribe_url\":\"http://www.slideshare.net/comment/unsubscribe/2606283\",\"captcha_url\":\"http://s3.amazonaws.com/ss-captchas/\",\"ajaxurl\":\"http://www.slideshare.net/~/slideshow/comments/2606283.json\",\"total_count\":0,\"create_url\":\"http://www.slideshare.net/comment/create\",\"destroy_url\":\"http://www.slideshare.net/comment/destroy\",\"update_url\":\"http://www.slideshare.net/comment/update\",\"template\":\"\\u003Cli class=\\\"vcard\\\"\\u003E\\n                  \\u003Ca href=\\\"#\\\" class=\\\"userimage-link h-author-photo url\\\" title=\\\"Full Name\\\" rel=\\\"nofollow\\\"\\u003E\\u003Cimg class=\\\"nickname\\\" src=\\\"/images/userImage_SMALL.gif\\\" alt=\\\"username\\\" original=\\\"/images/userImage_SMALL.gif\\\" /\\u003E\\u003Cspan class=\\\"h-username fn\\\"\\u003Eusername\\u003C/span\\u003E\\u003C/a\\u003E\\u003Ca href=\\\"#\\\" class=\\\"proBadge_link_slideview h-pb-sv h-pb-sv-c\\\"\\u003E\\u003Cimg class=\\\"h-pb-sv-img proBadge_comment\\\" src=\\\"http://public.slidesharecdn.com/images/pro_account_mini_badge.png\\\" height=\\\"8\\\" alt=\\\"Pro Account\\\" width=\\\"27\\\" /\\u003E\\u003C/a\\u003E\\u003Cspan class=\\\"h-occupation\\\"\\u003E, occupation, \\u003C/span\\u003E\\u003Cspan class=\\\"org h-organization\\\"\\u003Eorganization\\u003C/span\\u003E\\n                  \\u003Cspan class=\\\"quiet when-comment-value\\\"\\u003E3 months ago\\u003C/span\\u003E\\n                  \\u003Cspan class=\\\"floatRight h-comment-actions hide\\\"\\u003E\\n                    \\u003Ca href=\\\"#\\\" class=\\\"ilink action-edit\\\" rel=\\\"nofollow\\\"\\u003Eedit\\u003C/a\\u003E\\n                    \\u003Ca href=\\\"#\\\" class=\\\"ilink action-delete\\\" rel=\\\"nofollow\\\"\\u003Edelete\\u003C/a\\u003E\\n                    \\u003Ca href=\\\"#\\\" class=\\\"ilink action-spam loggedin-only\\\" rel=\\\"nofollow\\\"\\u003Espam\\u003C/a\\u003E\\n                  \\u003C/span\\u003E\\n                  \\u003Cblockquote class=\\\"comment-item-value\\\"\\u003E\\n                    \\u003Cp\\u003EThis is a comment!\\u003C/p\\u003E\\n                  \\u003C/blockquote\\u003E\\n                  \\n                \\u003C/li\\u003E\",\"spam_url\":\"http://www.slideshare.net/comment/mark_spam\"},\"presentationId\":2606283};\n\
+      //--></script><script src=\"http://public.slidesharecdn.com/v3/scripts/combined.js?23757\"></script>\n\
+      <script id=\"page-load\" type=\"text/javascript\">\n\
+      // <![CDATA[\n\
+      var timer = (new Date()).getTime();\n\
+      // ]]>\n\
+      </script>\n\
+      <script id=\"ga-init\" type=\"text/javascript\">\n\
+      // <![CDATA[\n\
+      window._gaq = [];\n\
+      // ]]>\n\
+      </script>\n\
+      <script id=\"rails_environment\" type=\"text/javascript\">\n\
+      // <![CDATA[\n\
+      slideshare_object.deploy_environment = 'production';\n\
+      // ]]>\n\
+      </script>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
+      <title>Classifica\xC3\xA7\xC3\xA3o de textos - Dev in Sampa - 28nov2009</title>\n\
+      <link href=\"http://public.slidesharecdn.com/images/favicon.ico\" rel=\"Shortcut Icon\" />\n\
+      <meta name=\"title\" property=\"media:title\" content=\"Classifica\xC3\xA7\xC3\xA3o de textos - Dev in Sampa - 28nov2009\" />\n\
+      <meta name=\"description\" property=\"dc:description\" content=\"Jos\xC3\xA9 Valim talks in portuguese about Text Classification at Dev in Sampa 2009\" />\n\
+      <meta name=\"og_title\" property=\"og:title\" content=\"Classifica\xC3\xA7\xC3\xA3o de textos - Dev in Sampa - 28nov2009\" />\n\
+      <meta name=\"og_type\" property=\"og:type\" content=\"article\" />\n\
+      <meta name=\"og_url\" property=\"og:url\" content=\"http://www.slideshare.net/plataformatec/classificao-de-textos-dev-in-sampa-28nov2009\" />\n\
+      <meta name=\"og_image\" property=\"og:image\" content=\"http://cdn.slidesharecdn.com/devinsampa-2009mini-091129060000-phpapp01-thumbnail-2?1259496219\" />\n\
+      <meta name=\"og_site_name\" property=\"og:site_name\" content=\"SlideShare\" />\n\n\
+      <meta name=\"fb_app_id\" property=\"fb:app_id\" content=\"2490221586\" />\n\
+      <link href=\"http://cdn.slidesharecdn.com/devinsampa-2009mini-091129060000-phpapp01-thumbnail?1259496219\" rel=\"image_src\" />\n\
+      <link href=\"http://www.slideshare.net/plataformatec/classificao-de-textos-dev-in-sampa-28nov2009\" rel=\"canonical\" />\n\
+      <link href=\"/rss/latest\" title=\"RSS\" rel=\"alternate\" type=\"application/rss+xml\" />\n\
+      <link href=\"/search/opensearch.xml\" title=\"SlideShare Search\" rel=\"search\" type=\"application/opensearchdescription+xml\" />\n\
+      <link href=\"http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=devinsampa-2009mini-091129060000-phpapp01&amp;stripped_title=classificao-de-textos-dev-in-sampa-28nov2009\" name=\"media_presentation\" rel=\"media:presentation\" />\n\
+      <link href=\"http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=devinsampa-2009mini-091129060000-phpapp01&amp;stripped_title=classificao-de-textos-dev-in-sampa-28nov2009&amp;hostedIn=fb_feed\" name=\"video_src\" rel=\"video_src\" />\n\
+      <link href=\"http://www.slideshare.net/api/oembed/1?format=json&amp;url=http://www.slideshare.net/plataformatec/classificao-de-textos-dev-in-sampa-28nov2009\" title=\"Slideshow oEmbed Profile\" rel=\"alternate\" type=\"application/json+oembed\" />\n\
+      <link href=\"http://www.slideshare.net/api/oembed/1?format=xml&amp;url=http://www.slideshare.net/plataformatec/classificao-de-textos-dev-in-sampa-28nov2009\" title=\"Slideshow oEmbed Profile\" rel=\"alternate\" type=\"text/xml+oembed\" />\n\
+      <meta name=\"media_width\" property=\"media:width\" content=\"425\" />\n\
+      <meta name=\"media_height\" property=\"media:height\" content=\"355\" />\n\
+      <meta name=\"video_width\" content=\"425\" />\n\
+      <meta name=\"video_height\" content=\"355\" />\n\
+      <meta name=\"video_type\" content=\"application/x-shockwave-flash\" />\n\
+      <meta href=\"http://cdn.slidesharecdn.com/devinsampa-2009mini-091129060000-phpapp01-thumbnail?1259496219\" name=\"media_thumbnail\" rel=\"media:thumbnail\" />\n\
+      <meta name=\"dc_creator\" property=\"dc:creator\" content=\"Plataforma Tecnologia\" />\n\n\
+      </head>\n\
+      <body>\n\
+      <div id=\"fb-root\"></div>\n\
+      <script>\n\
+      window.fbAsyncInit = function() {\n\
+      FB.init({\n\
+      appId  : slideshare_object.facebook_app_id,\n\
+      status : true, // check login status\n\
+      cookie : true, // enable cookies to allow the server to access the session\n\
+      xfbml  : true  // parse XFBML\n\
+      });\n\
+      };\n\
+      (function() {\n\
+      var e = document.createElement('script');\n\
+      e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';\n\
+      e.async = true;\n\
+      document.getElementById('fb-root').appendChild(e);\n\
+      }());\n\
+      </script>\n\
+      <div class=\"admanager-section\"><script type=\"text/javascript\" src=\"http://partner.googleadservices.com/gampad/google_service.js\"></script>\r\n\
+      <script type=\"text/javascript\">\r\n\
+      GS_googleAddAdSenseService(\"ca-pub-5203428669823392\");\r\n\
+      GS_googleEnableAllServices();\r\n\
+      </script>\n\
+      <script type=\"text/javascript\">\n\
+      GA_googleAddAttr('cat', 'technology');\n\
+      GA_googleAddAttr('contest', 'none');\n\
+      GA_googleAddAttr('misc', 'presentation');\n\
+      </script>\n\n\
+      \r\n\
+      <script type=\"text/javascript\">\r\n\
+      GA_googleAddSlot(\"ca-pub-5203428669823392\", \"slideview_top_728_90\");\r\n\
+      </script>\r\n\n\n\
+      \r\n\
+      <script type=\"text/javascript\">\r\n  GA_googleAddSlot(\"ca-pub-5203428669823392\", \"slideview_sponsorship\"); \r\n\
+      </script>\r\n\n\n\
+      <!--\r\n\
+      \r\n\
+      <script type=\"text/javascript\">\r\n\
+      GA_googleAddSlot(\"ca-pub-5203428669823392\", \"slideview_bottom_300_250\");\r\n\
+      </script>\r\n\
+      \r\n\
+      -->\n\n\
+      <!--\r\n\
+      <script type=\"text/javascript\">\r\n  GA_googleAddSlot(\"ca-pub-5203428669823392\", \"slideview_link\");\r\n\
+      </script>\r\n\
+      -->\n\n\
+      <script type=\"text/javascript\">\r\n  GA_googleAddSlot(\"ca-pub-5203428669823392\", \"slideview_right_1\");\r\n\
+      </script>\n\n\
+      <script type=\"text/javascript\">\r\n  GA_googleAddSlot(\"ca-pub-5203428669823392\", \"slideview_bottom2\"); \r\n\
+      </script>\n\n\
+      <script type='text/javascript'>\r\n\
+      GA_googleAddSlot(\"ca-pub-5203428669823392\", \"slideview_below_transcript\");\r\n\
+      </script>\n\n\
+      <script type=\"text/javascript\">\r\n  GA_googleAddSlot(\"ca-pub-5203428669823392\", \"footer\");\r\n\
+      </script>\r\n\
+      \r\n\
+      <!--\r\n\
+      <script type='text/javascript'>\r\n\
+      GA_googleAddSlot(\"ca-pub-5203428669823392\", \"pixel_tracker\");\r\n\
+      </script>\r\n\
+      -->\n\n\
+      <script type=\"text/javascript\">\r\n  GA_googleAddSlot(\"ca-pub-5203428669823392\", \"slideview_mid_468x60\");\r\n\
+      </script>\n\n\
+      <script type=\"text/javascript\">GA_googleAddAdSensePageAttr(\"google_hints\", \"Classifica\\u00e7\\u00e3o de textos - Dev in Sampa - 28nov2009\");</script>\n\
+      <script type=\"text/javascript\">\r\n GA_googleUseSyncSRARendering();\r\n  GA_googleFetchAds();\r\n\
+      </script>\r\n\
+      \r\n\
+      \r\n\
+      <!--\r\n\
+      <script type=\"text/javascript\">  \r\n\
+      var google_adnum = 0;\r\n\
+      var random_number = Math.random();\r\n\
+      if (random_number < 0.55){ \r\n\
+      GA_googleAddAttr(\"ztag\", \"Web-1\");\r\n } else { GA_googleAddAttr(\"ztag\", \"Go-1\"); } \r\n\
+      </script>\r\n\
+      -->\n\
+      </div>\n\
+      <div class=\"container\">\n\
+      <div class=\"clearfix header-09\">\n\
+      <a href=\"/\" class=\"logo\" title=\"Go to SlideShare's homepage\" rel=\"nofollow\">SlideShare. Present yourself.</a>\n\
+      <ul class=\"mainNav\">\n\
+      <li class=\"nav_home\"><a href=\"/\" title=\"SlideShare homepage\">Home</a></li>\n\
+      <li class=\"nav_business\"><a href=\"/business/premium/plans?cmp_src=main_nav\" title=\"Upgrade to Slideshare Pro Accounts for Premium Features.\">Go Pro</a></li>\n\
+      <li class=\"nav_channels\"><a href=\"/pro_accounts\" title=\"Channels on SlideShare\">Channels</a></li>\n\
+      <li class=\"nav_zipcast\"><a href=\"/zipcast\" title=\"View zipcast activity\">Zipcast</a></li>\n\
+      <li class=\"nav_upload\"><strong><a href=\"/login?from=upload&from_source=/upload\" title=\"Upload your presentations and documents in PowerPoint, OpenOffice, Keynote or PDF format\">Upload</a></strong></li>\n\
+      </ul>\n\
+      <form class=\"headerSearch\" method=\"get\" action=\"/search/slideshow\">\n\
+      <fieldset>\n\
+      <span class=\"suggestionContainer\">\n\
+      <input name=\"q\" class=\"text\" id=\"search_query_top\" type=\"text\" value=\"\" autocomplete=\"off\" />\n\
+      </span>\n\
+      <input class=\"ctaStrong\" type=\"submit\" value=\"Search\" />\n\
+      </fieldset>\n\
+      </form>\n\
+      <div class=\"userNav\"><ul>\n\n\n  <li>\n    <img id=\"j-fb-topnav-indicator\" width=\"20\" height=\"20\" class=\"loading hide\" alt=\"Processing&hellip;\" src=\"http://public.slidesharecdn.com/images/loading.gif\" />\n    <a id=\"fb-login-topnav\" class=\"fb_button fb_button_small\" href=\"/newsfeed?from_source=/newsfeed\"><span class=\"fb_button_text\">Login</span></a>\n  </li>\n  <li><a href=\"/login\" class=\"void_fancybox\" rel=\"nofollow\">Login</a></li>\n  <li><strong><a href=\"/signup\" class=\"void_fancybox\" title=\"Signup now for a SlideShare account\" rel=\"nofollow\">Signup</a></strong></li>\n  <li><a href=\"http://pro.slideshare.net/advertise\" rel=\"nofollow\">Advertise</a></li>\n\n\
+      </ul>\n\n\n\n\n  \n  <script src=\"http://public.slidesharecdn.com/javascripts/ajax_signup.js?23757\" type=\"text/javascript\"></script>\n  \n\n\
+      </div>\n\
+      </div>\n\
+      <div class=\"leaderboard banner ad_top lostchild\" style=\"height:90px;margin:0 0 .75em;text-align:center;width:728px\"><div class=\"leaderboardContent\"><script type=\"text/javascript\">  \r\n\
+      GA_googleFillSlot(\"slideview_top_728_90\");\r\n\
+      </script></div></div>\n\n\n\n\n\n\
+      <!-- disable_ad_section_start(weight=1.0) -->\n\
+      <div class=\"mainTitle\">\n\
+      <h1 class=\"h-slideshow-title\">Classifica\xC3\xA7\xC3\xA3o de textos - Dev in Sampa - 28nov2009</h1>\n\
+      <span class=\"quieter when-uploaded-value\">2 years ago</span>\n\n\n\
+      </div>\n\
+      <!-- disable_ad_section_end() -->\n\
+      <div class=\"column1\">\n\
+      <ul class=\"slideviewActions h-tools\">\n\
+      <li class=\"last\" style=\"float:right;margin:0;text-align:right\"><span class=\"h-sponsorshiptool lostchild\">\r\n\
+      <script type=\"text/javascript\">\r\n  GA_googleFillSlot(\"slideview_sponsorship\");\r\n\
+      </script>\r\n\
+      </span></li>\n\
+      <li class=\"action-share public-only\"><a href=\"#\" title=\"Email this presentation to your contacts\" class=\"sprite iconShare j-tooltip\" rel=\"nofollow\">Email</a> </li>\n\
+      <li class=\"action-addfav public-only\"><a href=\"/signup?from=favorite&from_source=http%3A%2F%2Fwww.slideshare.net%2Fplataformatec%2Fclassificao-de-textos-dev-in-sampa-28nov2009\" title=\"Save to favorites\" class=\"sprite iconFavOff j-tooltip\" rel=\"nofollow\">Favorite</a> </li>\n\
+      <li class=\"action-fav public-only\" style=\"display:none\">\n\
+      <a href=\"#\" title=\"Saved to your favorites\" class=\"sprite iconFavOn j-tooltip\" rel=\"nofollow\">Favorited</a> <a href=\"#\" title=\"Remove from favorites\" class=\"ilink delete j-tooltip\" rel=\"nofollow\">&times;</a>\n\
+      </li>\n\n\
+      <li class=\"action-download\" style=\"\"><a href=\"/signup?from=download&from_source=http://www.slideshare.net/plataformatec/classificao-de-textos-dev-in-sampa-28nov2009/download&download_id=2606283-f5a2846803f28dc3ed1511c6f8dde160a57270cc-slideshow\" title=\"Download this presentation\" class=\"sprite iconDownload j-tooltip\" rel=\"nofollow\">Download</a> </li>\n\
+      <li class=\"action-embed h-action-embed\"><a href=\"#\" title=\"Embed this presentation\" class=\"sprite iconEmbed j-tooltip\" rel=\"nofollow\">Embed</a> </li>\n\n\
+      <li class=\"h-zipcast action-meetnow j-action-meetnow\"><a href='/login' title=\"Start a meeting\" class=\"sprite j-tooltip iconZipcast\" rel=\"nofollow\">Zipcast</a></li>\n\
+      <li class=\"action-addgrp public-only last\"><a href=\"/signup?from=AddToCommunity&from_source=http%3A%2F%2Fwww.slideshare.net%2Fplataformatec%2Fclassificao-de-textos-dev-in-sampa-28nov2009\" title=\"Add this presentation to a Group or Event\" class=\"sprite j-tooltip\" rel=\"nofollow\">More&hellip;</a></li>\n\
+      <li></li>\n\n\
+      <li class=\"expanded action-embed-code embedPanel h-embed-allow\" style=\"display:none\">\n\
+      <span class=\"embedPanelBasic\">\n\
+      <span class=\"hint\">Copy and paste this code into your blog or website </span>\n\
+      <input class=\"text quiet h-embed-code\" readonly=\"readonly\" id=\"embed-code\" type=\"text\" value=\"\" />\n\
+      <a href=\"#\" class=\"ctaNormal\" id=\"j-embed-copier\">Copy</a>\n\
+      <span class=\"success hint\" style=\"display:none\"></span>\n\
+      </span>\n\
+      <strong>\n\
+      <a href=\"#\" title=\"Customize embed code\" class=\"customizeLink h-action-customize\" rel=\"nofollow\">Customize</a>\n\
+      </strong>\n\
+      <span class=\"customizeEmbed\" id=\"h-customize-embed-section\" style=\"display:none\">\n\
+      <label for=\"embed-customize-withrel\">\n\
+      Without related content <input id=\"embed-customize-withrel\" type=\"checkbox\" />\n\
+      </label>\n\
+      <label for=\"embed-customize-slidenumber\">\n\
+      Start from slide number\n\
+      <!-- Start from page: -->\n\
+      <select id=\"embed-customize-slidenumber\">\n\
+      <option value=\"1\">1</option>\n\n\
+      <option value=\"2\">2</option>\n\n\
+      <option value=\"3\">3</option>\n\n\
+      <option value=\"4\">4</option>\n\n\
+      <option value=\"5\">5</option>\n\n\
+      <option value=\"6\">6</option>\n\n\
+      <option value=\"7\">7</option>\n\n\
+      <option value=\"8\">8</option>\n\n\
+      <option value=\"9\">9</option>\n\n\
+      <option value=\"10\">10</option>\n\n\
+      <option value=\"11\">11</option>\n\n\
+      <option value=\"12\">12</option>\n\n\
+      <option value=\"13\">13</option>\n\n\
+      <option value=\"14\">14</option>\n\n\
+      <option value=\"15\">15</option>\n\n\
+      <option value=\"16\">16</option>\n\n\
+      <option value=\"17\">17</option>\n\n\
+      <option value=\"18\">18</option>\n\n\
+      <option value=\"19\">19</option>\n\n\
+      <option value=\"20\">20</option>\n\n\
+      <option value=\"21\">21</option>\n\n\
+      <option value=\"22\">22</option>\n\n\
+      <option value=\"23\">23</option>\n\n\
+      <option value=\"24\">24</option>\n\n\
+      <option value=\"25\">25</option>\n\n\
+      <option value=\"26\">26</option>\n\n\
+      <option value=\"27\">27</option>\n\n\
+      <option value=\"28\">28</option>\n\n\
+      <option value=\"29\">29</option>\n\n\
+      <option value=\"30\">30</option>\n\n\
+      <option value=\"31\">31</option>\n\n\
+      <option value=\"32\">32</option>\n\n\
+      <option value=\"33\">33</option>\n\n\
+      <option value=\"34\">34</option>\n\n\
+      <option value=\"35\">35</option>\n\n\
+      <option value=\"36\">36</option>\n\n\
+      <option value=\"37\">37</option>\n\n\
+      <option value=\"38\">38</option>\n\n\
+      <option value=\"39\">39</option>\n\n\
+      <option value=\"40\">40</option>\n\n\
+      <option value=\"41\">41</option>\n\n\
+      <option value=\"42\">42</option>\n\n\
+      <option value=\"43\">43</option>\n\n\
+      <option value=\"44\">44</option>\n\n\
+      <option value=\"45\">45</option>\n\n\
+      <option value=\"46\">46</option>\n\n\
+      <option value=\"47\">47</option>\n\n\
+      <option value=\"48\">48</option>\n\n\
+      <option value=\"49\">49</option>\n\n\
+      <option value=\"50\">50</option>\n\n\
+      <option value=\"51\">51</option>\n\n\
+      <option value=\"52\">52</option>\n\n\
+      <option value=\"53\">53</option>\n\n\
+      <option value=\"54\">54</option>\n\n\
+      <option value=\"55\">55</option>\n\n\
+      <option value=\"56\">56</option>\n\n\
+      <option value=\"57\">57</option>\n\n\
+      <option value=\"58\">58</option>\n\n\
+      <option value=\"59\">59</option>\n\n\
+      <option value=\"60\">60</option>\n\n\
+      <option value=\"61\">61</option>\n\n\
+      <option value=\"62\">62</option>\n\n\
+      <option value=\"63\">63</option>\n\n\
+      <option value=\"64\">64</option>\n\n\
+      <option value=\"65\">65</option>\n\n\
+      <option value=\"66\">66</option>\n\n\
+      <option value=\"67\">67</option>\n\n\
+      <option value=\"68\">68</option>\n\n\
+      <option value=\"69\">69</option>\n\n\
+      <option value=\"70\">70</option>\n\n\
+      <option value=\"71\">71</option>\n\n\
+      <option value=\"72\">72</option>\n\n\
+      <option value=\"73\">73</option>\n\n\
+      <option value=\"74\">74</option>\n\n\
+      <option value=\"75\">75</option>\n\n\
+      <option value=\"76\">76</option>\n\n\
+      <option value=\"77\">77</option>\n\n\
+      <option value=\"78\">78</option>\n\n\
+      <option value=\"79\">79</option>\n\n\
+      <option value=\"80\">80</option>\n\n\
+      <option value=\"81\">81</option>\n\n\
+      <option value=\"82\">82</option>\n\n\
+      <option value=\"83\">83</option>\n\n\
+      <option value=\"84\">84</option>\n\n\
+      <option value=\"85\">85</option>\n\n\
+      <option value=\"86\">86</option>\n\n\
+      <option value=\"87\">87</option>\n\n\
+      <option value=\"88\">88</option>\n\n\
+      <option value=\"89\">89</option>\n\n\
+      <option value=\"90\">90</option>\n\n\
+      <option value=\"91\">91</option>\n\n\
+      <option value=\"92\">92</option>\n\n\
+      <option value=\"93\">93</option>\n\n\
+      <option value=\"94\">94</option>\n\n\
+      <option value=\"95\">95</option>\n\n\
+      <option value=\"96\">96</option>\n\n\
+      <option value=\"97\">97</option>\n\n\
+      <option value=\"98\">98</option>\n\n\
+      <option value=\"99\">99</option>\n\n\
+      <option value=\"100\">100</option>\n\n\
+      <option value=\"101\">101</option>\n\n\
+      <option value=\"102\">102</option>\n\n\
+      <option value=\"103\">103</option>\n\n\
+      <option value=\"104\">104</option>\n\n\
+      <option value=\"105\">105</option>\n\n\
+      <option value=\"106\">106</option>\n\n\
+      <option value=\"107\">107</option>\n\n\
+      <option value=\"108\">108</option>\n\n\
+      <option value=\"109\">109</option>\n\n\
+      <option value=\"110\">110</option>\n\n\
+      <option value=\"111\">111</option>\n\n\
+      <option value=\"112\">112</option>\n\n\
+      <option value=\"113\">113</option>\n\n\
+      <option value=\"114\">114</option>\n\n\
+      <option value=\"115\">115</option>\n\n\
+      <option value=\"116\">116</option>\n\n\
+      <option value=\"117\">117</option>\n\n\
+      <option value=\"118\">118</option>\n\n\
+      <option value=\"119\">119</option>\n\n\
+      <option value=\"120\">120</option>\n\n\
+      <option value=\"121\">121</option>\n\n\
+      <option value=\"122\">122</option>\n\n\
+      <option value=\"123\">123</option>\n\n\
+      <option value=\"124\">124</option>\n\n\
+      <option value=\"125\">125</option>\n\n\
+      <option value=\"126\">126</option>\n\n\
+      <option value=\"127\">127</option>\n\n\
+      <option value=\"128\">128</option>\n\n\
+      <option value=\"129\">129</option>\n\n\
+      <option value=\"130\">130</option>\n\n\
+      <option value=\"131\">131</option>\n\n\
+      <option value=\"132\">132</option>\n\n\
+      <option value=\"133\">133</option>\n\n\
+      <option value=\"134\">134</option>\n\n\
+      <option value=\"135\">135</option>\n\n\
+      <option value=\"136\">136</option>\n\n\
+      <option value=\"137\">137</option>\n\n\
+      <option value=\"138\">138</option>\n\n\
+      <option value=\"139\">139</option>\n\n\
+      <option value=\"140\">140</option>\n\n\
+      <option value=\"141\">141</option>\n\n\
+      <option value=\"142\">142</option>\n\n\
+      <option value=\"143\">143</option>\n\n\
+      <option value=\"144\">144</option>\n\n\
+      <option value=\"145\">145</option>\n\n\
+      <option value=\"146\">146</option>\n\n\
+      <option value=\"147\">147</option>\n\n\
+      <option value=\"148\">148</option>\n\n\
+      <option value=\"149\">149</option>\n\n\
+      <option value=\"150\">150</option>\n\n\
+      <option value=\"151\">151</option>\n\n\
+      <option value=\"152\">152</option>\n\n\
+      <option value=\"153\">153</option>\n\n\
+      <option value=\"154\">154</option>\n\n\
+      <option value=\"155\">155</option>\n\
+      </select>\n\
+      </label>\n\
+      <label class=\"embedSizeTitle\">Size (px)</label>\n\
+      <span class=\"j-embed-size embedSizeCustomizer\">\n\
+      <a href=\"#\" class=\"j-embed-preset-template embedSizeBlock\">\n\
+      <span class=\"j-embed-desc embedSizeDescription\">460 x 349</span>\n\
+      <span class=\"j-embed-display embedSizeDisplay\">\n\
+      </span>\n\
+      </a>\n\
+      </span>\n\
+      <span class=\"wp\">\n\
+      <label>Embed code for WordPress.com blogs </label>\n\
+      <input name=\"embed-code\" class=\"text quiet h-wpembedcode\" readonly=\"readonly\" id=\"embedCodeWP\" type=\"text\" value=\"\" />\n\
+      <a href=\"#\" class=\"ctaNormal\" id=\"j-wp-copier\">Copy</a>\n\
+      <span class=\"success hint\" id=\"j-wp-msg\" style=\"display:none\"></span>\n\
+      </span>\n\
+      </span>\n\
+      <br /><br />\n\
+      <a href=\"#\" class=\"ilink cancel\" rel=\"nofollow\">Close</a>\n\
+      </li>\n\n\n\
+      <li class=\"expanded action-unverified-download public-only\" style=\"display:none\">\n\
+      <p>\n\
+      We have emailed the verification/download link to <strong>\"<span class=\"user-email\"></span>\"</strong>.\n\
+      <br />\n\
+      Login to your email and click the link to download the file directly.\n\
+      </p>\n\
+      <form class=\"changeEmail change-unverified-email\">\n\
+      <fieldset>\n\
+      <legend>To request the link at a different email address, update it here.</legend>\n\
+      <input name=\"unverified-email\" class=\"text unverified-email\" value=\"\" />\n\
+      <input class=\"submit\" type=\"submit\" value=\"Update\" />\n\
+      <a href=\"#\" class=\"ilink cancel\" rel=\"nofollow\">Close</a><br />\n\
+      <span class=\"change-unverified-email-validate\" style=\"display:none\">Validation messages.</span>\n\
+      <span class=\"change-unverified-email-win\" style=\"display:none;color:#0A0\">Success message.</span>\n\
+      <span class=\"change-unverified-email-fail\" style=\"display:none;color:#A00\">Fail message.</span>\n\
+      </fieldset>\n\
+      </form>\n\
+      <p style=\"margin:0\"><span class=\"hint\">Check your bulk/spam folders if you can't find our mail.</span></p>\n\
+      </li>\n\
+      <li class=\"expandedOverlay action-meetnow-interaction\" style=\"display:none\">\n\
+      <div class=\"h-meeting-partial meeting\"><input class=\"ctaNormal meetNowButton\" type=\"button\" value=\".\"/>\n\
+      <img alt=\"Loading&hellip;\" class=\"waitSpin\" height=\"5\" src=\"http://public.slidesharecdn.com/images/indicator.gif?23757\" style=\"display:none\" width=\"21\" />\n\
+      <div class=\"startMeeting\" style=\"display:none\"></div></div>\n\
+      <a href=\"#\" class=\"ilink cancel\" rel=\"nofollow\" style=\"display:none\">Close</a>\n\
+      </li>\n\
+      </ul>\n\n\
+      <div class=\"playerWrapper\">\n\
+      <div class=\"player\" id=\"svPlayerId\">\n\
+      <p id=\"placeholder\">\n\
+      Loading&hellip;\n\
+      </p>\n\
+      <p id=\"noflash\">\n\
+      Flash Player 9 (or above) is needed to view presentations. <br />We have detected that you do not have it on your computer. To install it, go <a href=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\" title=\"Install Adobe Flash Player\" rel=\"nofollow\">here</a>.\n\
+      </p>\n\
+      </div>\n\
+      <div class=\"playerAd h-player-banner lostchild noAdForLead\" style=\"display:none;\">\n\
+      <a href=\"#\" class=\"closeThis\">&times;</a>\n\
+      <div class=\"h-mid-banner-content\"><script type=\"text/javascript\"> \r\n\
+      GA_googleFillSlot(\"slideview_mid_468x60\"); \r\n\
+      </script></div>\n\
+      </div>\n\
+      </div>\n\
+      <script type=\"text/javascript\">\n\
+      // <![CDATA[\n\
+      (function(ele) {\n\
+      var sessionid = null;\n\
+      if (document.cookie) try {\n\
+      sessionid = encodeURIComponent(document.cookie.match(/_cookie_id=([^;]*)/)[1]);\n\
+      } catch (e) {\n\
+      //\n\
+      }\n\
+      var flashversion=deconcept.SWFObjectUtil.getPlayerVersion().major;\n\
+      if (flashversion<9) {\n\
+      document.getElementById('placeholder').style.display = 'none';\n\
+      document.getElementById('noflash').style.display = 'block';\n\
+      } else {\n\
+      if(slideshare_object.player.url.match(/^http:\\/\\/s3.amazonaws.com\\/ppt-download\\//)){\n\
+      html = '<embed width=\"598\" height=\"481\" quality=\"high\" bgcolor=\"#FFFFFF\" name=\"player\" id=\"player\"\\\n\
+      src=\"'+slideshare_object.player.url+'\" type=\"application/pdf\"/>';\n\
+      if (jQuery.browser.msie && ((jQuery.browser.version * 1) < 7)) {\n\
+      jQuery('#noflash').hide();\n\
+      jQuery('#svPlayerId').css('background', 'url(http://public.slidesharecdn.com/images/loading.gif) no-repeat center');\n\
+      jQuery(document).ready(function() { $(ele).html(html); });\n\
+      } else {\n\
+      $(ele).html(html);\n\
+      }\n\
+      } else {\n\
+      var so = new SWFObject(slideshare_object.player.url, \"player\", slideshare_object.player.width, slideshare_object.player.height, slideshare_object.player.version, slideshare_object.player.color, slideshare_object.player.no_type_info);\n\
+      so.addVariable('sessid', sessionid);\n\
+      so.addVariable('pvt', slideshare_object.pvt);\n\
+      if (slideshare_object.key) so.addVariable('key', slideshare_object.key);\n\
+      so.addVariable('doc', slideshare_object.doc);\n\
+      so.addVariable('version_no', slideshare_object.version_no);\n\
+      so.addVariable('presentationId', slideshare_object.presentationId);\n\
+      so.addVariable('totalSlides', slideshare_object.totalSlides);\n\
+      so.addVariable('startSlide', slideshare_object.startSlide);\n\
+      so.addVariable('inContest', slideshare_object.inContest);\n\
+      so.addVariable('totalSlides', slideshare_object.totalSlides);\n\
+      so.addVariable('startSlide', slideshare_object.startSlide);\n\
+      so.addVariable('presentationId', slideshare_object.presentationId);\n\
+      so.addVariable('preview', slideshare_object.preview);\n\
+      so.addVariable('fullscreen_bg_color' , slideshare_object.slideshow.fullscreen_bg_color);\n\
+      so.addVariable('stitle', slideshare_object.stripped_title);  // for secret preso's\n\
+      so.addVariable('userName', slideshare_object.slideshow.user_login);\n\
+      so.addVariable('has_form', (slideshare_object.slideshow.form_after_slide_number && 1));\n\
+      so.addVariable('form_after_slide_number', slideshare_object.slideshow.form_after_slide_number);\n\
+      so.addVariable('form_is_blocking', slideshare_object.slideshow.form_is_blocking);\n\
+      so.addVariable('hostedIn' , 'slideshare');\n\
+      so.addVariable('page' , 'slideview');\n\
+      so.addVariable('useHttp', '1');\n\
+      so.addVariable('rel', slideshare_object.slideshow.show_related_content);\n\
+      so.addVariable('autoplay', '1');\n\
+      so.addVariable('isAudio', slideshare_object.slideshow.is_audio ? '1' : '0');\n\
+      so.addParam(\"allowScriptAccess\", 'always');\n\
+      so.addParam(\"wmode\", 'transparent');\n\
+      so.addParam(\"allowFullScreen\", 'true');\n\
+      if (jQuery.browser.msie && ((jQuery.browser.version * 1) < 7)) {\n\
+      jQuery('#noflash').hide();\n\
+      jQuery('#svPlayerId').css('background', 'url(http://public.slidesharecdn.com/images/loading.gif) no-repeat center');\n\
+      jQuery(document).ready(function() { so.write(ele); });\n\
+      } else {\n\
+      so.write(ele);\n\
+      }\n\
+      }\n\
+      ele.style.height = slideshare_object.player.height + 'px';\n\
+      ele.style.width  = slideshare_object.player.width  + 'px';\n\
+      $(ele).parent().height(slideshare_object.player.height + 'px')\n\
+      $(ele).parent().width(slideshare_object.player.width  + 'px');\n\
+      if(slideshare_object.player.url.match(/^http:\\/\\/s3.amazonaws.com\\/ppt-download\\//)){\n\
+      $(ele).prepend(\"<div style='margin-left:10px; margin-right: 10px; padding-top:5px;'>This presentation is best viewed in Safari on Apple computers. Due to the file size, please be patient while it loads.<br />This is an Adobe&reg; Acrobat&reg; 9 PDF Portfolio. If you are unable to view this, please download Adobe Acrobat 9 Reader here <a href='http://ad.doubleclick.net/clk;216811595;39562291;o?http://get.adobe.com/reader/?sdid=EVMYF' >http://get.adobe.com/reader</a></div>\");\n\
+      window.setInterval(\"$('#svPlayerId div').remove()\",20000);\n\
+      }\n\
+      }\n\
+      })(document.getElementById('svPlayerId'));\n\
+      // ]]>\n\
+      </script>\n\n\n\
+      <div class=\"clearfix FBlike public-only\">\n\
+      <h2>Like this presentation?</h2>\n\
+      <iframe scrolling=\"no\" class=\"h-fb-like\" allowtransparency=\"true\" src=\"http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.slideshare.net%2Fplataformatec%2Fclassificao-de-textos-dev-in-sampa-28nov2009&amp;layout=standard&amp;show_faces=false&amp;width=340&amp;action=like&amp;colorscheme=light\" frameborder=\"0\" style=\"border:0;float:left;height:25px;margin:0;overflow:hidden;width:390px\"></iframe>\n\
+      </div>\n\
+      <div class=\"tabsContainer tabbox horzTabs\" id=\"commentsNotes\">\n\
+      <div class=\"commentsTab tab selected comments-tab h-comments-tab\">\n\
+      <h2 class=\"comment-value\"><a href=\"#commentsList\" rel=\"nofollow\"><span class=\"comments-total\">No comments yet</span></a></h2>\n\
+      <div class=\"tabContent\" id=\"commentsList\">\n\n\
+      <ul class=\"comments h-comments-list\"></ul>\n\n\n\
+      <form class=\"postComment h-comment-post\" method=\"post\" action=\"#\" id=\"postComment\" accept-charset=\"utf-8\">\n\
+      <fieldset>\n\
+      <div id=\"loginOptions\">\n\
+      <div id=\"my_identity\"></div>\n\
+      </div>\n\
+      <textarea class=\"h-post-comment-textarea j-post-comment-textarea\" rows=\"4\" cols=\"40\"></textarea>\n\
+      <div class=\"h-non-user-message\">\n\
+      <div>\n\
+      <a href=\"#\" title=\"Just include the embed code in the comment. We support embeds from Youtube, Google Videos, BlipTV, Metacafe, Viddler, Yahoo Videos and several other approved sites only.\" class=\"ilink floatLeft j-tooltip\" rel=\"nofollow\">Embed Video</a>\n\
+      <span class=\"floatRight\">\n\
+      <label class=\"comments-subscribe\" for=\"followupComments\">\n\
+      <input name=\"\" id=\"followupComments\" type=\"checkbox\" value=\"\" />\n\
+      Subscribe to comments\n\
+      </label>\n\
+      </span>\n\
+      </div>\n\
+      <a href=\"/signup?from=comments&from_source=http%3A%2F%2Fwww.slideshare.net%2Fplataformatec%2Fclassificao-de-textos-dev-in-sampa-28nov2009\" class=\"ctaNormal floatRight\" rel=\"nofollow\" id=\"login-provider-slideshare\">Post Comment</a>\n\
+      </div>\n\n\
+      </fieldset>\n\
+      </form>\n\
+      <div class=\"captchaSection captcha anon-only\" id=\"simple_captcha\" style=\"display:none\">\n\
+      </div>\n\
+      <form class=\"updateComment update-form\" method=\"post\" action=\"#\" accept-charset=\"utf-8\">\n\
+      <fieldset>\n\
+      <legend>Edit your comment</legend>\n\
+      <textarea rows=\"4\" cols=\"40\"></textarea>\n\
+      <input class=\"bold floatRight action-update\" type=\"submit\" value=\"Update\" />\n\
+      <a href=\"#\" class=\"ilink floatRight action-cancel\" rel=\"nofollow\">Cancel</a>\n\
+      </fieldset>\n\
+      </form>\n\
+      </div>\n\
+      </div>\n\
+      <div class=\"notesTab tab notes-tab\">\n\
+      <h2><a href=\"#notesList\" rel=\"nofollow\">Speaker Notes on slide <span class=\"which-slide-value\">1</span></a></h2>\n\
+      <div class=\"tabContent h-notes\" id=\"notesList\">\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\n\
+      <p class=\"slide-notes\"></p>\n\
+      </div>\n\
+      </div>\n\
+      </div>\n\
+      <div class=\"clearfix medRecBottom2\">\n\
+      <div class=\"slideview_bottom2_fill\"><script type=\"text/javascript\">\r\n GA_googleFillSlot(\"slideview_bottom2\"); \r\n\
+      </script></div>\n\n\
+      </div><!-- .medRecBottom2 -->\n\
+      <div class=\"tabsContainer tabbox horzTabs\" id=\"favsGroupsEvents\">\n\
+      <div class=\"favsTab selected tab\">\n\
+      <h2><a href=\"#favsList\" class=\"h-favorites-title\" rel=\"nofollow\">10 Favorites</a></h2>\n\
+      <div class=\"tabContent\" id=\"favsList\">\n\
+      <ul class=\"favsGroups h-favorites-list\">\n\
+      <li>\n\
+      <strong><a href=\"/jtadeulopes\" title=\"jtadeulopes\" class=\"fn url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"jtadeulopes\" original=\"http://cdn.slidesharecdn.com/profile-photo-jtadeulopes?1274665721\" /><span class=\"h-username\">J\xC3\xA9sus Lopes</span></a></strong>\n\
+      <span class=\"h-occupation\">, Software Developer </span><span class=\"org h-organization\"> at Zigotto, </span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>7 months ago</span></span>\n\
+      <div class=\"h-tags\">Tags <strong><a href='/tag/machine-learning' rel='nofollow'>machine learning</a></strong></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/heltonfernandes\" title=\"heltonfernandes\" class=\"nickname url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"heltonfernandes\" original=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" /><span class=\"h-username\">heltonfernandes</span></a></strong>\n\
+      <span class=\"h-occupation\"></span><span class=\"org h-organization\"></span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>8 months ago</span></span>\n\
+      <div class=\"h-tags\"></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/pescara49\" title=\"pescara49\" class=\"nickname url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"pescara49\" original=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" /><span class=\"h-username\">pescara49</span></a></strong>\n\
+      <span class=\"h-occupation\"></span><span class=\"org h-organization\"></span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>2 years ago</span></span>\n\
+      <div class=\"h-tags\"></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/brunofms\" title=\"brunofms\" class=\"fn url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"brunofms\" original=\"http://cdn.slidesharecdn.com/profile-photo-brunofms?1291057491\" /><span class=\"h-username\">Bruno Souza</span></a></strong>\n\
+      <span class=\"h-occupation\"></span><span class=\"org h-organization\"></span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>2 years ago</span></span>\n\
+      <div class=\"h-tags\">Tags <strong><a href='/tag/machine-leaning' rel='nofollow'>machine leaning</a></strong> <strong><a href='/tag/text-classification' rel='nofollow'>text classification</a></strong></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/bernardolm\" title=\"bernardolm\" class=\"nickname url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"bernardolm\" original=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" /><span class=\"h-username\">bernardolm</span></a></strong>\n\
+      <span class=\"h-occupation\"></span><span class=\"org h-organization\"></span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>2 years ago</span></span>\n\
+      <div class=\"h-tags\"></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/mestrecapablanca\" title=\"mestrecapablanca\" class=\"fn url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"mestrecapablanca\" original=\"http://cdn.slidesharecdn.com/profile-photo-mestrecapablanca?1271619821\" /><span class=\"h-username\">Rodrigo Ribeiro</span></a></strong>\n\
+      <span class=\"h-occupation\">, Programmer Analyst </span><span class=\"org h-organization\"> at Voice Technology, </span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>2 years ago</span></span>\n\
+      <div class=\"h-tags\">Tags <strong><a href='/tag/devinsampa09-ruby' rel='nofollow'>devinsampa09 ruby</a></strong></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/adolfosousa\" title=\"adolfosousa\" class=\"nickname url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"adolfosousa\" original=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" /><span class=\"h-username\">adolfosousa</span></a></strong>\n\
+      <span class=\"h-occupation\"></span><span class=\"org h-organization\"></span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>2 years ago</span></span>\n\
+      <div class=\"h-tags\"></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/rtopitt\" title=\"rtopitt\" class=\"nickname url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"rtopitt\" original=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" /><span class=\"h-username\">rtopitt</span></a></strong>\n\
+      <span class=\"h-occupation\"></span><span class=\"org h-organization\"></span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>2 years ago</span></span>\n\
+      <div class=\"h-tags\"></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/dirs\" title=\"dirs\" class=\"nickname url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"dirs\" original=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" /><span class=\"h-username\">dirs</span></a></strong>\n\
+      <span class=\"h-occupation\"></span><span class=\"org h-organization\"></span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>2 years ago</span></span>\n\
+      <div class=\"h-tags\"></div>\n\
+      </li>\n\n\
+      <li>\n\
+      <strong><a href=\"/mauriciomaia\" title=\"mauriciomaia\" class=\"fn url userimage-link\" rel=\"nofollow\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"mauriciomaia\" original=\"http://cdn.slidesharecdn.com/profile-photo-mauriciomaia?1282575679\" /><span class=\"h-username\">Maur\xC3\xADcio Maia</span></a></strong>\n\
+      <span class=\"h-occupation\">, Web Developer </span><span class=\"org h-organization\"> at anywhere, </span>\n\
+      <span class=\"quiet h-summary\"><span class='when-fav-value'>2 years ago</span></span>\n\
+      <div class=\"h-tags\"></div>\n\
+      </li>\n\
+      </ul>\n\
+      <div class=\"viewMore action-morefavs\" style=\"display:none\"><a href=\"#\" class=\"ilink\" rel=\"nofollow\">more</a></div>\n\
+      </div>\n\
+      </div>\n\n\
+      <!-- downloader list starts here -->\n\n\
+      <!-- downloader list ends here -->\n\
+      </div>\n\
+      <div class=\"slideshow-transcript\">\n\
+      <a rel=\"nofollow\" id=\"text-version\"></a>\n\
+      <h2 class=\"h-slideshow-title\">Classifica\xC3\xA7\xC3\xA3o de textos - Dev in Sampa - 28nov2009 - Presentation Transcript</h2>\n\
+      <!-- disable_ad_section_start(weight=0.5) -->\n\
+      <ol class=\"transcripts h-transcripts\"><li>T\xC3\xB3picos de machine learning\n\
+      Classi\xEF\xAC\x81ca\xC3\xA7\xC3\xA3o de textos\n\n\n\n\n                                    @josevalim\n               http://blog.plataformatec.com.br\n </li><li>Quem sou eu?\n </li><li>Mestrado na It\xC3\xA1lia com tese em\n    classifica\xC3\xA7\xC3\xA3o de textos\n </li><li>Desenvolvedor Ruby a mais de\n 3 anos, contribuidor ativo do\n           Rails Core\n </li><li>Motiva\xC3\xA7\xC3\xA3o\n </li><li>Nas \xC3\xBAltimas d\xC3\xA9cadas, a rob\xC3\xB3tica\n\
+      desbravou a vis\xC3\xA3o computacional.\n    O que v\xC3\xAAm em seguida?\n </li><li>Em 2006, o Google indexou mais\n de 25 bilh\xC3\xB5es de documentos\n </li><li>95% de todos os e-mails\n  enviados s\xC3\xA3o spams\n </li><li>O que \xC3\xA9 classifica\xC3\xA7\xC3\xA3o de texto?\n </li><li>\xC3\x89 a assinala\xC3\xA7\xC3\xA3o de forma\n\
+      autom\xC3\xA1tica de um documento a\n   um pr\xC3\xA9-definido grupo de\n    classes baseada em seu\n           conte\xC3\xBAdo\n </li><li>Conte\xC3\xBAdo\n\n\n\
+      \xE2\x80\xA2 Pr\xC3\xA9-processamento\n\
+      \xE2\x80\xA2 Classificadores\n\
+      \xE2\x80\xA2 Medidas\n </li><li>Conte\xC3\xBAdo\n\n\n\
+      \xE2\x80\xA2 Pr\xC3\xA9-processamento\n  - Remo\xC3\xA7\xC3\xA3o de stop words\n  - Representa\xC3\xA7\xC3\xA3o\n  - Stemming\n  - Pesagem\n\
+      \xE2\x80\xA2 Classificadores\n\
+      \xE2\x80\xA2 Medidas\n </li><li>Remo\xC3\xA7\xC3\xA3o de stop words\n </li><li>Stop words s\xC3\xA3o palavras em um\n\
+      texto desprovidas de sem\xC3\xA2ntica\n </li><li>Assunto: Especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es do\n\
+      protocolo http\n\n\
+      Eu preciso das especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es,\n\
+      ou pelo menos, uma\n\
+      interpreta\xC3\xA7\xC3\xA3o verbosa das\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es do protocolo\n\
+      http. Artigos t\xC3\xA9cnicos ou\n\
+      refer\xC3\xAAncia a livros tamb\xC3\xA9m\n\
+      seriam de grande ajuda.\n </li><li>Assunto: Especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es do\n\
+      protocolo http\n\n\
+      Eu preciso das especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es,\n\
+      ou pelo menos, uma\n\
+      interpreta\xC3\xA7\xC3\xA3o verbosa das\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es do protocolo\n\
+      http. Artigos t\xC3\xA9cnicos ou\n\
+      refer\xC3\xAAncia a livros tamb\xC3\xA9m\n\
+      seriam de grande ajuda.\n </li><li>Assunto: Especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es do\n\
+      protocolo http                  especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http\n\n\
+      Eu preciso das especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es,   preciso especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es pelo\n\
+      ou pelo menos, uma              menos interpreta\xC3\xA7\xC3\xA3o verbosa\n\
+      interpreta\xC3\xA7\xC3\xA3o verbosa das       especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es do protocolo      artigos t\xC3\xA9cnicos refer\xC3\xAAncia\n\
+      http. Artigos t\xC3\xA9cnicos ou       livros tamb\xC3\xA9m seriam grande\n\
+      refer\xC3\xAAncia a livros tamb\xC3\xA9m      ajuda\n\
+      seriam de grande ajuda.\n </li><li>Representa\xC3\xA7\xC3\xA3o\n </li><li>A representa\xC3\xA7\xC3\xA3o mais comum \xC3\xA9\n  em saco de palavras (bag of\n           words)\n </li><li>especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http\n\n\
+      preciso especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es pelo\n\
+      menos interpreta\xC3\xA7\xC3\xA3o verbosa\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http\n\
+      artigos t\xC3\xA9cnicos refer\xC3\xAAncia\n\
+      livros tamb\xC3\xA9m seriam grande\n\
+      ajuda\n </li><li>especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http   Palavra   Peso\n\
+      preciso especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es pelo\n\
+      menos interpreta\xC3\xA7\xC3\xA3o verbosa\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http\n\
+      artigos t\xC3\xA9cnicos refer\xC3\xAAncia\n\
+      livros tamb\xC3\xA9m seriam grande\n\
+      ajuda\n </li><li>especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http      Palavra      Peso\n\
+      preciso especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es pelo     especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n\
+      menos interpreta\xC3\xA7\xC3\xA3o verbosa\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http\n\
+      artigos t\xC3\xA9cnicos refer\xC3\xAAncia\n\
+      livros tamb\xC3\xA9m seriam grande\n\
+      ajuda\n </li><li>especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http      Palavra      Peso\n\
+      preciso especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es pelo     especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n\
+      menos interpreta\xC3\xA7\xC3\xA3o verbosa      protocolo      2\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http\n\
+      artigos t\xC3\xA9cnicos refer\xC3\xAAncia\n\
+      livros tamb\xC3\xA9m seriam grande\n\
+      ajuda\n </li><li>especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http      Palavra      Peso\n\
+      preciso especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es pelo     especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n\
+      menos interpreta\xC3\xA7\xC3\xA3o verbosa      protocolo      2\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http   interpreta\xC3\xA7\xC3\xA3o    1\n\
+      artigos t\xC3\xA9cnicos refer\xC3\xAAncia\n\
+      livros tamb\xC3\xA9m seriam grande\n\
+      ajuda\n </li><li>especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http      Palavra      Peso\n\
+      preciso especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es pelo     especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n\
+      menos interpreta\xC3\xA7\xC3\xA3o verbosa      protocolo      2\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http   interpreta\xC3\xA7\xC3\xA3o    1\n\
+      artigos t\xC3\xA9cnicos refer\xC3\xAAncia       artigos       1\n\
+      livros tamb\xC3\xA9m seriam grande\n\
+      ajuda\n </li><li>especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http      Palavra      Peso\n\
+      preciso especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es pelo     especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n\
+      menos interpreta\xC3\xA7\xC3\xA3o verbosa      protocolo      2\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es protocolo http   interpreta\xC3\xA7\xC3\xA3o    1\n\
+      artigos t\xC3\xA9cnicos refer\xC3\xAAncia       artigos       1\n\
+      livros tamb\xC3\xA9m seriam grande\n\
+      ajuda                              ajuda        1\n </li><li>Stemming\n </li><li>Stemming mapeia cada termo\n\
+      de um documento para sua raiz\n        (morfol\xC3\xB3gica)\n </li><li>andei, andou, andamos\n </li><li>andei, andou, andamos =&gt; andar\n </li><li>Pesagem\n </li><li>Pesagem por frequ\xC3\xAAncia\n </li><li>Palavra      Peso\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n  protocolo      2\n\
+      interpreta\xC3\xA7\xC3\xA3o    1\n   artigos       1\n    ajuda        1\n </li><li>Pesagem por TF-IDF\n </li><li>Pesagem por TF-IDF\n </li><li>Pesagem por TF-IDF\n </li><li>Pesagem por TF-IDF\n\n\
+      Term frequency\n </li><li>Pesagem por TF-IDF\n\n\
+      Term frequency\n\n   Palavra      Peso\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n  protocolo      2\n\
+      interpreta\xC3\xA7\xC3\xA3o    1\n   artigos       1\n    ajuda        1\n </li><li>Pesagem por TF-IDF\n\n\
+      Term frequency         *\n\n   Palavra      Peso\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n  protocolo      2\n\
+      interpreta\xC3\xA7\xC3\xA3o    1\n   artigos       1\n    ajuda        1\n </li><li>Pesagem por TF-IDF\n\n\
+      Term frequency         *\n\n   Palavra      Peso\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n  protocolo      2\n\
+      interpreta\xC3\xA7\xC3\xA3o    1\n   artigos       1\n    ajuda        1\n </li><li>Pesagem por TF-IDF\n\n                           Inverse document\n\
+      Term frequency         *\n                               frequency\n   Palavra      Peso\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n  protocolo      2\n\
+      interpreta\xC3\xA7\xC3\xA3o    1\n   artigos       1\n    ajuda        1\n </li><li>Pesagem por TF-IDF\n\n                              Inverse document\n\
+      Term frequency         *\n                                  frequency\n   Palavra      Peso\n\
+      especi\xEF\xAC\x81ca\xC3\xA7\xC3\xB5es    3\n  protocolo      2\n                           idf(tk) = log |N / df(tk)|\n\
+      interpreta\xC3\xA7\xC3\xA3o    1\n   artigos       1\n    ajuda        1\n </li><li>Conte\xC3\xBAdo\n\n\n\
+      \xE2\x80\xA2 Pr\xC3\xA9-processamento\n  - Remo\xC3\xA7\xC3\xA3o de stop words\n  - Representa\xC3\xA7\xC3\xA3o\n  - Stemming\n  - Pesagem\n\
+      \xE2\x80\xA2 Classificadores\n\
+      \xE2\x80\xA2 Medidas\n </li><li>Conte\xC3\xBAdo\n\n\n\
+      \xE2\x80\xA2 Pr\xC3\xA9-processamento\n\
+      \xE2\x80\xA2 Classificadores\n  - Naive bayes\n  - k nearest neighbors\n  - Rocchio classifier\n  - Support vector machines\n\
+      \xE2\x80\xA2 Medidas\n </li><li>Naive Bayes\n </li><li>Modelo mat\xC3\xA9matico simples\n </li><li>Baseado no Teorema de Bayes\n </li><li>P(ci|dj)\n </li><li>P(ci|dj) =\n </li><li>P(ci|dj) = P(ci)\n </li><li>P(ci|dj) = P(ci) *\n </li><li>P(ci|dj) = P(ci) * P(dj|ci)\n </li><li>P(ci|dj) = P(ci) * P(dj|ci) / P(dj)\n </li><li>Exemplo: duas classes, cinco\n  documentos de exemplo\n </li><li>Document                    Class\n\
+      Ruby is a dynamic language              Language\n\
+      Ruby has color between pink and red     Gemstone\n\
+      Gems is a ruby packaging system         Language\n\
+      Ruby is one of the four precious gems   Gemstone\n\
+      The Ruby language was born in Japan     Language\n </li><li>Document                    Class\n\
+      Ruby is a dynamic language              Language\n\
+      Ruby has color between pink and red     Gemstone\n\
+      Gems is a ruby packaging system         Language\n\
+      Ruby is one of the four precious gems   Gemstone\n\
+      The Ruby language was born in Japan     Language\n </li><li>Term      Language   Gemstone\n ruby         3          2\n gems         1          1\n\
+      dynamic       1          0\n\
+      language      2          0\n  color       0          1\n   pink       0          1\n   red        0          1\n package      1          0\n\
+      precious      0          1\n  japan       1          0\n </li><li>(valor inicial + ocorrencias de wk em ci)\n\
+      P(wk|ci) =\n               (peso do valor inicial + numero de\n                      documentos em ci)\n </li><li>(0.5 + ocorrencias de wk em ci)\n\
+      P(wk|ci) =\n             (1 + numero de documentos em ci)\n </li><li>Term         Language       Gemstone\n ruby      (0.5+3) / (1+3) (0.5+2) / (1+2)\n gems      (0.5+1) / (1+3) (0.5+1) / (1+2)\n\
+      dynamic    (0.5+1) / (1+3)   (0.5+0) / (1+2)\n\
+      language   (0.5+2) / (1+3)   (0.5+0) / (1+2)\n  color    (0.5+0) / (1+3)   (0.5+1) / (1+2)\n   pink    (0.5+0) / (1+3)   (0.5+1) / (1+2)\n   red     (0.5+0) / (1+3)   (0.5+1) / (1+2)\n package   (0.5+1) / (1+3)   (0.5+0) / (1+2)\n\
+      precious   (0.5+0) / (1+3)   (0.5+1) / (1+2)\n  japan    (0.5+1) / (1+3)   (0.5+0) / (1+2)\n </li><li>Term      Language   Gemstone\n ruby        0.88       0.83\n gems        0.38       0.5\n\
+      dynamic      0.38       0.17\n\
+      language     0.62       0.17\n  color      0.12       0.5\n   pink      0.12       0.5\n   red       0.12       0.5\n package     0.38       0.17\n\
+      precious     0.12       0.5\n  japan      0.38       0.17\n </li><li>A qual classe pertence o documento:\n  \xE2\x80\x9CMy ruby gems arrived in a pink\n              package\xE2\x80\x9D\n </li><li>A qual classe pertence o documento:\n  \xE2\x80\x9CMy ruby gems arrived in a pink\n              package\xE2\x80\x9D\n </li><li>P(language|d) = P(ci) * P(d|ci) / P(d)\n </li><li>P(language|d) = P(ci) * P(d|ci) / P(d)\n </li><li>P(language|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em language /\n  total documentos = 0.6\n </li><li>P(language|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em language /\n  total documentos = 0.6\n </li><li>P(language|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em language /\n  total documentos = 0.6\n\n P(ruby|language) * P(gems|language) *\n P(pink|language) * P(package|language)\n </li><li>P(language|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em language /\n  total documentos = 0.6\n\n P(ruby|language) * P(gems|language) *\n P(pink|language) * P(package|language)\n </li><li>P(language|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em language /\n  total documentos = 0.6\n\n P(ruby|language) * P(gems|language) *\n P(pink|language) * P(package|language)\n\n\n\n                                N\xC3\xA3o importa ...\n </li><li>P(gemstone|d) = P(ci) * P(d|ci) / P(d)\n </li><li>P(gemstone|d) = P(ci) * P(d|ci) / P(d)\n </li><li>P(gemstone|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em gemstone /\n  total documentos = 0.4\n </li><li>P(gemstone|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em gemstone /\n  total documentos = 0.4\n </li><li>P(gemstone|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em gemstone /\n  total documentos = 0.4\n\n P(ruby|gemstone) * P(gems|gemstone) *\n P(pink|gemstone) * P(package|gemstone)\n </li><li>P(gemstone|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em gemstone /\n  total documentos = 0.4\n\n P(ruby|gemstone) * P(gems|gemstone) *\n P(pink|gemstone) * P(package|gemstone)\n </li><li>P(gemstone|d) = P(ci) * P(d|ci) / P(d)\n\n\
+      documentos em gemstone /\n  total documentos = 0.4\n\n P(ruby|gemstone) * P(gems|gemstone) *\n P(pink|gemstone) * P(package|gemstone)\n\n\n\n                                N\xC3\xA3o importa ...\n </li><li>P(language|d) = 0.6 * 0.88 * 0.38 * 0.12 * 0.38 / P(d)\n </li><li>P(language|d) = 0.6 * 0.88 * 0.38 * 0.12 * 0.38 / P(d)\n\n P(gemstone|d) = 0.4 * 0.83 * 0.5 * 0.5 * 0.17 / P(d)\n </li><li>P(language|d) = 0.6 * 0.88 * 0.38 * 0.12 * 0.38 / P(d)\n\n P(gemstone|d) = 0.4 * 0.83 * 0.5 * 0.5 * 0.17 / P(d)\n\n\n          P(language|d) = 0.009149 / P(d)\n </li><li>P(language|d) = 0.6 * 0.88 * 0.38 * 0.12 * 0.38 / P(d)\n\n P(gemstone|d) = 0.4 * 0.83 * 0.5 * 0.5 * 0.17 / P(d)\n\n\n          P(language|d) = 0.009149 / P(d)\n\n           P(gemstone|d) =0.014110 / P(d)\n </li><li>P(language|d) = 0.6 * 0.88 * 0.38 * 0.12 * 0.38 / P(d)\n\n P(gemstone|d) = 0.4 * 0.83 * 0.5 * 0.5 * 0.17 / P(d)\n\n\n          P(language|d) = 0.009149 / P(d)\n\n           P(gemstone|d) =0.014110 / P(d)\n\n            P(gemstone|d) &gt; P(language|d)\n </li><li>P(language|d) = 0.6 * 0.88 * 0.38 * 0.12 * 0.38 / P(d)\n\n P(gemstone|d) = 0.4 * 0.83 * 0.5 * 0.5 * 0.17 / P(d)\n\n\n          P(language|d) = 0.009149 / P(d)\n\n           P(gemstone|d) =0.014110 / P(d)\n\n            P(gemstone|d) &gt; P(language|d)\n\n           d pertence \xC3\xA0 classe gemstone\n </li><li>Considera que as palavras em\n    um documento s\xC3\xA3o\n      independentes\n </li><li>Simples e r\xC3\xA1pido\n </li><li>k-nearest neighbor (k-nn)\n </li><li>Representa documentos no espa\xC3\xA7o\n\
+      como um vetor em fun\xC3\xA7\xC3\xA3o dos seus\n             pesos\n </li><li>Um documento \xC3\xA9 classificado ao\n\
+      analizar os k documentos mais\n        pr\xC3\xB3ximos a ele\n </li><li>Document                    Class\n\
+      Ruby is a dynamic language              Language\n\
+      Ruby has color between pink and red     Gemstone\n\
+      Gems is a ruby packaging system         Language\n\
+      Ruby is one of the four precious gems   Gemstone\n\
+      The Ruby language was born in Japan     Language\n </li><li>&lt;ruby, language, dynamic, gems, color, pink, red, package, precious, japan&gt;\n\n                   &lt;1, 1, 1, 0, 0, 0, 0, 0, 0, 0&gt;\n                   &lt;1, 0, 0, 1, 1, 1, 1, 0, 0, 0&gt;\n                   &lt;1, 0, 0, 1, 0, 0, 0, 1, 0, 0&gt;\n                   &lt;1, 0, 0, 1, 0, 0, 0, 0, 1, 0&gt;\n                   &lt;1, 1, 0, 0, 0, 0, 0, 0, 0, 1&gt;\n </li><li>A qual classe pertence o documento:\n  \xE2\x80\x9CMy ruby gems arrived in a pink\n              package\xE2\x80\x9D\n </li><li>&lt;ruby, language, dynamic, gems, color, pink, red, package, precious, japan&gt;\n\n                   &lt;1, 1, 1, 0, 0, 0, 0, 0, 0, 0&gt;\n                   &lt;1, 0, 0, 1, 1, 1, 1, 0, 0, 0&gt;\n                   &lt;1, 0, 0, 1, 0, 0, 0, 1, 0, 0&gt;\n                   &lt;1, 0, 0, 1, 0, 0, 0, 0, 1, 0&gt;\n                   &lt;1, 1, 0, 0, 0, 0, 0, 0, 0, 1&gt;\n                   &lt;1, 0, 0, 1, 0, 1, 0, 1, 0, 0&gt;\n </li><li>Documents               Distance     Class\n\n\
+      &lt;1, 1, 1, 0, 0, 0, 0, 0, 0, 0&gt;      5       Language\n\
+      &lt;1, 0, 0, 0, 1, 1, 1, 0, 0, 0&gt;      4       Gemstone\n\
+      &lt;1, 0, 0, 1, 0, 0, 0, 1, 0, 0&gt;      1       Language\n\
+      &lt;1, 0, 0, 1, 0, 0, 0, 0, 1, 0&gt;      3       Gemstone\n\
+      &lt;1, 1, 0, 0, 0, 0, 0, 0, 0, 1&gt;      5       Language\n\
+      &lt;1, 0, 0, 1, 0, 1, 0, 1, 0, 0&gt;\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>Para k = 1\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>Documento pertence a language\n </li><li>Para k = 3\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>Documento pertence a gemstone\n </li><li>Por\xC3\xA9m, k-nn sempre precisa de\n   todos os dados de treino\n </li><li>Classificador pesado e lento\n </li><li>Rocchio classifier\n </li><li>Similar ao k-nn, por\xC3\xA9m\n\
+      representa os documentos\n     como uma m\xC3\xA9dia\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>5   4   3   2   1   ?\n\n\n\n\n                        language\n                        gemstone\n </li><li>Para classificar um documento,\n calculamos a sua dist\xC3\xA2ncia \xC3\xA0s\n             m\xC3\xA9dias\n </li><li>3.5\n\n\
+      5   4   3    2     1   ?\n\n\n\n            3.66\n\n\n\n                                 language\n                                 gemstone\n </li><li>Documento pertence a gemstone\n </li><li>Rocchio \xC3\xA9 leve e r\xC3\xA1pido, por\xC3\xA9m\n possui um problema \xC3\xB3bvio...\n </li><li>?\n </li><li>?\n </li><li>Support Vector Machines\n         (SVM)\n </li><li>Teoria matem\xC3\xA1tica complexa\n </li><li>Tamb\xC3\xA9m representa os documentos\n          no espa\xC3\xA7o\n </li><li>Acha um hiperplano que divide o\n\
+      espa\xC3\xA7o dos documentos em dois\n </li><li>5   4   3   2   1\n\n\n\n\n                    language\n                    gemstone\n </li><li>language\n\
+      gemstone\n </li><li>language\n\
+      gemstone\n </li><li>Calcular este hiperplano,\n\
+      geralmente exige muito\n    processamento\n </li><li>Por\xC3\xA9m classificar um documento \xC3\xA9\n\
+      r\xC3\xA1pido, basta determinar qual lado\n      do hiperplano ele est\xC3\xA1\n </li><li>language\n\
+      gemstone\n </li><li>?\n\n\n\n\n    language\n    gemstone\n </li><li>?\n\n\n\n\n    language\n    gemstone\n </li><li>Conte\xC3\xBAdo\n\n\n\
+      \xE2\x80\xA2 Pr\xC3\xA9-processamento\n\
+      \xE2\x80\xA2 Classificadores\n  - Naive bayes\n  - k nearest neighbors\n  - Rocchio classifier\n  - Support vector machines\n\
+      \xE2\x80\xA2 Medidas\n </li><li>Conte\xC3\xBAdo\n\n\n\
+      \xE2\x80\xA2 Pr\xC3\xA9-processamento\n\
+      \xE2\x80\xA2 Classificadores\n  - Naive bayes\n  - k nearest neighbors\n  - Rocchio classifier\n  - Support vector machines\n\
+      \xE2\x80\xA2 Medidas\n </li><li>Medidas\n </li><li>Analisar um classificador por\n   sua acur\xC3\xA1cia \xC3\xA9 errado\n </li><li>Classe real\n\n                 p                 n\n            Verdadeiro       Falso\n          p\n\
+      Classe       Positivo       Positivo\n\
+      predita        Falso       Verdadeiro\n          n\n              Negativo      Negativo\n </li><li>Acur\xC3\xA1cia = (VP + VN) / (VP + VN + FP + FN)\n </li><li>A acur\xC3\xA1cia esconde potenciais\n   falso positivos ou falso\n          negativos\n </li><li>Use precis\xC3\xA3o e revoca\xC3\xA7\xC3\xA3o\n </li><li>Precis\xC3\xA3o = VP / (VP + FP)\n </li><li>Revoca\xC3\xA7\xC3\xA3o = VP / (VP + FN)\n </li><li>Alta precis\xC3\xA3o significa poucos\n falso positivos, alta revoca\xC3\xA7\xC3\xA3o\n\
+      equivale a poucos falso negativos\n </li><li>Alguns resultados...\n </li><li>Dataset da Reuters - RCV1-v2\n </li><li>Precis\xC3\xA3o      Revoca\xC3\xA7\xC3\xA3o\n\n\
+      100%\n         94.5                                      93.4 92.2\n                              92.3\n\
+      87.5%                  89.9\n                                            85.5\n                80.3\n 75%                                 75.7\n\n\n\
+      62.5%\n\n 50%\n        Naive Bayes      k-NN        Rocchio         SVM\n </li><li>No geral, SVM possui os melhores\n            resultados\n </li><li>Naive Bayes possui alt\xC3\xADssima\n\
+      precis\xC3\xA3o, excelente para filtros\n           anti-spam\n </li><li>Conte\xC3\xBAdo\n\n\n\
+      \xE2\x80\xA2 Pr\xC3\xA9-processamento\n\
+      \xE2\x80\xA2 Classificadores\n\
+      \xE2\x80\xA2 Medidas\n </li><li>?!\n                      @josevalim\n http://blog.plataformatec.com.br\n </li></ol>\n\
+      </div>\n\
+      <!-- disable_ad_section_end() -->\n\
+      </div>\n\
+      <div class=\"column2\">\n\
+      <div class=\"clearfix details\">\n\
+      <p class=\"author no-lead\">\n\
+      <a href=\"/plataformatec\" class=\"userimage-link j-tooltip-bottom\" title=\"plataformatec\"><img src=\"http://public.slidesharecdn.com/images/userImage-96x96.gif\" alt=\"Plataforma Tecnologia\" /><span class=\"h-username\" style=\"vertical-align:top\">Plataforma Tecnologia</span></a>\n\n\
+      <span class=\"h-section-add-contact potential-contact user-23175993\"><a href=\"/signup?from=addcontact&from_source=http%3A%2F%2Fwww.slideshare.net%2Fplataformatec%2Fclassificao-de-textos-dev-in-sampa-28nov2009\" title=\"Follow this user\" class=\"followAuthor ctaNormal h-action-add-contact j-tooltip-bottom\" rel=\"nofollow\">+ Follow</a></span>\n\
+      <span class=\"hide indicator\"><img src=\"http://public.slidesharecdn.com/images/indicator.gif?23757\" height=\"5\" alt=\"Processing...\" width=\"21\" style=\"float:none;\" /></span>\n\
+      </p>\n\n\n\
+      <p class=\"stats\">\n\
+      <span class=\"stats-text\"><span class=\"h-view-count viewCount\">1771 views</span><span class=\"h-other-count\">, 10 favs, 5 embeds</span></span> <a href=\"#\" class=\"ilink h-toggle-description\" rel=\"nofollow\">more</a> \n\
+      </p>\n\
+      <!-- disable_ad_section_start(weight=0.5) -->\n\
+      <div class=\"description h-not-truncated\" style=\"display:none\">\n\
+      <p>Jos\xC3\xA9 Valim talks in portuguese about Text Classification at Dev in Sampa 2009</p>\n\
+      </div>\n\
+      <!-- disable_ad_section_end() -->\n\
+      </div>\n\
+      <div class=\"ad_300x25 lostchild slideview_link1_fill\" style=\"border:0;margin:0;padding:0;width:300px\"><!--\r\n\
+      <script type=\"text/javascript\">\r\n  GA_googleFillSlot(\"slideview_link\");\r\n\
+      </script>\r\n\
+      --></div>\n\
+      <script type=\"text/javascript\">\n\
+      // <![CDATA[\n\
+      if (window.slideshare_object && slideshare_object.remove_if_blank) { slideshare_object.remove_if_blank('.slideview_link1_fill'); }\n\
+      // ]]>\n\
+      </script>\n\n\
+      <div class=\"column2Sidebar\">\n\
+      <div class=\"tabsContainer tabbox horzTabs h-moreRelated\" id=\"moreRelated\">\n\
+      <div class=\"tab selected related-tab h-related-tab\">\n\
+      <h2><a href=\"#relatedList\" rel=\"nofollow\">Related</a></h2>\n\
+      <div class=\"tabContent\" id=\"relatedList\">\n\
+      <ul class=\"clearfix moreRelated h-related-slideshows\">\n\
+      <li>\n\
+      <a href=\"/th2/slide-workshops-5s-hb-e-banquetes\" title=\"Slide Workshops 5s Hb E Banquetes\">\n\n\
+      <span class=\"no-docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://cdn.slidesharecdn.com/slide-workshops-5shb-e-banquetes-1212746461070394-8-thumbnail-2?1212740128\" height=\"69\" alt=\"Slide Workshops 5s Hb E Banquetes\" original=\"\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">Slide Workshops 5s Hb E Banquetes</span>\n\
+      <span class=\"quiet h-stat\">2473 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/sharon0610/a-ypearlcom-explain-how-to-harmony-with-the-overall-color-of-gemstone-jewelry\" title=\"A Ypearl.Com Explain How To Harmony With The Overall Color Of Gemstone Jewelry\">\n\
+      <img class=\"ieFixOverlay\" src=\"http://public.slidesharecdn.com/images/transparent.gif?23757\" height=\"69\" alt=\"\" width=\"92\" />\n\
+      <span class=\"docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://cdn.slidesharecdn.com/aypearl-comexplainhowtoharmonywiththeoverallcolorofgemstonejewelry-091115213256-phpapp02-thumbnail-2?1258342390\" height=\"69\" alt=\"A Ypearl.Com Explain How To Harmony With The Overall Color Of Gemstone Jewelry\" original=\"\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">A Ypearl.Com Explain How To Harmony With The Overall Color&hellip;</span>\n\
+      <span class=\"quiet h-stat\">205 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/sharon0610/a-ypearlcom-explain-how-to-harmony-with-the-overall-color-of-gemstone-jewelry-2587501\" title=\"A Ypearl.Com Explain How To Harmony With The Overall Color Of Gemstone Jewelry\">\n\
+      <img class=\"ieFixOverlay\" src=\"http://public.slidesharecdn.com/images/transparent.gif?23757\" height=\"69\" alt=\"\" width=\"92\" />\n\
+      <span class=\"docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://cdn.slidesharecdn.com/aypearl-comexplainhowtoharmonywiththeoverallcolorofgemstonejewelry-091125235039-phpapp01-thumbnail-2?1259215586\" height=\"69\" alt=\"A Ypearl.Com Explain How To Harmony With The Overall Color Of Gemstone Jewelry\" original=\"\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">A Ypearl.Com Explain How To Harmony With The Overall Color&hellip;</span>\n\
+      <span class=\"quiet h-stat\">134 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/Thilini/beautiful-gems-presentation\" title=\"Beautiful Gems\">\n\n\
+      <span class=\"no-docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://cdn.slidesharecdn.com/beautiful-gems-1219907793318021-9-thumbnail-2?1219900583\" height=\"69\" alt=\"Beautiful Gems\" original=\"\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">Beautiful Gems</span>\n\
+      <span class=\"quiet h-stat\">425 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/isb4mt/rocks-and-minerals-taylor\" title=\"Rocks And  Minerals  Taylor\">\n\n\
+      <span class=\"no-docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Rocks And  Minerals  Taylor\" original=\"http://cdn.slidesharecdn.com/rocksandmineralstaylor-091119002414-phpapp01-thumbnail-2?1258611891\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">Rocks And  Minerals  Taylor</span>\n\
+      <span class=\"quiet h-stat\">226 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/guest6b8df4/education-373-inquiry-gemstones\" title=\"Education 373  inquiry gemstones\">\n\n\
+      <span class=\"no-docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Education 373  inquiry gemstones\" original=\"http://cdn.slidesharecdn.com/education373-inquirygemstones-100430013101-phpapp01-thumbnail-2?1272609148\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">Education 373  inquiry gemstones</span>\n\
+      <span class=\"quiet h-stat\">169 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/icaromedeiros/tagsuggestion\" title=\"Tag Suggestion\">\n\n\
+      <span class=\"no-docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Tag Suggestion\" original=\"http://cdn.slidesharecdn.com/tagsuggestion-123730174256-phpapp01-thumbnail-2?1237301814\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">Tag Suggestion</span>\n\
+      <span class=\"quiet h-stat\">565 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/sharon0610/wwwaypearlcom-explain-the-gemstone-enhancements-and-care\" title=\"Www.Aypearl.Com Explain The Gemstone Enhancements And Care\">\n\
+      <img class=\"ieFixOverlay\" src=\"http://public.slidesharecdn.com/images/transparent.gif?23757\" height=\"69\" alt=\"\" width=\"92\" />\n\
+      <span class=\"docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Www.Aypearl.Com Explain The Gemstone Enhancements And Care\" original=\"http://cdn.slidesharecdn.com/www-aypearl-comexplainthegemstoneenhancementsandcare-091125234706-phpapp01-thumbnail-2?1259214445\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">Www.Aypearl.Com Explain The Gemstone Enhancements And Care</span>\n\
+      <span class=\"quiet h-stat\">142 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/chinafashionjewelry/fashion-jewelry-simply-elegant\" title=\"Fashion Jewelry Simply Elegant\">\n\
+      <img class=\"ieFixOverlay\" src=\"http://public.slidesharecdn.com/images/transparent.gif?23757\" height=\"69\" alt=\"\" width=\"92\" />\n\
+      <span class=\"docThumbOverlay\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Fashion Jewelry Simply Elegant\" original=\"http://cdn.slidesharecdn.com/fashionjewelrysimplyelegant-091105024237-phpapp02-thumbnail-2?1257410572\" width=\"92\" />\n\
+      </span>\n\
+      <span class=\"h-title\">Fashion Jewelry Simply Elegant</span>\n\
+      <span class=\"quiet h-stat\">204 views</span>\n\
+      </a>\n\
+      </li>\n\
+      </ul>\n\
+      </div>\n\
+      </div>\n\
+      <div class=\"tab more-tab\">\n\
+      <h2><a href=\"#moreList\" rel=\"nofollow\">More by user</a></h2>\n\
+      <div class=\"tabContent\" id=\"moreList\">\n\
+      <ul class=\"clearfix moreRelated h-author-slideshows\">\n\
+      <li>\n\
+      <a href=\"/plataformatec/railties-ruby-masters-conf-26feb2011\" title=\"Railties - Ruby Masters Conf - 26Feb2011\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Railties - Ruby Masters Conf - 26Feb2011\" original=\"http://cdn.slidesharecdn.com/2011-02-26-railties-rubymastersconf-110226114336-phpapp02-thumbnail-2?1298742463\" width=\"92\" />\n\
+      <span class=\"h-title\">Railties - Ruby Masters Conf - 26Feb2011</span>\n\
+      <span class=\"quiet h-stat\">477 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/plataformatec/rails-23-30-and-31-rubyconfbr-26oct2010\" title=\"Rails 2.3, 3.0 and 3.1 - RubyConfBR - 26oct2010\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Rails 2.3, 3.0 and 3.1 - RubyConfBR - 26oct2010\" original=\"http://cdn.slidesharecdn.com/2010-10-26-rails2-33-0and3-1rubyconfbr-101106050352-phpapp01-thumbnail-2?1289037960\" width=\"92\" />\n\
+      <span class=\"h-title\">Rails 2.3, 3.0 and 3.1 - RubyConfBR - 26oct2010</span>\n\
+      <span class=\"quiet h-stat\">234 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/plataformatec/rails-3-the-developers-conference-21aug2010\" title=\"Rails 3 - The Developers Conference - 21aug2010\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Rails 3 - The Developers Conference - 21aug2010\" original=\"http://cdn.slidesharecdn.com/2010-08-21-rails3tdc-100826074548-phpapp02-thumbnail-2?1282826968\" width=\"92\" />\n\
+      <span class=\"h-title\">Rails 3 - The Developers Conference - 21aug2010</span>\n\
+      <span class=\"quiet h-stat\">709 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/plataformatec/cruding-open-source-whyday-19aug2010\" title=\"CRUDing Open Source - WhyDay - 19aug2010\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"CRUDing Open Source - WhyDay - 19aug2010\" original=\"http://cdn.slidesharecdn.com/2010-08-19-opensourcewhyday-100826074225-phpapp02-thumbnail-2?1282827009\" width=\"92\" />\n\
+      <span class=\"h-title\">CRUDing Open Source - WhyDay - 19aug2010</span>\n\
+      <span class=\"quiet h-stat\">571 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/plataformatec/rails-3-rs-on-rails-21aug2010\" title=\"Rails 3 - RS on Rails - 21aug2010\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"Rails 3 - RS on Rails - 21aug2010\" original=\"http://cdn.slidesharecdn.com/2010-08-21-rails3rsonrails-100826073745-phpapp02-thumbnail-2?1282827010\" width=\"92\" />\n\
+      <span class=\"h-title\">Rails 3 - RS on Rails - 21aug2010</span>\n\
+      <span class=\"quiet h-stat\">819 views</span>\n\
+      </a>\n\
+      </li>\n\n\
+      <li>\n\
+      <a href=\"/plataformatec/o-que-h-de-novo-no-rails-3-ruby-on-rails-no-mundo-real\" title=\"O que h\xC3\xA1 de novo no Rails 3 - Ruby on Rails no Mundo Real - 23may2010\">\n\
+      <img class=\"h-thumbnail\" src=\"http://public.slidesharecdn.com/images/thumbnail.png\" height=\"69\" alt=\"O que h\xC3\xA1 de novo no Rails 3 - Ruby on Rails no Mundo Real - 23may2010\" original=\"http://cdn.slidesharecdn.com/2010-05-29-rails3rubyreal-100817203840-phpapp02-thumbnail-2?1282826352\" width=\"92\" />\n\
+      <span class=\"h-title\">O que h\xC3\xA1 de novo no Rails 3 - Ruby on Rails no Mundo Real&hellip;</span>\n\
+      <span class=\"quiet h-stat\">810 views</span>\n\
+      </a>\n\
+      </li>\n\
+      </ul>\n\
+      <a href=\"/plataformatec/slideshows\" title=\"View all presentations from this user\" class=\"viewAll h-all-by-author\">View all presentations from this user</a>\n\
+      </div>\n\
+      </div>\n\n\n\
+      </div>\n\
+      <!-- 300x250 ad begins here-->\n\
+      <div class=\"ad_300x250 adbox-outer lostchild ad_right_1\"><script type=\"text/javascript\"> \r\n\
+      GA_googleFillSlot(\"slideview_right_1\"); \r\n\
+      </script>\r\n\
+      \r\n\
+      <!--\r\n\
+      <script type=\"text/javascript\"> \r\n\
+      if (random_number < .5) { GA_googleFillSlot(\"slideview_right_1\"); } \r\n\
+      else {  GA_googleFillSlot(\"slideview_right_1_exp\"); } \r\n\
+      </script>\r\n\
+      --></div>\n\n\
+      <!-- 300x250 ad ends here-->\n\
+      <!-- More info begins here-->\n\
+      <div class=\"moreInfo\">\n\
+      <h2>About this <span class=\"type-string-down\">presentation</span></h2>\n\n\
+      <h3>Usage Rights</h3>\n\
+      <p class=\"license\">&copy; All Rights Reserved</p>\n\
+      <h3>Stats</h3>\n\
+      <ul class=\"clearfix detailedStats stats-bottom\" id=\"stats-bottom\">\n\
+      <li class=\"stats-favorites-count\"><span class=\"favorites\">10</span> <strong>Favorites</strong></li>\n\
+      <li class=\"stats-comments-count\"><span class=\"comments\">0</span> <strong>Comments</strong></li>\n\
+      <li class=\"stats-downloads-count\"><span class=\"downloads\">60</span> <strong>Downloads</strong></li>\n\
+      <li class=\"h-stats-on-site-count\"><span class=\"on-site\">1,524</span> <strong>Views on <br />SlideShare</strong></li>\n\
+      <li class=\"h-stats-from-embed-count\"><span class=\"from-embed\">247</span> <strong>Views on <br />Embeds</strong></li>\n\
+      <li class=\"h-stats-views-count\"><span class=\"views\">1,771</span> <strong>Total Views</strong></li>\n\
+      </ul>\n\n\
+      <div id=\"h-top-embeds\">\n\
+      <h3>Embed views</h3>\n\
+      <ul class=\"embedsList h-embeds-list-top\">\n\
+      <li><span class=\"views\">208 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://blog.plataformatec.com.br</span></em></li>\n\n\
+      <li><span class=\"views\">28 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://feeds.feedburner.com</span></em></li>\n\n\
+      <li><span class=\"views\">9 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://www.slideshare.net</span></em></li>\n\n\
+      <li><span class=\"views\">1 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://www.agaelebe.com.br</span></em></li>\n\n\
+      <li><span class=\"views\">1 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://mi.o2.ie</span></em></li>\n\
+      </ul>\n\
+      <p><a href=\"#\" class=\"ilink action-moreembeds\" rel=\"nofollow\">more</a></p>\n\
+      </div>\n\
+      <div id=\"h-all-embeds\">\n\
+      <h3>Embed views</h3>\n\
+      <ul class=\"embedsList h-embeds-list-all\">\n\
+      <li><span class=\"views\">208 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://blog.plataformatec.com.br</span></em></li>\n\n\
+      <li><span class=\"views\">28 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://feeds.feedburner.com</span></em></li>\n\n\
+      <li><span class=\"views\">9 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://www.slideshare.net</span></em></li>\n\n\
+      <li><span class=\"views\">1 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://www.agaelebe.com.br</span></em></li>\n\n\
+      <li><span class=\"views\">1 views</span> on <em><span class=\"h-referer\" rel=\"nofollow\">http://mi.o2.ie</span></em></li>\n\
+      </ul>\n\
+      <p><a href=\"#\" class=\"ilink action-lessembeds\" rel=\"nofollow\">less</a></p>\n\
+      </div>\n\
+      <h3>Accessibility</h3>\n\
+      <p class=\"text-version-link\">View <a href=\"#text-version\" rel=\"nofollow\">text version</a></p>\n\
+      <h3>Additional Details</h3>\n\
+      <ul>\n\n\
+      <li class=\"h-no-api-credit\">\n\
+      Uploaded via <a href=\"/\" rel=\"nofollow\">SlideShare</a>\n\
+      </li>\n\n\
+      <li class=\"h-uploaded-as\" style=\"\">\n\
+      Uploaded as <a href=\"/\" class=\"uploaded-as-text\">Apple Keynote</a>\n\
+      </li>\n\
+      </ul>\n\
+      <!-- Flag begins here-->\n\
+      <div class=\"flag flag-inappropriate\">\n\
+      <a href=\"/signup?from=flagss&from_source=http%3A%2F%2Fwww.slideshare.net%2Fplataformatec%2Fclassificao-de-textos-dev-in-sampa-28nov2009\" class=\"action-flag\" rel=\"nofollow\">\n\
+      <span title=\"This presentation has been flagged\" class=\"flagged\">Flagged as inappropriate</span>\n\
+      <span title=\"Flag this presentation as inappropriate\" class=\"flag\">Flag as inappropriate</span>\n\
+      </a>\n\
+      <form method=\"post\" action=\"#\" accept-charset=\"utf-8\" style=\"display:none\">\n\
+      <fieldset>\n\
+      <legend>Flag as inappropriate</legend>\n\
+      <p>Select your reason for flagging this <span class=\"type-string-down\">presentation</span> as inappropriate. If needed, use the <a href=\"/feedback\" title=\"FeedBack\" rel=\"nofollow\">feedback</a> form to let us know more details.</p>\n\
+      <select name=\"ia_value\">\n\
+      <option value=\"0\">None</option>\n\
+      <option value=\"1\">Pornographic</option>\n\
+      <option value=\"3\">Defamatory</option>\n\
+      <option value=\"4\">Illegal/Unlawful</option>\n\
+      <option value=\"6\">Spam</option>\n\
+      <option value=\"5\">Other Terms Of Service Violation</option>\n\n\n\n\n\n\
+      </select>\n\
+      <input class=\"action-submit\" type=\"submit\" value=\"Flag\" />\n\
+      <a href=\"#\" class=\"ilink action-cancel\" rel=\"nofollow\">Cancel</a>\n\
+      </fieldset>\n\
+      </form>\n\
+      </div><!-- Flag ends here-->\n\
+      <!-- Other issues similar to flagging begins here -->\n\
+      <div>\n\
+      <a href=\"http://www.slideshare.net/terms#dmca\" rel=\"nofollow\">File a copyright complaint</a>\n\
+      </div>\n\
+      <!-- End other issues -->\n\
+      <!-- SuperUser actions being here-->\n\
+      <!-- SuperUser actions end here-->\n\
+      </div><!-- More info, part 2 ends here-->\n\
+      <div class=\"sidebarPanel\">\n\
+      <div id=\"slideshow-categories\">\n\
+      <h2>Categories</h2>\n\
+      <!-- disable_ad_section_start(weight=0.75) -->\n\
+      <ul class=\"slideshow-categories\">\n\
+      <li class=\"su-category\"><strong><a href=\"/category/\"></a></strong></li>\n\
+      <li class=\"category\"><strong><a href=\"/category/technology\">Technology</a></strong></li>\n\
+      </ul>\n\
+      <!-- disable_ad_section_end() -->\n\
+      </div>\n\
+      <div class=\"slideshow-tags\">\n\
+      <h2>Tags</h2>\n\
+      <!-- disable_ad_section_start(weight=1.0) -->\n\
+      <ul class=\"tags\">\n\
+      <li><strong>\n\
+      <a href=\"/tag/software\" rel=\"nofollow\">software</a>\n\
+      </strong></li>\n\n\
+      <li><strong>\n\
+      <a href=\"/tag/plataforma\" rel=\"nofollow\">plataforma</a>\n\
+      </strong></li>\n\n\
+      <li><strong>\n\
+      <a href=\"/tag/machine-learning\" rel=\"nofollow\">machine learning</a>\n\
+      </strong></li>\n\n\
+      <li><strong>\n\
+      <a href=\"/tag/text-classification\" rel=\"nofollow\">text classification</a>\n\
+      </strong></li>\n\n\
+      <li><strong>\n\
+      <a href=\"/tag/devinsampa\" rel=\"nofollow\">devinsampa</a>\n\
+      </strong></li>\n\n\
+      <li><strong>\n\
+      <a href=\"/tag/machine-leaning\" rel=\"nofollow\">machine leaning</a>\n\
+      </strong></li>\n\n\
+      <li><strong>\n\
+      <a href=\"/tag/devinsampa09-ruby\" rel=\"nofollow\">devinsampa09 ruby</a>\n\
+      </strong></li>\n\
+      </ul>\n\
+      <!-- disable_ad_section_end() -->\n\
+      </div>\n\n\n\
+      </div>\n\
+      <div class=\"sidebarPanel\">\n\
+      <h2>Follow SlideShare</h2>\n\
+      <ul class=\"socialProfiles\">\n\
+      <li><a href=\"http://twitter.com/slideshare\" class=\"iconTwitter g-slideview\" title=\"Follow SlideShare on Twitter\" rel=\"nofollow\">Twitter</a></li>\n\
+      <li><a href=\"http://www.facebook.com/slideshare\" class=\"iconFacebook g-slideview\" title=\"Follow SlideShare on Facebook\" rel=\"nofollow\">Facebook</a></li>\n\
+      <li><a href=\"http://blog.slideshare.net\" class=\"iconRSS g-slideview\" title=\"Follow SlideShare's Blog Updates\">SlideShare Blog</a></li>\n\
+      </ul>\n\
+      </div>\n\
+      <!-- right column bottom ad (block) start here  -->\n\
+      <div class=\"ad bottom_horizontal_google_ad_banner adbox-outer lostchild no-contest-only\"><!--\r\n\
+      <script type=\"text/javascript\">\r\n\
+      GA_googleFillSlot(\"slideview_bottom_300_250\"); \r\n\
+      </script>\r\n\
+      -->\r\n\
+      \r\n\
+      \r\n\
+      <!--\r\n\
+      <script type=\"text/javascript\">\r\n\
+      if (random_number < .5){ GA_googleFillSlot(\"slideview_bottom_300_250\"); } \r\n\
+      else { GA_googleFillSlot(\"slideview_bottom_exp\");}\r\n\
+      </script>\r\n\
+      --></div>\n\
+      <!-- right column bottom ad (block) end here  -->\n\
+      </div>\n\
+      </div> <!-- .column2Sidebar -->\n\
+      <div class=\"viralShare public-only\">\n\
+      <div class=\"clearfix viralShareItem\">\n\
+      <a href=\"http://www.slideshare.net/share/tweet/2606283/Check%20out%20this%20SlideShare%20presentation%20:%20Classifica%C3%A7%C3%A3o%20de%20textos%20-%20Dev%20in%20Sampa%20-%2028n...\" title=\"3 tweets. Tweet this to your followers on Twitter\" class=\"tweet h-viral-tweet-button popup\" rel=\"nofollow\">\n\
+      <span class=\"count viral-count-twitter\">3</span> <span class=\"plurality\">tweets</span>\n\
+      </a>\n\
+      </div>\n\
+      <div class=\"clearfix viralShareItem\">\n\
+      <a href=\"http://www.slideshare.net/share/facebook/2606283/Check%20out%20this%20SlideShare%20presentation%20:%20Classifica%C3%A7%C3%A3o%20de%20textos%20-%20Dev%20in%20Sampa%20-%2028n...\" title=\"1 share. Share this on Facebook\" class=\"fbShare h-viral-facebook-button popup\">\n\
+      <span class=\"count viral-count-facebook\">1</span> <span class=\"plurality\">share</span>\n\
+      </a>\n\
+      </div>\n\
+      <div class=\"clearfix viralShareItem\">\n\
+      <a href=\"#fancybox-holder\" title=\"Share this on WordPress\" class=\"wpShare h-viral-wordpress-button fancybox inline\">WordPress</a>\n\
+      </div>\n\
+      <div class=\"clearfix viralShareItem\">\n\
+      <a href=\"http://www.slideshare.net/share/blogspot/2606283\" title=\"Share this on Blogger\" class=\"bloggerShare h-viral-blogger-button popup\">Blogger</a>\n\
+      </div>\n\
+      <div class=\"clearfix viralShareItem\">\n\
+      <a href=\"#fancybox-holder\" title=\"More share options\" class=\"moreLink h-viral-more-link fancybox\">More</a>\n\
+      </div>\n\n\
+      </div>\n\
+      <div id=\"fancybox-holder\" style=\"display:none;\">&nbsp;</div>\n\
+      <div class=\"clear clearfix medRecBelowTranscript\">\n\
+      <div class=\"slideview_below_transcript_fill\"><script type='text/javascript'>\r\n\
+      GA_googleFillSlot(\"slideview_below_transcript\");\r\n\
+      </script></div>\n\
+      </div>\n\
+      <div class=\"h-modal-signup\" id=\"j-modal-signup\" style=\"display:none\">\n\
+      <a href=\"/signup?from=contest&from_source=http%3A%2F%2Fwww.slideshare.net%2Fplataformatec%2Fclassificao-de-textos-dev-in-sampa-28nov2009\" title=\"trigger link for fancybox signup\">modal signup</a>\n\
+      </div>\n\
+      <div class=\"clearfix footer-09\">\n\
+      <div class=\"clearfix\">\n\
+      <div class=\"sponsoredA\">\n\
+      <div class=\"sponsoredA1\"><script type=\"text/javascript\">\r\n  GA_googleFillSlot(\"footer\");\r\n\
+      </script>\r\n\
+      \r\n\
+      <!--\r\n\
+      <script type='text/javascript'>\r\n\
+      GA_googleFillSlot(\"pixel_tracker\");\r\n\
+      </script>\r\n\
+      --></div>\n\
+      </div>\n\
+      <form class=\"headerSearch\" method=\"get\" action=\"/search/slideshow\">\n\
+      <fieldset>\n\
+      <input name=\"searchfrom\" type=\"hidden\" value=\"footer\" />\n\
+      <span class=\"suggestionContainer\">\n\
+      <input name=\"q\" class=\"text\" id=\"search_query_bottom\" type=\"text\" value=\"\" autocomplete=\"off\" />\n\
+      </span>\n\
+      <input class=\"ctaStrong\" type=\"submit\" value=\"Search\" />\n\
+      </fieldset>\n\
+      </form>\n\
+      <div class=\"sponsoredB\">\n\
+      </div>\n\
+      </div>\n\
+      <div class=\"links\">\n\
+      <div class=\"fColumn fColumnSmall\">\n\
+      <ul class=\"linksList\">\n\
+      <li><strong>Learn About Us</strong></li>\n\
+      <li><a href=\"/about\" title=\"About us\" rel=\"nofollow\">SlideShare 101</a></li>\n\
+      <li><a href=\"/about/workatslideshare\" title=\"Work with us\" rel=\"nofollow\">Work with us</a></li>\n\
+      <li><a href=\"http://blog.slideshare.net\" title=\"Our Blog\">Our Blog</a></li>\n\
+      <li><a href=\"/about/press\" title=\"Press\" rel=\"nofollow\">Press</a></li>\n\
+      <li id=\"help_link\"><a href=\"http://help.slideshare.com/home\" class=\"void_fancybox\" title=\"Get Help\" rel=\"nofollow\">GET HELP</a></li>\n\
+      </ul>\n\
+      </div>\n\
+      <div class=\"fColumn fColumnMid\">\n\
+      <ul class=\"linksList\">\n\
+      <li><strong>Using SlideShare</strong></li>\n\
+      <li><a href=\"/tour\" title=\"Quick Tour\" rel=\"nofollow\">Quick Tour</a></li>\n\
+      <li><a href=\"/terms\" title=\"Terms of Use\" rel=\"nofollow\">Terms of Use</a></li>\n\
+      <li><a href=\"/privacy\" title=\"Privacy Policy\" rel=\"nofollow\">Privacy Policy</a></li>\n\
+      <li><a href=\"/terms#dmca\" title=\"Copyright &amp; DMCA\" rel=\"nofollow\">Copyright &amp; DMCA</a></li>\n\
+      <li><a href=\"/community_guidelines\" title=\"Community Guidelines\" rel=\"nofollow\">Community Guidelines</a></li>\n\
+      </ul>\n\
+      </div>\n\
+      <div class=\"fColumn fColumnSmall\">\n\
+      <ul class=\"linksList\">\n\
+      <li><strong>SlideShare Outside</strong></li>\n\
+      <li><a href=\"http://bit.ly/SlideshareOnFacebook\" title=\"SlideShare for Facebook\" rel=\"nofollow\">Facebook App</a></li>\n\
+      <li><a href=\"http://slidesha.re/SlideShareOnLinkedIn\" title=\"SlideShare for LinkedIn\" rel=\"nofollow\">LinkedIn App</a></li>\n\
+      <li><a href=\"/mobile\" title=\"SlideShare Mobile\" rel=\"nofollow\">SlideShare Mobile</a></li>\n\
+      </ul>\n\
+      </div>\n\
+      <div class=\"fColumn\">\n\
+      <ul class=\"linksList\">\n\
+      <li><strong>Pro &amp; more</strong></li>\n\
+      <li><a href=\"/business/premium/plans?cmp_src=footer\" title=\"Go Pro\" rel=\"nofollow\">Go Pro</a></li>\n\
+      <li><a href=\"/business/leadshare\" title=\"Capture Leads\" rel=\"nofollow\">Capture Leads</a></li>\n\
+      <li><a href=\"http://premium.slideshare.net/advertise\" title=\"Advertise with us\" rel=\"nofollow\">Advertise with us</a></li>\n\
+      <li><a href=\"https://slideshare.wufoo.com/forms/want-to-get-featured-on-the-homepage/\" title=\"Get featured on homepage\" rel=\"nofollow\">Get featured on homepage</a></li>\n\
+      </ul>\n\
+      </div>\n\
+      <div class=\"fColumn last\">\n\
+      <ul class=\"linksList\">\n\
+      <li><strong>Developers &amp; API</strong></li>\n\
+      <li><a href=\"/developers\" title=\"Developers section\" rel=\"nofollow\">Developers section</a></li>\n\
+      <li><a href=\"http://groups.google.com/group/slideshare-developers?lnk=srg\" title=\"Developers Group\" rel=\"nofollow\">Developers Group</a></li>\n\
+      <li><a href=\"/widgets/blogbadge\" title=\"Widgets for your blog\" rel=\"nofollow\">Widgets for your blog</a></li>\n\
+      </ul>\n\
+      </div>\n\
+      </div>\n\
+      <p class=\"aboutSlideShare\">\n\
+      <span class=\"slideshareBoys\">&nbsp;</span>\n\
+      <strong>SlideShare is the world's largest community for sharing presentations.</strong> Upload and share on blogs, Twitter, Facebook or LinkedIn. 45 million people use SlideShare every month for research, sharing ideas, connecting with others, and generating business leads. SlideShare also supports documents, PDFs, and videos.\n\
+      <strong><a href=\"/signup?footer\" title=\"Sign up for SlideShare\">Get an account</a>.</strong>\n\
+      </p><!-- .aboutSlideShare -->\n\
+      <p class=\"followSlideShare\">\n\
+      <a href=\"http://www.facebook.com/slideshare\"><img src=\"http://public.slidesharecdn.com/images/facebook-slideshare.png?23757\" height=\"33\" alt=\"Like SlideShare on Facebook\" width=\"110\" /></a>\n\
+      <a href=\"http://www.twitter.com/slideshare\"><img src=\"http://public.slidesharecdn.com/images/twitter-slideshare.png?23757\" height=\"27\" alt=\"Follow SlideShare on Twitter\" width=\"160\" /></a>\n\
+      </p>\n\
+      <p class=\"copyright\">&copy; <span class=\"h-copyright-year\">2011</span> SlideShare Inc. All rights reserved.</p>\n\
+      <li class=\"expanded action-addfav-new public-only\" style=\"display:none\">\n\
+      <form method=\"post\" action=\"/search/slideshow\" accept-charset=\"utf-8\">\n\
+      <fieldset>\n\
+      <legend>Favorited!</legend>\n\
+      <label>You could add some tags too</label>\n\
+      <input class=\"text hinted-inputfield favorite-tags j-hint-tooltip\" title=\"separate tags by comma\" type=\"text\" value=\"separate tags by comma\" /><br />\n\
+      <label class=\"h-lcomments-in-fav-section\">Have an opinion? Make a quick comment as well.</label>\n\
+      <textarea class=\"comments-in-fav-section h-lcomments-in-fav-section\" rows=\"3\" cols=\"3\"></textarea>\n\
+      <input class=\"save submit h-fav-new-submit\" type=\"submit\" value=\"Post\" />\n\
+      <a href=\"#\" class=\"ilink cancel\" rel=\"nofollow\">Cancel</a>\n\
+      </fieldset>\n\
+      </form>\n\
+      </li><li class=\"expanded action-addfav-edit public-only\" style=\"display:none\">\n\
+      <form method=\"post\" action=\"/search/slideshow\" accept-charset=\"utf-8\">\n\
+      <fieldset>\n\
+      <legend>Edit your favorites</legend>\n\
+      <input class=\"text hinted-inputfield favorite-tags j-hint-tooltip\" title=\"separate tags by comma\" type=\"text\" value=\"\" />\n\
+      <br />\n\
+      <input class=\"save submit\" type=\"submit\" value=\"Save\" />\n\
+      <a href=\"#\" class=\"ilink cancel\" rel=\"nofollow\">Cancel</a>\n\
+      </fieldset>\n\
+      </form>\n\
+      </li><li class=\"expanded action-addgrp-new public-only\" style=\"display:none\">\n\
+      <form method=\"post\" action=\"/search/slideshow\" accept-charset=\"utf-8\">\n\
+      <fieldset>\n\
+      <legend>Send to your Group / Event</legend>\n\
+      <select>\n\
+      <option selected=\"selected\" value=\"0\">Select Group / Event</option>\n\
+      <optgroup label=\"Groups\"></optgroup>\n\
+      <optgroup label=\"Events\"></optgroup>\n\
+      </select>\n\
+      <label>Add your message</label>\n\
+      <textarea class=\"hinted-inputfield\" rows=\"3\" cols=\"7\"></textarea>\n\
+      <input class=\"save submit\" type=\"submit\" value=\"Send\" />\n\
+      <a href=\"#\" class=\"ilink cancel\" rel=\"nofollow\">Cancel</a>\n\
+      </fieldset>\n\
+      </form>\n\
+      </li></div>\n\
+      </div>\n\
+      <noscript>\n\
+      <!-- Quantcast noscript tracking-->\n\
+      <img src=\"http://pixel.quantserve.com/pixel/p-abU44ONrAuwk2.gif\" height=\"1\" alt=\"Quantcast\" style=\"border:0;display:none\" width=\"1\" />\n\
+      <!-- Comscore noscript tracking -->\n\
+      <img src=\"http://b.scorecardresearch.com/p?c1=2&amp;c2=7400849&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cj=1\" height=\"1\" alt=\" \" width=\"1\" />\n\
+      </noscript>\n\
+      <script type=\"text/javascript\">\n\
+      // <![CDATA[\n\
+      new Tabbox(\"moreRelated\", { header: \"h2\", autosize: false, vertical: false, select: 0 });\n\
+      new Tabbox(\"commentsNotes\", { header: \"h2\", autosize: false, vertical: false, select: 0 });\n\
+      new Tabbox(\"favsGroupsEvents\", { header: \"h2\", autosize: false, vertical: false, select: 0 });\n\
+      if(slideshare_object.user.owner == true && getUrlVar(\"show_download_info\") == \"true#favsGroupsEvents\"){\n\
+      $(\".downloadsTab .downloadList-title\").click();\n\
+      }\n\
+      (function() {\n\
+      function copy(fieldname) {\n\
+      var original = document.getElementById(fieldname);\n\
+      var duplicate = document.getElementById(fieldname + '2');\n\
+      if (original && duplicate) duplicate.value = original.value;\n\
+      }\n\
+      copy('embed-code');\n\
+      copy('embedCodeWP');\n\
+      copy('embedCodeWithoutRelated');\n\
+      })();\n\
+      if (slideshare_object.ready) slideshare_object.ready();\n\
+      // ]]>\n\
+      </script>\n\
+      <script type=\"text/javascript\">\n\
+      // <![CDATA[\n\
+      slideshare_object.done = true;\n\
+      // ]]>\n\
+      </script>\n\n\
+      <script id=\"page-load-loggedout\" type=\"text/javascript\" charset=\"utf-8\">\n\
+      // <![CDATA[\n\
+      jQuery(window).load(function(){\n\
+      window._gaq.push(['_trackEvent', \"Pageload time\", \"slideview_pageload_logged_out\", BrowserDetect.init(), (new Date()).getTime() - timer ]);\n\
+      });\n\
+      // ]]>\n\
+      </script>\n\n\n\
+      <a href=\"#cta_meeting_privacy\" class=\"h-privacy_cta_link j-cta_meeting_privacy\" id=\"j-meeting_privacy_cta\"></a>\n\
+      <div class=\"h-privacy_cta j-privacy_cta\"><div class=\"hide\" style=\"display:none\">\n  <div id=\"cta_meeting_privacy\">\n    <!--<div class=\"proSign\">SlideShare <span>PRO</span></div>-->\n    <h1 class=\"insightHeader\">Password protect your Zipcasts</h1>\n    <form name=\"upgradeForm\" class=\"h-upgradeForm remove_ad_cta_popup\" method=\"post\" action=\"https://www.slideshare.net/business/premium/payment\">\n      <div class=\"atd\" style=\"display:none;margin:0;padding:0\">\n         <input name=\"authenticity_token\" type=\"text\" value=\"MIZsuVvoE2TWsHkP3BbSORdWVyiBygYeGZZsfQxizv8=\" />\n      </div>\n      <input name=\"plan_group\" class=\"plan_group\" type=\"hidden\" value=\"business\" />\n      <h2>Add privacy to your Zipcasts</h2>\n      <ul>\n        <li>Require a password to login</li>\n        <li>Control who attends your Zipcasts</li>\n        <li>Leverage other privacy options of SlideShare PRO</li>\n      </ul>\n      <div class=\"ctaFocus\">\n        <button class=\"ctaStrong\" type=\"submit\">Upgrade to PRO</button> <a href=\"#\" class=\"dontUpgrade j-know-more\">See what else you get &raquo;</a>\n      </div>\n      <div class=\"frequencyChoice\">\n        <label><input name=\"span\" checked=\"checked\" type=\"hidden\" value=\"monthly\" /></label>\n        <label><input name=\"from\" checked=\"checked\" type=\"hidden\" value=\"meeting_privacy_cta\" /></label>\n      </div>\n      <div class=\"clear\"></div>\n    </form>\n    <img class=\"remove_ad_cta_popup_img\" src=\"http://public.slidesharecdn.com/images/visual-privacy.png?23757\" height=\"100\" alt=\"Remove ads\" width=\"99\" />\n  </div>\n\
+      </div>\n\
+      </div>\n\
+      </body>\n\
+      </html>"
+    http_version: "1.1"
