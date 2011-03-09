@@ -110,7 +110,12 @@ module Readability
 
     def google_videos
       uri = URI.parse(@base_uri + @request)
-      video_id = CGI::parse(uri.query)['docid'].first
+
+      if uri.fragment
+        video_id = CGI::parse(uri.fragment)['docid'].first
+      else
+        video_id = CGI::parse(uri.query)['docid'].first
+      end
       Nokogiri::HTML.fragment <<-HTML
         <div>
           <embed id=VideoPlayback src=http://video.google.com/googleplayer.swf?docid=#{video_id}&hl=en&fs=true style=width:400px;height:326px allowFullScreen=true allowScriptAccess=always type=application/x-shockwave-flash>
