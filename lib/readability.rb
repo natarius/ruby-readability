@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'nokogiri'
+require 'cgi'
 
 # so to run with non-Rails projects
 class Object
@@ -56,6 +57,7 @@ module Readability
       article = vimeo if is_vimeo? && remove_unlikely_candidates
       article = ted if is_ted? && remove_unlikely_candidates
       article = slideshare if is_slideshare? && remove_unlikely_candidates
+      article = google_videos if is_google_videos? && remove_unlikely_candidates
       article = apply_custom_rule if has_special_rule?
 
       if article && remove_unlikely_candidates
@@ -102,6 +104,22 @@ module Readability
       (@base_uri.to_s =~ REGEXES[:videoRe])
     end
 
+    def is_google_videos?
+      (@base_uri.to_s =~ /video.google.com/)
+    end
+
+    def google_videos
+      uri = URI.parse(@base_uri + @request)
+      video_id = CGI::parse(uri.query)['docid'].first
+      Nokogiri::HTML.fragment <<-HTML
+        <div>
+          <embed id=VideoPlayback src=http://video.google.com/googleplayer.swf?docid=#{video_id}&hl=en&fs=true style=width:400px;height:326px allowFullScreen=true allowScriptAccess=always type=application/x-shockwave-flash>
+          </embed>
+        </div>
+      HTML
+
+    end
+
     def slideshare
       title = @document.css("h1.h-slideshow-title").inner_html
       movie_value = @document.css("link[name='media_presentation']").first.attributes["href"].value
@@ -119,7 +137,7 @@ module Readability
             <embed name=\"__sse2606283\" src=\"#{movie_value}\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"425\" height=\"355\"></embed>
           </object>
         </div>
-        HTML
+      HTML
     end
 
     def youtube

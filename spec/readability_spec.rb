@@ -268,6 +268,19 @@ describe Readability do
       end
     end
 
+    describe "Google Videos" do
+      it 'should extract the videos' do
+        url = "http://video.google.com/videoplay?docid=-4176721009838609904&hl=en#"
+        uri = URI.parse(url)
+        response = Net::HTTP.get_response(uri)
+        @parsed_page = Readability::Document.new(Nokogiri::HTML(response.body), uri.host, uri.request_uri)
+        @content = @parsed_page.content
+
+        @content.should == " <div>\n <embed id=\"VideoPlayback\" src=\"http://video.google.com/googleplayer.swf?docid=-4176721009838609904&amp;hl=en&amp;fs=true\" style=\"width:400px;height:326px\" allowfullscreen=\"true\" allowscriptaccess=\"always\" type=\"application/x-shockwave-flash\"></embed>\n</div>"
+      end
+    end
+
+
   end
 
 
