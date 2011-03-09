@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    busk-ruby-readability (1.2.8)
+    busk-ruby-readability (1.2.9)
 
 GEM
   remote: http://rubygems.org/
