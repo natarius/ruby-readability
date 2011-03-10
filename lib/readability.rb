@@ -111,7 +111,7 @@ module Readability
     def google_videos
       uri = URI.parse(@base_uri + @request)
 
-      if uri.fragment
+      if uri.fragment && uri.fragment != ""
         video_id = CGI::parse(uri.fragment)['docid'].first
       else
         video_id = CGI::parse(uri.query)['docid'].first
