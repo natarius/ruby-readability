@@ -34,7 +34,7 @@ module Readability
         :trimRe => /^\s+|\s+$/,
         :normalizeRe => /\s{2,}/,
         :killBreaksRe => /(<br\s*\/?>(\s|&nbsp;?)*){1,}/,
-        :videoRe => /http:\/\/(www\.)?(youtube|vimeo|ted|player\.vimeo)\.com/i
+        :videoRe => /(www\.)?(youtube|vimeo|ted|player\.vimeo)\.com/i
     }
 
     # should we get rid of this?
