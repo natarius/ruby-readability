@@ -149,12 +149,7 @@ module Readability
       debug("I have a Youtube video page")
       if @request =~ /\?v=([_\-a-z0-9]+)&?/i
         Nokogiri::HTML.fragment <<-HTML
-          <object width="280">
-            <param name="movie" value="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US"></param>
-            <param name="allowFullScreen" value="true"></param>
-            <param name="allowscriptaccess" value="always"></param>
-            <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="280"></embed>
-          </object>
+          <iframe width="280" src="http://www.youtube.com/embed/{$1}" frameborder="0" allowfullscreen></iframe>
         HTML
       else
         nil
