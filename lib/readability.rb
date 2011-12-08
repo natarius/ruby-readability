@@ -85,7 +85,7 @@ module Readability
     end
 
     def is_youtube?
-      (@base_uri.to_s =~ /(www\.)?youtube.com/ || @base_uri.to_s =~ /(www\.)?youtu.be/)
+      (@base_uri.to_s =~ /(www\.)?youtube.com/)
     end
 
     def is_vimeo?
