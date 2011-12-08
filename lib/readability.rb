@@ -85,19 +85,19 @@ module Readability
     end
 
     def is_youtube?
-      (@base_uri.to_s =~ /^(www\.)?youtube.com/)
+      (@base_uri.to_s =~ /(www\.)?youtube.com/ || @base_uri.to_s =~ /(www\.)?youtu.be/)
     end
 
     def is_vimeo?
-      (@base_uri.to_s =~ /^(www.)?vimeo.com/)
+      (@base_uri.to_s =~ /(www.)?vimeo.com/)
     end
 
     def is_ted?
-      (@base_uri.to_s =~ /^(www.)?ted.com\/talks/)
+      (@base_uri.to_s =~ /(www.)?ted.com\/talks/)
     end
 
     def is_slideshare?
-      (@base_uri.to_s =~ /^(www.)?slideshare.net/)
+      (@base_uri.to_s =~ /(www.)?slideshare.net/)
     end
 
     def is_special_case?
@@ -118,7 +118,7 @@ module Readability
       end
       Nokogiri::HTML.fragment <<-HTML
         <div>
-          <embed id=VideoPlayback src=http://video.google.com/googleplayer.swf?docid=#{video_id}&hl=en&fs=true style=width:400px;height:326px allowFullScreen=true allowScriptAccess=always type=application/x-shockwave-flash>
+          <embed id=VideoPlayback src=http://video.google.com/googleplayer.swf?docid=#{video_id}&hl=en&fs=true style=width:280px; allowFullScreen=true allowScriptAccess=always type=application/x-shockwave-flash>
           </embed>
         </div>
       HTML
@@ -129,17 +129,17 @@ module Readability
       title = @document.css("h1.h-slideshow-title").inner_html
       movie_value = @document.css("link[name='media_presentation']").first.attributes["href"].value
       Nokogiri::HTML.fragment <<-HTML
-        <div style=\"width:425px\" id=\"__ss_2606283\">
+        <div style=\"width:280px\" id=\"__ss_2606283\">
           <strong style=\"display:block;margin:12px 0 4px\">
             <a href=\"#{@request}\" title=\"#{title}\">
               #{title}
             </a>
           </strong>
-          <object id=\"__sse2606283\" width=\"425\" height=\"355\">
+          <object id=\"__sse2606283\" width=\"280\">
             <param name=\"movie\" value=\"#{movie_value}\" />
             <param name=\"allowFullScreen\" value=\"true\"/>
             <param name=\"allowScriptAccess\" value=\"always\"/>
-            <embed name=\"__sse2606283\" src=\"#{movie_value}\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"425\" height=\"355\"></embed>
+            <embed name=\"__sse2606283\" src=\"#{movie_value}\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"280\"></embed>
           </object>
         </div>
       HTML
@@ -149,11 +149,11 @@ module Readability
       debug("I have a Youtube video page")
       if @request =~ /\?v=([_\-a-z0-9]+)&?/i
         Nokogiri::HTML.fragment <<-HTML
-          <object width="706" height="422">
+          <object width="280">
             <param name="movie" value="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US"></param>
             <param name="allowFullScreen" value="true"></param>
             <param name="allowscriptaccess" value="always"></param>
-            <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="706" height="422"></embed>
+            <embed src="http://www.youtube.com/v/#{$1}?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="280"></embed>
           </object>
         HTML
       else
@@ -165,13 +165,13 @@ module Readability
       debug("I have a Vimeo video page")
       # matches non-channel or pages that used swfobject to print player
       if @document.css("#clip_id")
-        Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{@document.css("#clip_id").attr('value')}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>")
+        Nokogiri::HTML.fragment("<iframe src=\"http://player.vimeo.com/video/#{@document.css("#clip_id").attr('value')}\" width=\"280\" frameborder=\"0\"></iframe>")
       # matches channel pages
       elsif player = @document.css(".player")
         html = ""
         player.each do |video|
           if video.to_html =~ /clip_id=([0-9]+)/
-            html << "<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"572\" height=\"322\" frameborder=\"0\"></iframe>"
+            html << "<iframe src=\"http://player.vimeo.com/video/#{$1}\" width=\"280\" frameborder=\"0\"></iframe>"
           end
         end
         Nokogiri::HTML.fragment(html)
