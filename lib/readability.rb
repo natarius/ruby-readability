@@ -28,7 +28,7 @@ module Readability
         :okMaybeItsACandidateRe => /and|article|body|column|main/i,
         :positiveRe => /article|body|content|entry|hentry|page|pagination|post|text/i,
         :negativeRe => /combx|comment|contact|foot|footer|footnote|link|media|meta|promo|related|scroll|shoutbox|sponsor|tags|widget/i,
-        :divToPElementsRe => /<(a|blockquote|dl|div|img|ol|p|pre|table|ul)/i,
+        :divToPElementsRe => /<(blockquote|dl|div|img|ol|p|pre|table|ul)/i,
         :replaceBrsRe => /(<br[^>]*>[ \n\r\t]*){2,}/i,
         :replaceFontsRe => /<(\/?)font[^>]*>/i,
         :trimRe => /^\s+|\s+$/,
@@ -368,6 +368,11 @@ module Readability
 
       # remove empty <p> tags
       node.css("p").each do |elem|
+         elem.remove if elem.content.strip.empty?
+      end
+
+      # remove empty <div> tags
+      node.css("div").each do |elem|
          elem.remove if elem.content.strip.empty?
       end
 
