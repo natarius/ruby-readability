@@ -77,7 +77,8 @@ module Readability
 
         cleaned_article = sanitize(article, candidates, options)
 
-        cleaned_article.gsub!(/[^\x00-\x7FÁáÉéÍíÑñÓóÚúÜü]/,"'") if cleaned_article
+        cleaned_article.gsub!(/[^\x00-\x7FÁáÉéÍíÑñÓóÚúÜü]/,"") if cleaned_article
+        cleaned_article.gsub!(/[^\x00-\x7FÁá]/,"'") if cleaned_article
 
         if remove_unlikely_candidates && article.text.strip.length < (options[:retry_length] || RETRY_LENGTH)
           make_html
